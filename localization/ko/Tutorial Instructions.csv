@@ -1,0 +1,77 @@
+﻿Key,Value
+TutoA Message 1,이곳은 손입니다. 현재 턴에 배치할 수 있는 카드가 표시됩니다.
+TutoA Message 2,손에서 카드를 선택해 보드에 놓으세요.
+TutoA Message 3,기술을 클릭해 크리처에게 {attack_name}을(를) 사용하도록 지시하세요. 괄호 안의 숫자는 이 기술의 피해량입니다.
+TutoA Message 4,기술을 선택했다면 턴을 종료할 수 있습니다.
+TutoB Message 1,"이것은 <Color=green>속도</color> 표시입니다.
+느린 크리처는 공격할 기회를 얻기도 전에 죽을 수 있습니다."
+TutoB Message 2,적의 속도가 더 높아 먼저 공격했습니다.
+TutoB Message 3,"일부 기술은 크리처의 속도와 관계없이 먼저 공격합니다.
+우선 기술을 사용해 적이 반격하기 전에 쓰러뜨리세요."
+TutoB Message 4,위쪽의 적 카운터에서 볼 수 있듯이 적이 1마리 남았습니다.
+TutoB Message 5,새로 나온 적의 속도가 아군과 같습니다...
+TutoB Message 6,두 크리처가 동시에 공격합니다!
+TutoC Message1,동료가 곧 죽을 위기에 처했습니다.
+TutoC Message2,피리를 사용해 후퇴시키세요. 피리는 턴당 한 번 사용할 수 있습니다.
+TutoC Message3,주의: 크리처가 죽으면 <color=red>영원히</color> 잃게 됩니다!
+TutoC Message4,참고: 후퇴한 크리처는 버린 카드 더미로 갑니다.
+TutoC Message5,크리처에게 열매를 줘서 체력을 회복하세요!
+TutoC Message6,"아이템은 화면 아래의 배낭에 보관됩니다.
+한 턴에 원하는 만큼 사용할 수 있지만, 보드에 있는 크리처에게만 사용할 수 있습니다!"
+TutoC Message7.2,덱에 새 카드를 추가하려면 적 크리처를 <color=green>길들여야</color> 합니다.
+TutoC Message8,크리처를 <color=green>길들이려면</color> 좋아하는 먹이를 주면 됩니다. 
+TutoC Message9,길들인 크리처는 전투가 끝나면 팀에 합류합니다.
+TutoC Message7.1,"적이 약해졌습니다! 
+이제 <color=green>길들일</color> 차례입니다."
+TutoD Message1,이번 전투에는 라인이 2개 있습니다.
+TutoD Message2,"각 라인은 서로 독립적이며, 턴은 왼쪽 라인부터 오른쪽 라인 순서로 진행됩니다."
+TutoD Message3,각 크리처는 맞은편의 적만 공격합니다.
+TutoD Message4,늘 그렇듯 같은 라인에서는 속도가 공격 순서를 결정합니다.
+TutoD Message5,정면에 대상이 없으면 다른 라인에서 가장 가까운 크리처를 대신 공격합니다.
+TutoD Message6,"크리처를 끌어다 놓아 다른 라인으로 옮길 수 있습니다.
+한 턴에 몇 번이든 옮길 수 있습니다."
+TutoD Message7,주의: 적이 이 기술을 사용하면 자신의 라인뿐 아니라 다른 라인의 크리처도 공격합니다.
+Final Tuto Complete Info Panel,잘했습니다! 훈련을 모두 마쳤습니다. 이제 새 카드 덱을 받고 심연으로 내려갑니다.
+Taming Tuto Complete Info Panel,이번 훈련에서 길들인 카드는 가져갈 수 없습니다.
+TutoC Message 8.1,"참고: 크리처의 {icons.hp}이(가) 낮을수록 길들이기 확률이 높아집니다.
+<b>체력이 1{icons.hp} 남았을 때 좋아하는 먹이를 주면 반드시 <color=green>길들이기에 성공</color>합니다!</b>"
+TutoC Message 4.1,"이곳은 뽑을 카드 더미입니다.
+매 턴 여기서 무작위 크리처 1장을 뽑습니다. "
+TutoC Message 4.2,뽑을 카드 더미가 비면 버린 카드 더미를 섞어 새 뽑을 카드 더미로 만듭니다.
+Undo Tuto Message 2,"실수했다면 언제든 이 버튼을 눌러 행동을 되돌릴 수 있습니다.
+단, 실패한 길들이기를 되돌려도 먹이는 반환되지 않습니다."
+Right Click Tuto Message,카드를 마우스 오른쪽 버튼으로 클릭하면 자세한 정보를 볼 수 있습니다.
+Right Click Tuto Message Controller,카드에서 Y(Xbox) 또는 세모(PlayStation) 버튼을 누르면 자세한 정보를 볼 수 있습니다.
+TutoC SecondMoveMessage 1,"이번에는 적이 다른 기술을 사용합니다. 
+"
+TutoC SecondMoveMessage 2,적이 사용할 기술은 항상 초록색으로 강조됩니다.
+TutoE Message1,"적은 아군을 한 번에 쓰러뜨릴 수 있지만, 이번에는 먼저 공격할 우선 기술이 없습니다..."
+TutoE Message2,소지품의 아이템으로 적에게 <color=#DBA51E>약화</color> {icons.attack_minus}을(를) 부여해 피해를 줄이세요!
+TutoE Message3,카드 아래의 아이콘을 보면 크리처에게 어떤 효과가 있는지 알 수 있습니다.
+TutoE Message4,카드에 커서를 올리면 각 효과의 설명을 읽을 수 있습니다.
+TutoE Message6,아! 이 적들에게는 <color=#DBA51E>약화</color> {icons.attack_minus}에 면역이 되는 특성(지속 능력)이 있습니다.
+TutoE Message7,이번에는 소지품의 아이템으로 팀에 <color=#36D9F6>견고</color> {icons.defense_plus}을(를) 부여해 공격을 버티세요.
+TutoE Message5,참고: 크리처가 후퇴하면 가지고 있던 효과가 제거됩니다.
+TutoE Message8,이 적은 <color=#36D9F6>견고</color> {icons.defense_plus}을(를) 무시하는 <color=#E26BE0>중독</color> {icons.poison}을(를) 부여합니다...
+TutoE Message9,주사기로 팀에 <b>특성</b> {venom_cure_name}을(를) 주입하세요. 그러면 <color=#E26BE0>중독</color> {icons.poison} 피해를 받는 대신 체력을 회복합니다!
+TutoE Message10,적의 기술은 <b>사용 횟수가 1회로 제한</b>되어 있어 한 전투에 한 번만 사용할 수 있습니다.
+TutoE Message11,사용 횟수는 기술 옆에 남은 횟수/최대 횟수로 표시됩니다.
+TutoC Swordbird Message1,적이 아군보다 빠릅니다!
+TutoC Swordbird Message2,"""{swift_scratch_name}"" 같은 우선 기술로 먼저 공격하세요."
+Encounter Choice Tuto 1,이제 어느 길로 갈지 선택할 차례입니다.
+Encounter Choice Tuto 2,상대하게 될 적을 확인해 보세요.
+Encounter Choice Tuto 3,"전투에서 승리하면 이 아이템 카드들을 얻습니다.
+"
+Encounter Choice Tuto 4,아이템에 더해 다음 이벤트도 발생합니다:
+Encounter Choice Tuto 5,이제 아래쪽 화살표를 눌러 다른 선택지를 확인해 봅시다.
+Encounter Choice Tuto 6,보다시피 이 조우에서는 다른 적들이 등장합니다...
+Encounter Choice Tuto 8,더 마음에 드는 쪽을 선택하고 전투를 시작하세요!
+Encounter Choice Tuto 7,보상도 다릅니다!
+Encounter Choice Part2 Tuto 1,전투 중과 마찬가지로 전투 사이에도 배낭을 열어 아이템을 사용할 수 있습니다.
+Encounter Choice Part2 Tuto 2,덱을 열어 일부 크리처를 방생할 수도 있습니다.
+Taming Advice Part1,"먹이로 크리처를 길들이지 않으면 적은 계속 강해지고, 아군은 그 속도를 따라가지 못합니다!"
+Taming Advice Part2,다음 전투에서 크리처를 최소 2마리 길들여 보세요.
+Taming Advice Title,크리처를 더 길들이세요!
+Encounter Reroll Tuto 1,제시된 두 조우가 모두 마음에 들지 않으면 이 버튼으로 새 조우를 생성할 수 있습니다.
+Encounter Reroll Tuto 2,"단, 조우당 한 번만 가능하니 신중하게 사용하세요."
+Encounter Reroll Tuto 3,참고: 조우를 새로고침하면 이전 선택지로 돌아갈 수 없습니다.

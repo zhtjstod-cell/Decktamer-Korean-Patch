@@ -1,0 +1,87 @@
+﻿Key,Value
+Leave,[떠난다]
+Select Sacrifice,"[동료 하나를 희생한다] 
+<size=70%><i>(그 능력 중 하나를 아이템으로 얻는다.)"
+Fight,[싸운다]
+Proceed,[계속한다]
+Rest,"[잠시 쉰다] 
+<size=70%><i>(모든 크리처의 HP를 1 회복한다.)"
+Give Mushroom,"[크리처에게 작은 버섯을 먹인다] 
+<size=70%><i>(크리처 하나를 선택한다. HP +1, 속도 +1.)"
+Take random talent or attack,"[주사기를 챙긴다] 
+<size=70%><i>(특성 또는 기술 에센스를 선택한다.)"
+Fully rest,"[푹 쉰다] 
+<size=70%><i>(모든 크리처의 체력을 완전히 회복한다.)"
+Final boss battle choice,[불가해한 무언가...]
+Gather Food,"[먹이를 채집한다]
+<size=70%><i>(먹이 아이템 하나를 선택한다.)"
+Attempt to Hunt,"[사냥을 시도한다]
+<size=70%><i>(50% 확률로 최상급 먹이를 얻는다.)"
+Duplicate a creature,"[크리처를 복제한다]
+<size=70%><i>(복제체는 저주를 받는다.)"
+Store item,"[아이템을 배낭에 넣는다]
+<i><size=70%>(아이템 하나를 선택한다.)"
+Give Serum,"[크리처에게 돌연변이 유발 물질을 준다]
+<i><size=70%>(크리처 하나를 선택한다. 무작위 돌연변이 2개를 얻는다.)"
+Get Vessel,"[함께 데려간다]
+<i><size=70%>(옛 인간을 덱에 추가한다.)"
+Ascend Creature,"[딱정벌레가 물게 둔다]
+<i><size=70%>(시작 덱의 크리처 하나를 승천시킨다.)"
+Mystery Trade,"[낯선 자와 교환한다]
+<i><size=70%>(크리처 하나를 선택한다. 같은 위험도의 무작위 크리처로 교체된다.)"
+Place Bait,"[먹이를 미끼로 놓는다]
+<i><size=70%>(위험도 {danger_level}의 크리처를 유인할 먹이를 선택한다.)"
+Safari Tame,"[길들인다]
+<i><size=70%>(덱에 추가할 크리처 하나를 선택한다.)"
+Oasis Heal,"[크리처를 정화한다]
+<size=70%><i>(크리처 하나를 선택한다. 저주를 제거하고 체력을 완전히 회복한다.)"
+Flee,[달아난다]
+Give Cursed Mushroom,"[크리처에게 저주받은 버섯을 먹인다] 
+<size=70%><i>(크리처 하나를 선택한다. HP +3, 속도 +3을 얻지만 저주도 받는다.)"
+Fuse Creatures,"[외과의에게 수술을 맡긴다] 
+<size=70%><i>(융합할 크리처 둘을 선택한다.)"
+Take the egg,"[알을 가져간다]
+<size=70%><i>(나중에 크리처로 부화할 알을 얻는다.)"
+Look for food,"[먹이를 찾는다] 
+<size=70%><i>(무작위 먹이를 얻는다.)"
+Explore,"[탐색한다]
+<size=70%><i>(무작위 아이템 2개를 얻는다.)"
+Use the small syringe v2,"[정제된 주사기를 사용한다]
+<size=70%><i>(크리처의 능력 하나를 선택해 추출하고 복제한다.)"
+Give treats,"[간식을 나눠 준다]
+<size=70%><i>(크리처 하나의 HP를 1 회복하는 과정을 5번 진행한다.)"
+Resurrect,"[다시 팀으로 맞이한다]
+<size=70%><i>(죽은 크리처 하나를 부활시킨다.)"
+Take the Secret Formula,[약병을 챙긴다]
+Seek a mate,"[짝을 찾는다]
+<size=70%><i>(크리처 하나를 선택한다. 같은 종의 동물이 덱에 합류한다.)"
+Leave in tree regular,"[나무 안에 12시간 둔다]
+<size=70%><i>(크리처 하나를 선택한다. HP와 속도가 5가 된다.)"
+Leave in tree cursed,"[나무 안에 24시간 둔다]
+<size=70%><i>(크리처 하나를 선택한다. HP와 속도가 7이 되지만 저주를 받는다.)"
+Prepare the feast,"[연회를 준비한다] 
+<i><size=70%>(먹이를 선택한다. 그 먹이를 좋아하는 크리처의 최대 HP가 증가한다.)"
+Take the experimental syringe,"[실험용 주사기를 챙긴다]
+<i><size=70%>(소지품에 추가할 특별한 주사기를 선택한다.)"
+Pick blue medicine,"[파란 약을 고른다]
+<i><size=70%>(크리처 하나의 체력을 완전히 회복한다.)"
+Pick red medicine,"[빨간 약을 고른다]
+<i><size=70%>(크리처 하나에게 저주를 포함한 무작위 돌연변이 4개를 부여한다.)"
+Catch it,[붙잡는다]
+Mutated,"[변이시킨다]
+<i><size=70%>(크리처 하나를 선택한다. ""{implosion_name}"" 기술을 배운다.)"
+Bulk Up,"[몸집을 키운다]
+<i><size=70%>(크리처 하나를 선택한다. 속도 -{minus_speed}을(를) 대가로 최대 HP +{plus_hp}.)"
+Slim Down,"[몸집을 줄인다]
+<i><size=70%>(크리처 하나를 선택한다. 최대 HP -{minus_hp}을(를) 대가로 속도 +{plus_speed}.)"
+Stay the same,[그대로 둔다]
+Stored the food,[먹이를 챙긴다]
+Use The Syringe,[주사기를 사용한다...]
+Swap Stats,"[기생충이 끝낼 때까지 기다린다]
+<i><size=70%>(크리처 둘을 선택해 능력치를 맞바꾼다.)"
+Kill the Parasite & Leave,[기생충을 죽이고 떠난다]
+Take the creature with me,"[크리처를 데려간다]
+<i><size=70%>(덱에 추가할 맞춤 크리처를 만든다.)"
+Rest 50% heal,"[쉰다] 
+<size=70%><i>(모든 크리처의 체력을 50% 회복한다.)"
+Rest 0% heal,[쉰다]

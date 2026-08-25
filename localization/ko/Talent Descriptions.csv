@@ -1,0 +1,184 @@
+﻿Key,Value
+When Placed Applies X Token for X Turns to its Team,"배치 시, {number_turns}턴 동안 팀에 {number}{token}을(를) 부여합니다."
+Vampirism,피해를 줄 때 체력을 1{icons.hp} 회복합니다.
+Evasive,배치 시 또는 후퇴 시 카드 1장을 뽑습니다.
+Nap,후퇴 시 체력을 4{icons.hp} 회복합니다.
+Rocky Shell,남은 체력이 1{icons.hp}인 경우를 제외하면 한 번의 공격으로 죽지 않습니다(전투당 1회).
+Regeneration,매 턴 종료 시 체력을 1{icons.hp} 회복합니다.
+Apex Predator,적을 죽이면 {icons.attack_plus}와(과) {icons.speed_plus}을(를) 얻습니다.
+"When Placed, Gains X Token for X Turns","배치 시, {number_turns}턴 동안 {number}{token}을(를) 얻습니다."
+"When an Ally Gets Healed, Gains Token",아군이 체력을 회복하면 {token}을(를) 얻습니다.
+Opposing Enemy Has X Token,맞은편 적에게 {amount}{token}이(가) 있습니다.
+Determination,체력이 최대 {icons.hp}일 때 2 {icons.attack_plus}을(를) 가집니다.
+Vengeful,아군이 죽으면 2 {icons.attack_plus}을(를) 얻습니다.
+Light-Headed,한 턴 걸러 한 번씩만 공격할 수 있습니다.
+Venom Cure,중독 {icons.poison} 피해를 받는 대신 그만큼 체력을 회복합니다.
+Fortitude,부정 효과에 면역입니다.
+Imitator,배치 시 왼쪽 아군의 기술을 얻습니다.
+Inflicts Token When Attacking,공격 후 대상에게 {token}을(를) 부여합니다.
+Wind of Change,보드에서 가장 느린 아군이 {icons.dexterity}을(를) 가집니다.
+"For Each Token1, Also Has Token2",자신이 가진 {token1} 하나당 {token2}도 하나씩 가집니다.
+Peripheral Vision,다른 라인에서 오는 피해를 절반으로 줄입니다(소수점 버림).
+Haunting Presence,배치 시 모든 적에게 피해를 1 줍니다.
+Sleep Trap,배치 시 맞은편 적이 <u>더 느리면</u> 수면 {icons.sleep}에 빠뜨립니다.
+Thick Hide v2,한 번에 {minDamage}~{maxDamage}의 피해를 받으려 할 때 피해를 {reducedDamage}(으)로 줄입니다.
+Deals Damage When Placed,배치 시 맞은편 적에게 피해를 {damage_number} 줍니다.
+"When Attacked, Inflicts Token to the Attacker",공격받을 때 공격자에게 {token}을(를) 부여합니다.
+Adjacent Creatures Have X Token,인접한 크리처가 {amount}{token}을(를) 가집니다.
+Inflicts X Token When Placed,배치 시 맞은편 적에게 {number}{token_name}을(를) 부여합니다.
+"When Attacked, Gains Token",공격받을 때 {token}을(를) 얻습니다.
+Curing Bristles,배치 시 모든 아군의 부정 효과를 제거합니다.
+Slow Start,배치 시 수면 {icons.sleep}에 빠집니다.
+Eerie Screech,배치 시 모든 적의 긍정적 능력치 변화를 제거합니다.
+Passive Aggressive,매 턴 2 {icons.speed_plus}와(과) 2 {icons.defense_plus} 상태를 번갈아 가집니다.
+Gains X Token On Kill,적을 죽이면 {number}{token}을(를) 얻습니다.
+Adrenaline,체력이 2{icons.hp} 이하일 때 3 {icons.attack_plus}을(를) 가집니다.
+Galvanizing,배치 시 또는 후퇴 시 아군에게 1턴 동안 {icons.attack_plus}을(를) 부여합니다.
+Fortress,상태 기술 {icons.status_move}을(를) 사용한 뒤 {icons.protection}을(를) 얻습니다.
+Deft,상태 기술 {icons.status_move}(으)로 선제공격합니다.
+Has X Token1 For Each Creature That Has Token2,자신을 포함해 {token3}이(가) 있는 크리처 하나당 {number1}{token1}와(과) {number2}{token2}을(를) 가집니다.
+Sonar v2,맞은편 적의 특성이 비활성화됩니다. (이번 전투에서 남은 턴: {turns_left})
+Fear Bonding,아군이 부정 효과를 받으면 {icons.attack_plus}와(과) {icons.speed_plus}을(를) 얻습니다.
+Token On Death Opposing Enemy,죽을 때 맞은편 적에게 {token}을(를) 부여합니다.
+Antibodies,중독 {icons.poison} 상태인 아군이 2 {icons.attack_plus}을(를) 가집니다.
+"When a Creature Receives Token1, Gains That Much Token2",크리처가 {token1}을(를) 받으면 같은 수만큼 {token2}을(를) 얻습니다.
+Tail Shelter,2 {icons.defense_plus}을(를) 가집니다. 기술을 사용하면 사라집니다.
+The World,턴 종료 시 모든 크리처의 일시적 효과 {icons.hourglass} 지속 시간이 줄어들지 않습니다.
+Resentful,부정 효과를 받으면 맞은편 적에게도 같은 효과를 부여합니다.
+Devil's Advocate,자신의 능력치 변화를 반전시킵니다.
+Ethereal,후퇴 시 자신의 복제체를 남깁니다(전투당 1회).
+Peer Learning,아군이 효과를 얻으면 자신도 같은 효과를 얻습니다.
+Assimilator,배치 시 맞은편 적의 특성을 얻습니다. 후퇴 시 사라집니다.
+Transmission,후퇴 시 자신의 긍정 효과 사본을 모든 아군에게 부여합니다.
+Token all enemies,모든 적이 {number}{token}을(를) 가집니다.
+Hypersensitive,자신의 능력치 변화를 2배로 만듭니다.
+Gains Token When Ally Placed,아군이 배치되면 {token}을(를) 얻습니다.
+Omnipresence,아군이 죽으면 턴 종료 시 그 자리를 촉수가 대신합니다. 아군이 후퇴하면 즉시 촉수로 대체됩니다.
+Always Has X Token,항상 {amount}{token}을(를) 가집니다.
+Allies of DL X Have X Token,위험도 {dl} {icons.danger_star}인 아군이 {amount} {token}을(를) 가집니다.
+Deals Damage and Inflicts X Token When Placed,배치 시 맞은편 적에게 피해를 {damage_number} 주고 {token_number}{token}을(를) 부여합니다.
+Inflicts X Token for X Turns to All Enemies When Placed,배치 시 모든 적에게 {turn}턴 동안 {amount}{token}을(를) 부여합니다.
+Pain Harvester,피해 생존 시 체력을 1{icons.hp} 회복합니다.
+Undying,"죽을 때 이 특성이 없는 상태로, 최대 체력 {icons.hp}의 절반을 가지고 다시 소환됩니다(올림)."
+Inflicts Token to Opposing Enemy at End of Turn,매 턴 종료 시 맞은편 적에게 {token}을(를) 부여합니다.
+Hyperstimulation,배치 시 위험도 4 {icons.danger_star} 이하인 모든 크리처의 모든 기술을 얻습니다.
+Oneiric,매 턴 바뀌는 무작위 기술 하나를 가집니다.
+Abyss Cure,인접한 크리처가 부정 효과에 면역이 됩니다.
+Inflicts Token to Opposing Enemy When Placed and On End Turn,배치 시와 매 턴 종료 시 맞은편 적에게 {amount}{token}을(를) 부여합니다.
+Gains X Token End Turn,매 턴 종료 시 {number}{token}을(를) 얻습니다.
+"When Placed, Gains X Token",배치 시 {number}{token}을(를) 얻습니다.
+Spiky Scales,공격받을 때 자신의 {icons.armor}만큼 공격자에게 피해를 줍니다.
+Adds Item On Death,죽을 때 {item_name}을(를) 소지품에 추가합니다.
+Immune to Token,{token}에 면역입니다.
+Duelist,맞은편 적과 속도가 같아집니다.
+"When Placed, Inflicts X Token For X Turns",배치 시 맞은편 적에게 {number_turns}턴 동안 {number}{token}을(를) 부여합니다.
+Enemies with Token1 Have That Much Token2,{token1}이(가) 있는 적은 같은 수만큼 {token2}도 가집니다.
+Inflicts X Token for X turns When an Enemy Takes Damage,적이 피해를 받으면 {number_turns}턴 동안 그 적에게 {number}{token}을(를) 부여합니다.
+When Placed Restores X HP to Itself,배치 시 체력을 {number}{icons.hp} 회복합니다.
+Leech Aura,팀원이 피해를 줄 때마다 그 팀원의 체력이 1{icons.hp} 회복됩니다.
+Calcification,초과 회복량을 {icons.armor}(으)로 전환합니다.
+"When an Ally is Placed, Gives it and Gains X Token",아군이 배치되면 그 아군에게 {number}{token}을(를) 부여하고 자신도 {number}{token}을(를) 얻습니다.
+Spine Volley,"자신의 {icons.armor}을(를) 모두 잃고, 잃은 만큼 모든 적에게 피해를 줍니다."
+Zappy,상태 기술{icons.status_move}을(를) 사용한 뒤 맞은편 적에게 피해를 {damage_number} 줍니다.
+Reactive,팀원이 상태 기술{icons.status_move}을(를) 사용한 뒤 모든 적에게 피해를 {damage_number} 줍니다.
+Mystic Presence,모든 크리처의 모든 능력치 변화를 2배로 만듭니다.
+Everlasting,초과 회복량만큼 최대 {icons.hp}이(가) 영구히 증가합니다(최대 20).
+Has Token if Opposing Enemy Has Token,맞은편 적에게 {token2}이(가) 있으면 {number}{token1}을(를) 가집니다.
+Reinvigorating Spirit,배치 시 아군의 사용 횟수 제한 기술을 1회씩 회복합니다(전투당 1회).
+Opportunist,부정 효과가 있는 크리처에게 추가 피해를 3 줍니다.
+"When an Enemy Receives a Negative Effect, Gains as Much Token for X Turns",적이 부정 효과를 받을 때마다 {number_turns}턴 동안 그 수만큼 {number}{token}을(를) 얻습니다.
+"When Placed and On Retreat, Inflicts X Token to the Opposing Enemy",배치 시 또는 후퇴 시 맞은편 적에게 {number}{token}을(를) 부여합니다.
+"While Asleep, Has X Token",수면 {icons.sleep} 상태일 때 {number}{token}을(를) 가집니다.
+Optimistic,피해가 1 이하인 기술을 사용한 뒤 체력을 1{icons.hp} 회복합니다.
+Crafty,팀원이 상태 기술{icons.status_move}을(를) 사용한 뒤 체력을 1{icons.hp} 회복합니다.
+Made in Heaven,일시적 효과 {icons.hourglass}은(는) 1턴보다 오래 지속될 수 없습니다.
+End of Eternity,영구 효과가 대신 3턴짜리 일시적 효과 {icons.hourglass}이(가) 됩니다.
+Umbilical Root,{boss_name}이(가) 살아 있는 동안 {number}{token}을(를) 가집니다.
+Nightmare Fuel,매 턴 종료 시 잠든 다른 크리처 {icons.sleep}에게서 체력을 {amount}{icons.hp} 빼앗습니다.
+Slumbering,깨어날 때 모든 적에게 피해를 {damage_number} 줍니다. 발동할 때마다 피해가 증가합니다. 전투 시작 시 수면 {icons.sleep} 상태입니다.
+"When Damaged, Adds Item to Inventory",피해를 받을 때 {item_name}을(를) 소지품에 추가합니다. (이번 전투에서 남은 횟수: {uses_left})
+Sneaky,피리를 소모하지 않고 후퇴할 수 있습니다.
+Withering,배치 시 자신이 가진 부정 효과의 수만큼 맞은편 적에게 피해를 줍니다.
+Born in Heaven,아군이 피해를 받으면 그 아군에게 {token}을(를) 부여합니다.
+Takes Damage on End Turn,매 턴 종료 시 피해를 {amount} 받습니다.
+Exponential Growth,매 턴 종료 시 {amount} {token}을(를) 얻습니다. 수치는 턴마다 증가합니다.
+"When an Enemy is Placed, Inflicts X Token for X Turns to it",적이 배치되면 그 적에게 {number_turns}턴 동안 {amount}{token}을(를) 부여합니다.
+Deals Damage to Opposing Enemy on End Turn,매 턴 종료 시 맞은편 적에게 피해를 {damage} 줍니다.
+Ever-Evolving,적이 긍정 효과를 얻으면 자신도 같은 효과를 얻습니다.
+Deals Extra Damage to Sleeping Creatures,수면 {icons.sleep} 상태인 크리처에게 추가 피해를 {damage_boost} 줍니다.
+Sleep Sucker,수면 {icons.sleep} 상태인 크리처에게 피해를 줄 때 체력을 {number}{icons.hp} 회복합니다.
+Enemies Have Double Token,적이 가진 {token}의 수가 2배가 됩니다.
+Gains X Token Upon Receiving Negative Effect,부정 효과를 받으면 {number}{token}을(를) 얻습니다.
+"Upon Losing Token1, Inflicts as Many Token2 to All Enemies",{token1}을(를) 잃으면 모든 적에게 같은 수만큼 {token2}을(를) 부여합니다.
+Has Token if There is an Empty Slot,아군의 빈 슬롯이 있으면 {token}을(를) 가집니다.
+"When a Creature Receives Token1, Gains that Much Token2 for X Turns",크리처가 {token1}을(를) 받으면 {number_turns}턴 동안 같은 수만큼 {token2}을(를) 얻습니다.
+Double Damage To Creatures with Token,{token}이(가) 있는 크리처에게 피해를 2배로 줍니다.
+Enemies with Token1 Have X Token2,{token1}이(가) 있는 적은 {amount}{token2}을(를) 가집니다.
+Cowardly,턴 종료 시 체력이 1{icons.hp} 남아 있으면 후퇴합니다.
+Radioactive,돌연변이 기술이 추가 피해를 {number} 줍니다.
+Inflicts Token When Dealing Damage,피해를 줄 때 대상에게 {number}{token}을(를) 부여합니다.
+Inflicts Token When Team Member Deals Damage,팀원이 피해를 줄 때 대상에게 {number}{token}을(를) 부여합니다.
+"When an Enemy Receives Token1, Inflicts X Token2 to it.",적이 {token1}을(를) 받으면 그 적에게 {number}{token2}을(를) 부여합니다.
+Enemies With 0 Speed Have X Token,속도가 0인 적이 {number}{token}을(를) 가집니다.
+Takes and Deals Double Damage,받는 피해와 주는 피해가 모두 2배가 됩니다.
+Restful Sleep,깨어날 때 체력을 {amount}{icons.hp} 회복하고 자신의 부정 효과를 제거합니다.
+Inflicts X Token When an Enemy Takes Damage,적이 피해를 받으면 그 적에게 {number}{token}을(를) 부여합니다.
+Eternal Shield,후퇴 시 또는 전투 종료 후에도 최대 {max} {icons.armor}을(를) 유지합니다.
+Unstable Genome,"두 전투마다 한 번, 전투 시작 시 무작위 돌연변이를 얻습니다."
+Metabolizer,생선을 먹은 뒤 무작위 돌연변이를 얻습니다.
+When Placed Forces Opposing Enemy to Retreat,배치 시 맞은편 적을 강제로 후퇴시킵니다.
+Genotoxic,배치 시 이번 전투 동안 아군을 진화시킵니다. 진화할 수 있는 아군만 해당합니다.
+First Responder,전투를 시작할 때 손에 들어옵니다.
+Ripple Effect,팀원이 다른 라인의 대상을 공격할 때 추가 피해를 {damage} 줍니다.
+Inflicts X Token to All Enemies When Placed,배치 시 모든 적에게 {number}{token}을(를) 부여합니다.
+Test Subject,주사기로 추출당한 능력을 잃지 않습니다.
+Force-Sucker,적을 죽이면 사용 횟수 제한 기술의 사용 횟수를 1회 회복합니다.
+"Upon Losing Token1, Inflicts X Token2 to All Enemies",{token1}을(를) 잃으면 모든 적에게 {amount}{token2}을(를) 부여합니다.
+Reverse World,"각 라인에서 크리처의 공격 순서를 반대로 바꿉니다. 먼저 공격할 크리처는 마지막에, 마지막에 공격할 크리처는 먼저 공격합니다."
+Harmony,속도가 자신의 {icons.hp}과(와) 같아집니다.
+Underdog,맞은편 적의 위험도 {icons.danger_star}가 자신보다 높은 단계 하나당 1 {token}을(를) 가집니다.
+Heals Allies On Death,죽을 때 아군의 체력을 {amount}{icons.hp} 회복합니다.
+Opposing Enemy Has X Token1 if it Has Token2,맞은편 적에게 {token2}이(가) 있으면 {amount}{token1}도 가집니다.
+Regains X HP When Ally Placed,아군이 배치되면 체력을 {number}{icons.hp} 회복합니다.
+Gains X Token when an Team Member Uses a Status Move.,팀원이 상태 기술{icons.status_move}을(를) 사용한 뒤 {number}{token}을(를) 얻습니다.
+"When Opposing Enemy Receives Token1, Gains That Much Token2",맞은편 적이 {token1}을(를) 받으면 같은 수만큼 {token2}을(를) 얻습니다.
+Gains X Token1 and X Token2 when an Team Member Uses a Status Move.,팀원이 상태 기술{icons.status_move}을(를) 사용한 뒤 {number1}{token1}와(과) {number2}{token2}을(를) 얻습니다.
+New Entry,"{turns_left}턴 후, 끔찍한 무언가가 튀어나옵니다..."
+Toxic,맞은편 적의 중독 {icons.poison}이(가) 매 턴 종료 시 감소하는 대신 증가합니다.
+Plague,모든 크리처의 중독 {icons.poison} 피해가 {extra_damage} 증가합니다.
+Deals Damage Equal to its Token to All Enemies,자신이 가진 {token}만큼 모든 적에게 피해를 줍니다.
+Iron Will,피해를 받고 체력이 1{icons.hp} 남으면 체력을 완전히 회복합니다 {icons.hp}(전투당 1회).
+Zenkai Boost,"체력이 1{icons.hp}일 때 회복하면, 회복한 {icons.hp} 하나당 1 {token1}와(과) 1 {token2}을(를) 얻습니다."
+Has Token While at 1 HP Left,체력이 1{icons.hp} 남으면 {number}{token}을(를) 가집니다.
+"When Placed, Falls Asleep to Gain X Token",배치 시 수면 {icons.sleep}에 빠지고 {number}{token}을(를) 얻습니다.
+"When a Team Member Gains Token, it Gains an Extra One",팀원이 {token}을(를) 얻을 때 하나를 추가로 얻습니다.
+When Placed and On Death Gives X Token to its Allies,배치 시와 사망 시 아군에게 {number}{token}을(를) 부여합니다.
+"When an Ally Dies, Gains X Token for X Turns",아군이 죽으면 {number_turns}턴 동안 {number}{token}을(를) 얻습니다.
+Inflicts and Gains Token When Dealing Damage,피해를 줄 때 대상에게 {number1}{token1}을(를) 부여하고 {number2}{token2}을(를) 얻습니다.
+Regains X HP When a Creature Dies,크리처가 죽으면 체력을 {amount}{icons.hp} 회복합니다.
+When Healed Gives X Token To Adjacent Creatures,체력을 회복할 때 인접한 크리처에게 {number}{token}을(를) 부여합니다.
+On Death Gives X Token to its Team,죽을 때 팀에 {number}{token}을(를) 부여합니다.
+When Placed Gains X Token1 and X Token2 for X Turns,배치 시 {number_turns}턴 동안 {number1}{token1}와(과) {number2}{token2}을(를) 얻습니다.
+When Placed Gives X Token for X Turns to the Ally to its Left,배치 시 왼쪽 아군에게 {number_turns}턴 동안 {number}{token}을(를) 부여합니다.
+The Ally With the Lowest Health Has X Token,체력 {icons.hp}이(가) 가장 낮은 아군이 {number}{token}을(를) 가집니다.
+Has X Token1 if it doesn't have Token2,{token2}이(가) 없으면 {number}{token1}을(를) 가집니다.
+"After Consuming Item, Regains X HP and Gains X Token",{item_name}을(를) 소비한 뒤 체력을 {hp_amount}{icons.hp} 회복하고 {token_amount}{token}을(를) 얻습니다.
+"When an Ally Gets Healed, Gains X Token for X Turns",아군이 체력을 회복하면 {number_of_turns}턴 동안 {token_amount}{token}을(를) 얻습니다.
+Eternal Cycle,팀원이 피해 생존 시 그 팀원의 맞은편 적에게 피해를 {damage} 줍니다.
+Gluttosis,먹이 {icons.carnivore}{icons.herbivore}{icons.piscivore}을(를) 먹은 뒤 최대 {icons.hp}과(와) 속도가 영구히 1 증가합니다.
+Scavenger,크리처가 <b>({creatures_left})</b>마리 죽으면 소지품에 추가할 아이템을 하나 발견합니다!
+Has X Token1 For Each Creature That Has Token2,자신을 포함해 {token2}이(가) 있는 크리처 하나당 {number}{token1}을(를) 가집니다.
+Has X Token1 And X Token2 For Each Empty Ally Slot,아군의 빈 슬롯 하나당 {amount1}{token1}와(과) {amount2}{token2}을(를) 가집니다.
+Defiant,"{amount}{token}을(를) 가지지만, 매 턴 무작위로 선택된 기술 하나만 고를 수 있습니다."
+Can Use Status Moves Even While Asleep,수면 상태에서도 상태 기술 {icons.status_move}을(를) 사용할 수 있습니다.
+Has X Token If It Has A Negative Effect,부정 효과가 있으면 {number}{token}을(를) 가집니다.
+On Kill Regains X HP,적을 죽이면 체력을 {number}{icons.hp} 회복합니다.
+Has X Token if Opposing Enemy has X HP or Less,맞은편 적의 체력이 {hp_threshold}{icons.hp} 이하이면 {token_amount}{token}을(를) 가집니다.
+"When Token is Inflicted, Regains X HP",{token}을(를) 부여할 때 체력을 {amount}{icons.hp} 회복합니다.
+Adds Item To Your Inventory When Placed Once Per Battle,배치 시 {item}을(를) 소지품에 추가합니다(전투당 1회).
+"When a Team Member Gains Token1, Gains X Token2 for X Turns",팀원이 {token1}을(를) 얻으면 {number_turns}턴 동안 {token_amount}{token2}을(를) 얻습니다.
+After Using A Status Move Gains X Token,상태 기술 {icons.status_move}을(를) 사용한 뒤 {number}{token}을(를) 얻습니다.
+After Using A Status Move Inflicts X Token To Opposing Enemy,상태 기술 {icons.status_move}을(를) 사용한 뒤 맞은편 적에게 {number}{token}을(를) 부여합니다.
+"When an Enemy Receives Token1, Gains X Token2",적이 {token1}을(를) 받으면 {number}{token2}을(를) 얻습니다.
+Item Heals Extra,{item_name}을(를) 소비한 뒤 체력을 추가로 {hp_amount}{icons.hp} 회복합니다.
+Regains X HP When Ally Retreated,아군이 후퇴하면 체력을 {number}{icons.hp} 회복합니다.

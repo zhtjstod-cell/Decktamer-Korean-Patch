@@ -1,0 +1,17 @@
+﻿Key,Value
+Use Move Log,{user}이(가) {move}을(를) 사용했습니다.
+Take Damage Log,{creature}이(가) 피해를 {damage} 받았습니다.
+Death Log,{creature}이(가) 쓰러졌습니다!
+Heal Log,{creature}: +{number}{icons.hp}.
+Enter Battle Log,{creature}이(가) 전투에 참가했습니다.
+Leave Battle Log,{creature}이(가) 후퇴했습니다.
+Use Item Log,{item}을(를) 사용했습니다.
+Use Item on Creature Log,{creature}에게 {item}을(를) 사용했습니다.
+Successful Tame Log,{creature} 길들이기 성공! ({percentage})
+Strategy Phase Log,- 전략 단계 -
+Attack Phase Log,- 공격 단계 -
+End of Turn Log,- 턴 종료 -
+Failed Tame Log,{creature} 길들이기 실패. ({percentage})
+Turns Log,{number}턴
+Speed Log,속도
+Turn Title Log,- {number}턴 -

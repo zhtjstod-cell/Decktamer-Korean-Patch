@@ -1,0 +1,231 @@
+{
+  "patch_name": "Decktamer Korean Patch",
+  "patch_version": "1.0.0",
+  "game_version": "1.7.4",
+  "translation": {
+    "method": "GPT direct translation with contextual and gameplay review",
+    "tables": 37,
+    "rows": 3039,
+    "aggregate_sha256": "93c0ef76410a8a2704ac7c13325757bd82212ddbdde7a06fa42e2dd6ada68b33"
+  },
+  "binary_deltas": {
+    "Assembly-CSharp.dll": {
+      "format_version": 1,
+      "segments": 5,
+      "original_size": 1757696,
+      "patched_size": 1757696,
+      "original_sha256": "ee5dc47461f2776fa83d4acbb17d0434e12e76f0ac54ebc631a8c7cbb3225b5b",
+      "patched_sha256": "8a0a8e93d51c707d77f69e69624dc8191df4373d5aea4c60f2f1255961ba3f85",
+      "delta_sha256": "50276c251b48dd46d0378a3e5187b412a13dcacd30287faa16df160346322e8a",
+      "delta_size": 181
+    },
+    "sharedassets0.assets": {
+      "format_version": 1,
+      "segments": 9825,
+      "original_size": 213598948,
+      "patched_size": 213598948,
+      "original_sha256": "ba21274137c1f6a8b896cc25d2a316228b6ca9861b3c25e349395ea13a4fa6cf",
+      "patched_sha256": "2027eeecc0f3657ecc08cc483db48be942b582b0a7cec509b6b2f23d4350c050",
+      "delta_sha256": "4d0bbc34efb1e52a9e23a4f16052f35f8155a22278cb82b89a69fdebdfffd54b",
+      "delta_size": 13358839
+    }
+  },
+  "files": {
+    "CHANGELOG.md": {
+      "sha256": "aec6683d7d56895076a1bf9869dfec6a248d5a1602924822980209cd18ab9092",
+      "size": 683
+    },
+    "Install_Korean_Patch.bat": {
+      "sha256": "b736a9202be3dbd72af1b00ffc9d6c6d7e1429a4799c06a942fa41d008040b1a",
+      "size": 465
+    },
+    "LICENSE": {
+      "sha256": "8597b7f5918881b562cdad0cf9da914f6f69b0640d5f86731097d77302dc1645",
+      "size": 1071
+    },
+    "licenses/OFL-NanumPenScript.txt": {
+      "sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f",
+      "size": 4534
+    },
+    "licenses/OFL-NotoSerifKR.txt": {
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+      "size": 4350
+    },
+    "localization/ko/Attack Descriptions.csv": {
+      "sha256": "763d1e0664a3fcd190333fe03d737a01fe76a53bb3d414bcbba9a74a4c7fa68b",
+      "size": 23880
+    },
+    "localization/ko/Attack Names.csv": {
+      "sha256": "b62b6343b684cc73c889b82343dc8f719f7ae34ffdedb806042115997ca3fc36",
+      "size": 11047
+    },
+    "localization/ko/Battle Log.csv": {
+      "sha256": "28497dd7dd84d21096709b4b32659f7a47d0919fd5853e61df3c054e4d0a4f5a",
+      "size": 788
+    },
+    "localization/ko/Bestiary Description 2.csv": {
+      "sha256": "3acf954e22c6a044b890fc8c57516d05338054fe2a882a5129be5bd2a15bf5ea",
+      "size": 38684
+    },
+    "localization/ko/Bestiary Description.csv": {
+      "sha256": "2cd24713bc59229f467a1d738725f9d6b8adddb0b00e9d1bc2043eb8ca908ad8",
+      "size": 34448
+    },
+    "localization/ko/Bestiary Habitat 2.csv": {
+      "sha256": "7c43b88c06740dd7fc0c7b901d02f743d72cce3fdb8023bcd1d3029d087e2de6",
+      "size": 2058
+    },
+    "localization/ko/Bestiary Habitat.csv": {
+      "sha256": "6860cc0214acf68350e636d0c42947971abca22aeb60fe8c4314d3602a24a369",
+      "size": 2430
+    },
+    "localization/ko/Challenge Presets.csv": {
+      "sha256": "72e95727da5893a3d52a9d04b0934745252ac0768f7d21f41ed478e400688bce",
+      "size": 238
+    },
+    "localization/ko/ChallengeModifier Descriptions.csv": {
+      "sha256": "f962400c755ea19c9a31de2164f0cae389f6e87b955122d7cac98f87195b8d56",
+      "size": 3711
+    },
+    "localization/ko/ChallengeModifier Names.csv": {
+      "sha256": "9eaa927220a8b00d4e710fb69b5bbeed75445bf8a91e968536873d8e0170135b",
+      "size": 727
+    },
+    "localization/ko/ChallengeModifier Values.csv": {
+      "sha256": "e2f55c49f8db9a55f6bff753d3d593455b136b58c9a6c61b9e520866d4f2db1f",
+      "size": 1271
+    },
+    "localization/ko/Creature Names.csv": {
+      "sha256": "cf76c820714ca8f9af84b8eb78d00f4258a3f5defce43623049c6b17c1d180da",
+      "size": 5387
+    },
+    "localization/ko/Custom Depth Ranges.csv": {
+      "sha256": "51cd8d6402d1d5acd14127852c039d709c71528080074c3cddde353ffeaf20e8",
+      "size": 300
+    },
+    "localization/ko/Encounter Diary Entries.csv": {
+      "sha256": "b79c42910aa08671db89cc5333d00ac5e30f595a7d39d84d6f207a3a244a151b",
+      "size": 3149
+    },
+    "localization/ko/Event Choices.csv": {
+      "sha256": "388f9ce62a45751905c69f4f1cd98d9e7d4ee9c4a6b530ff3cb811987a6fa3e0",
+      "size": 4891
+    },
+    "localization/ko/Event Descriptions.csv": {
+      "sha256": "7bc6749fcd5b1029c2547497378818e8c9a488991f949e82e58b5073d0b35d13",
+      "size": 13521
+    },
+    "localization/ko/Event Names.csv": {
+      "sha256": "c2a97652be91e6680d3e0dfd8d56e3826ce613b0834b8c9cf427faebfa80627d",
+      "size": 877
+    },
+    "localization/ko/Event Short Descriptions.csv": {
+      "sha256": "e706b0d733e11fccd639e73a9f71359c69f159b616a21f3d52ec82bc5636b051",
+      "size": 3305
+    },
+    "localization/ko/Fun Facts.csv": {
+      "sha256": "56aa3635123eff000cb6a883b3863b57d0193a8cdb07dacf908a8d8f326429d3",
+      "size": 18028
+    },
+    "localization/ko/GameMode Descriptions.csv": {
+      "sha256": "59a72eb5ee9bd767f3d68ac6f348ada84ea9d8eba4d339589cc3fbc5c38069b2",
+      "size": 1014
+    },
+    "localization/ko/GameMode Fields.csv": {
+      "sha256": "c3c1ff26895f8de8c9a1f304db2ff5a3dca47ebadec69d0ed185baa09a406b25",
+      "size": 225
+    },
+    "localization/ko/GameMode Names.csv": {
+      "sha256": "c9e2b58e03ab791b6134993d74cdf12ff6656c288a6f24240035bfe0e0e28a51",
+      "size": 789
+    },
+    "localization/ko/Icons.csv": {
+      "sha256": "eee04c26eb49159c377565c61ab0555edaf4b25d05fd9c7736520f50d8d7cec2",
+      "size": 901
+    },
+    "localization/ko/Item Descriptions.csv": {
+      "sha256": "c573db72dc879db4fe4cb6b536866b381b928691e8f9bb0eb5a2e7e1d5f7d42d",
+      "size": 6436
+    },
+    "localization/ko/Item Names.csv": {
+      "sha256": "b5e70dd1ab51b9d05363857a945413fec538ab69983a8c710f5b837243be237a",
+      "size": 1133
+    },
+    "localization/ko/Keyword Descriptions.csv": {
+      "sha256": "c599586cf3bdf7e4702f395377980d64af649e7d4206b6b2c41436ea28970b56",
+      "size": 4556
+    },
+    "localization/ko/Keyword Names.csv": {
+      "sha256": "d86c1f708772a5f9db02bd5c1b8aaabd4c57247b3460d9346c3dcc9a1e62f2cd",
+      "size": 1273
+    },
+    "localization/ko/Lore Page Descriptions.csv": {
+      "sha256": "6d7a37b0ac28adc1344c6408cf419ca59754384c367be24ea6c3b56aa7699885",
+      "size": 22229
+    },
+    "localization/ko/Lore Page Titles.csv": {
+      "sha256": "334b8f9d9443c8f86d55a60abd25a3592cfacac8edd04d53af5ec1ffae335d74",
+      "size": 105
+    },
+    "localization/ko/Lore.csv": {
+      "sha256": "6aa872e555111ae222b16720f12d0a41f6c13d68ac47fb6561020175f9f0c19d",
+      "size": 2634
+    },
+    "localization/ko/Talent Descriptions.csv": {
+      "sha256": "96fb69e6a43a58ee9116119938c2dc6affe1723b7cd292fa9ad92234d53bad8b",
+      "size": 20139
+    },
+    "localization/ko/Talent Effects.csv": {
+      "sha256": "83e5c7210a1e26ed4f58e928d3a5b258f720c3be813aa6800d741c164ed0eb43",
+      "size": 21374
+    },
+    "localization/ko/Talent Names.csv": {
+      "sha256": "2ad95f5fe110f2810ff9233304ad0efec6de15d542db8502bb7cd23a17693ed4",
+      "size": 5670
+    },
+    "localization/ko/Token Descriptions.csv": {
+      "sha256": "c87a0486609e89c4e07375e7682856a366568d623846145d81eccdc7b99d2625",
+      "size": 1845
+    },
+    "localization/ko/Token Names.csv": {
+      "sha256": "ed0ed7602f3f669e75f733fedaf2e12cbfe7240071027761c6f6816a5b0898d3",
+      "size": 560
+    },
+    "localization/ko/Tutorial Instructions.csv": {
+      "sha256": "72b2447aa3ee183d1fba4760c02e5a34598fe5ecef6421000f67d46c1fb12951",
+      "size": 7371
+    },
+    "localization/ko/UI.csv": {
+      "sha256": "b923bce430242ca668c973236589203aca42b40629ad6052f25af1a0dd0d7acb",
+      "size": 16789
+    },
+    "patches/Assembly-CSharp.dll.kpatch.gz": {
+      "sha256": "50276c251b48dd46d0378a3e5187b412a13dcacd30287faa16df160346322e8a",
+      "size": 181
+    },
+    "patches/sharedassets0.assets.kpatch.gz": {
+      "sha256": "4d0bbc34efb1e52a9e23a4f16052f35f8155a22278cb82b89a69fdebdfffd54b",
+      "size": 13358839
+    },
+    "README.md": {
+      "sha256": "1204d5292994c9276d05ee00436561d91707070fc65b0cd591ca78efd642e80a",
+      "size": 3404
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "sha256": "70f3846400d15eecdf4a7a1e04ea5a888ab47bf77f10dbe7615ea8374d1d6517",
+      "size": 1064
+    },
+    "tools/DecktamerKoreanPatch.ps1": {
+      "sha256": "fbeb1be0f94b21900babde783086124e04173137893588012ed3ee54caf4fc81",
+      "size": 17988
+    },
+    "Uninstall_Korean_Patch.bat": {
+      "sha256": "2bbfd86839a62bdf6e30bc4735230bb36e3064219799334b1b5eca7cd787a079",
+      "size": 469
+    },
+    "Verify_Korean_Patch.bat": {
+      "sha256": "e646076ca3e6e0ab52be48cb728f2ae2dd2daa1a72c40913bf1c82e854ca71fc",
+      "size": 363
+    }
+  }
+}

@@ -1,0 +1,220 @@
+﻿Key,Value
+Does Nothing,아무 일도 일어나지 않습니다...
+Extra Damage for Allies of DL1,위험도 1{icons.danger_star}인 아군 하나당 추가 피해를 1 줍니다.
+Hits First,선제공격.
+Hits All Lanes,전 라인 공격을 합니다.
+Draws X Cards,카드를 {number}장 뽑습니다.
+Targets Other Lanes,맞은편 적을 공격하지 않습니다. 대신 다른 라인의 적을 대상으로 삼습니다.
+Self-Heal,자신의 체력을 {number}{icons.hp} 회복합니다.
+Heals its Team,팀의 체력을 {number}{icons.hp} 회복합니다.
+Hits X Times,{number_of_times}회 공격합니다.
+Extra Damage if Target is Faster,대상이 <u>더 빠르면</u> 추가 피해를 {damage_number} 줍니다.
+Gives X Token to the Ally to its Right,오른쪽 아군에게 {number}{stat}을(를) 부여합니다.
+Extra Damage if Target is Slower,대상이 <u>더 느리면</u> 추가 피해를 {damage_number} 줍니다.
+Cures its Team,팀의 모든 부정 효과를 제거합니다.
+Toxic Fart,모든 크리처에게 {icons.poison} 효과를 부여합니다.
+Falls Asleep,수면 {icons.sleep}에 빠집니다.
+Treachery,"모든 아군에게 {icons.defense_minus}을(를) 부여하고, 자신은 4 {icons.attack_plus}을(를) 얻습니다."
+Blood Ritual,자신에게 피해를 2 줍니다. 5 {token}을(를) 얻습니다.
+Hits Last,후공.
+Inflicts X Token if Target is Slower,대상이 <u>더 느리면</u> 대상에게 {number}{token}을(를) 부여합니다.
+Inflicts X Token,대상에게 {number}{token_name} 효과를 부여합니다.
+"Inflicts X Token1 to Itself, Gains X Token2",<u>자신</u>에게 {number1}{token1}을(를) 부여합니다. {number2}{token2}을(를) 얻습니다.
+Vilespores,모든 적에게 {icons.speed_minus}와(과) {icons.attack_minus}을(를) 부여한 뒤 수면 {icons.sleep}에 빠집니다.
+Gains X Token this Turn Only,이번 턴에만 {number}{token_name}을(를) 얻습니다.
+Revitalization,인접한 크리처의 부정 효과를 모두 제거하고 4 {icons.armor}을(를) 부여합니다.
+Resurgence,팀의 부정 효과를 각각 1 {icons.attack_plus}(으)로 바꿉니다.
+Removes Positive Effects,대상의 모든 긍정 효과를 제거합니다.
+Doubles Positive Effects of its Team,팀의 긍정 효과를 2배로 만듭니다.
+Frenzy,이 공격으로 대상을 죽이면 이 기술을 다시 사용합니다.
+Toxin Rush v2,크리처 하나라도 중독 {icons.poison} 상태라면 전 라인 공격을 합니다.
+Gains X Token,{number}{token}을(를) 얻습니다.
+Target Falls Asleep,대상이 수면 {icons.sleep}에 빠집니다.
+Inflicts X Token1 and X Token2 to Itself,자신에게 {number1}{token1}와(과) {number2}{token2}을(를) 부여합니다.
+Damages Itself,자신에게 피해를 {damage} 줍니다.
+Magnify,이번 턴에 아군이 이미 {magnify_name}을(를) 사용했다면 추가 피해를 7 줍니다.
+Mushroom Madness,자신의 부정 효과를 제거합니다. 제거한 효과 하나당 1회 추가로 공격합니다.
+Strange Scent,보드 위의 모든 {icons.attack_minus}와(과) {icons.speed_minus}을(를) 서로 바꿉니다.
+Extra Damage For Each Token,{token} 하나당 추가 피해를 {multiplier} 줍니다.
+Triple Damage if Target has Token,대상에게 {token}이(가) 있으면 피해를 3배로 줍니다.
+Nanotoxin,중독 {icons.poison} 상태인 모든 적에게 2 {icons.poison}을(를) 부여합니다.
+Repeated Strike,남은 전투 동안 이 기술의 피해가 1 증가합니다.
+Entrench,"턴 종료 시, 2턴 동안 팀에 2 {icons.defense_plus}와(과) 2 {icons.attack_minus}을(를) 부여합니다."
+Inflicts X Token to Itself,자신에게 {number}{token_name}을(를) 부여합니다.
+Hits X Times if Target has Token,대상에게 {token_name}이(가) 있으면 {number_of_times}회 공격합니다.
+Inflicts X Token for X turns,{number_turns}턴 동안 대상에게 {amount}{token_name}을(를) 부여합니다.
+Extra Damage if Target Has Token,대상에게 {token_name}이(가) 있으면 추가 피해를 {damage} 줍니다.
+Dumb Strike,이 크리처에게 특성이 없으면 추가 피해를 2 줍니다.
+Absorb,이 공격으로 대상을 죽이면 대상의 특성을 영구히 얻습니다.
+Acquired State,대상의 모든 긍정 효과를 빼앗습니다.
+Inflicts X Token to Itself and Enemy,자신과 대상에게 {number}{token}을(를) 부여합니다.
+Poisoned Gift,"팀에 중독 {icons.poison}과(와) 2 {icons.attack_plus}, 2 {icons.speed_plus}을(를) 부여합니다."
+Applies X Token to All Creatures for X turns,모든 크리처에게 {turns}턴 동안 {number}{token}을(를) 부여합니다.
+"Hits All Lanes, Inflicts X Token to Itself",전 라인 공격을 합니다. 자신에게 {number}{token}을(를) 부여합니다.
+Gives X Token this Turn Only to the Ally to its Right,이번 턴에만 오른쪽 아군에게 {number}{stat}을(를) 부여합니다.
+Cloning,자신의 체력을 4{icons.hp} 회복합니다. 턴 종료 시 후퇴하고 자신의 복제체를 남깁니다.
+Echo,{number_times}회 공격합니다. 이번 전투에서 {echo_name}을(를) 사용할 때마다 공격 횟수가 늘어납니다.
+Adds Item to Inventory,{item_name}을(를) 소지품에 추가합니다.
+Hits X Times and Inflicts X Token,{number_of_times}회 공격합니다. 공격할 때마다 {number}{token}을(를) 부여합니다.
+Fully Heals Itself,자신의 체력을 완전히 회복합니다 {icons.hp}.
+Blood Surge,이 크리처가 체력을 회복한 횟수마다 추가 피해를 1 줍니다 {icons.hp}.
+Last Surprise,마지막 사용 시 모든 적에게 피해를 10 줍니다.
+Curse of the Void,"대상에게 {icons.attack_minus}, {icons.defense_minus}, {icons.speed_minus}, {icons.poison}을(를) 부여합니다."
+Gives X Token to its Team,팀에 {number}{token}을(를) 부여합니다.
+Sightless Swipe,각 적을 그 적이 가진 {icons.detected}의 수만큼 공격합니다. 아무도 {icons.detected}을(를) 가지고 있지 않으면 실패합니다.
+Gains X Token1 and X Token2,{number1}{token1}와(과) {number2}{token2}을(를) 얻습니다.
+Gains X Token and Falls Asleep,{number}{token}을(를) 얻고 수면 {icons.sleep}에 빠집니다.
+Petrification,대상에게 8 {icons.armor}과(와) 8 {icons.attack_minus}을(를) 부여합니다.
+Double Damage if Owner has Token,이 크리처에게 {token}이(가) 있으면 피해를 2배로 줍니다.
+Inflicts X Token to Creatures Adjacent to Target,대상과 인접한 크리처에게 {number}{token}을(를) 부여합니다.
+"Inflicts X Token1, Increases with Token2",{number}{inflicted_token}을(를) 부여합니다. 대상의 {target_token}이(가) 많을수록 수치가 증가합니다.
+Web-weaving,"모든 적에게 1턴 동안 {icons.clumsy}을(를), 그리고 {icons.poison}을(를) 부여합니다."
+Last Whisper,"대상을 즉시 죽이고(위험도 4 {icons.danger_star} 이하), 이 기술을 잊습니다."
+Inflicts X Token to All Enemies,모든 적에게 {number}{token}을(를) 부여합니다.
+Hits All Lanes Twice,전 라인 공격을 2회 합니다.
+Anesthetic Gas,턴 종료 시 자신을 제외한 <u>모든</u> 크리처가 수면 {icons.sleep}에 빠집니다.
+Deals Extra Damage For Each Dead Ally,아군이 죽은 횟수마다 추가 피해를 {number} 줍니다.
+Gains X Token for X Turns,{number_turns}턴 동안 {number}{token}을(를) 얻습니다.
+Gives X Token for X Turns to the Ally to its Right,오른쪽 아군에게 {number_turns}턴 동안 {number}{stat}을(를) 부여합니다.
+Gains X Token1 and X Token2 for X Turns,{number_turns}턴 동안 {number1}{token1}와(과) {number2}{token2}을(를) 얻습니다.
+Leech Bite,준 피해 하나당 자신의 체력을 1{icons.hp} 회복합니다.
+Targets Lowest Health,체력이 가장 낮은 적을 대상으로 삼습니다. {icons.hp}
+Doubles the Target's Negative Effects,대상의 부정 효과를 2배로 만듭니다.
+Gives X Token1 and X Token2 for X Turns to its Team,{number_turns}턴 동안 팀에 {number1}{token1}와(과) {number2}{token2}을(를) 부여합니다.
+Inflicts X Token to All Enemies for X Turns,{number_turns}턴 동안 모든 적에게 {number}{token}을(를) 부여합니다.
+Gives X Token to its Team for X turns,{number_turns}턴 동안 팀에 {number}{token}을(를) 부여합니다.
+Gigaton Press,자신의 {icons.hp}만큼 피해를 줍니다.
+Healing Spout,자신의 모든 효과를 제거합니다. 제거한 효과 하나당 체력을 1{icons.hp} 회복합니다.
+Ascension,한 번의 탐사에서 이 기술을 2회 사용하면 영구히 진화합니다. (남은 횟수: {uses})
+Deals 1 Damage to All Enemies for Each Token They Have,각 적이 가진 {token} 하나당 그 적에게 피해를 1 줍니다.
+Mistcall,"팀에 1 {icons.attack_plus}, 1 {icons.armor}을(를) 부여하고 체력을 1{icons.hp} 회복합니다."
+Lunar Call,팀이 가진 모든 사용 횟수 제한 기술의 횟수를 전부 회복합니다.
+Inflicts X Token1 and X Token2 to the Target,대상에게 {number1}{token1}와(과) {number2}{token2}을(를) 부여합니다.
+Gains X Token and Inflicts X Token to the Target.,{number1}{token1}을(를) 얻습니다. 대상에게 {number2}{token2}을(를) 부여합니다.
+Patience,자신의 속도가 0이면 추가 피해를 {number} 줍니다.
+Soil Absorption,3턴 동안 5 {icons.attack_plus}을(를) 얻고 수면 {icons.sleep}에 빠집니다.
+Dig,자신에게 5 {icons.speed_minus}을(를) 부여하고 3턴 동안 2 {icons.defense_plus}을(를) 얻습니다.
+Discharge,턴 종료 시 피해가 2 증가합니다. 사용하면 초기화됩니다.
+Submerge,{token}을(를) 얻습니다. 턴 종료 시 후퇴합니다.
+Excitement,체력이 최대 {icons.hp}라면 선제공격합니다.
+Time Paradox,대상을 존재에서 지워 버립니다.
+Rewind,아군 하나를 부활시킵니다.
+Can be Used while Asleep,수면 {icons.sleep} 상태에서도 사용할 수 있습니다.
+Double Damage If Target is Asleep,대상이 수면 {icons.sleep} 상태면 피해를 2배로 줍니다.
+"If Target is Asleep, Doesn't Lose Limited Use",대상이 수면 {icons.sleep} 상태면 사용 횟수가 줄지 않습니다.
+Night Terror,대상을 수면 {icons.sleep}에 빠뜨립니다. 이미 잠들어 있다면 피해를 {damage_amount} 줍니다.
+Can Only be Used while Asleep,수면 {icons.sleep} 상태일 때만 사용할 수 있습니다.
+Hypnowave,대상과 그 왼쪽에 있는 모든 크리처를 수면 {icons.sleep}에 빠뜨립니다.
+Unhinged Wrath,전 라인 공격을 합니다. 적의 빈 슬롯 하나당 이 기술을 한 번 반복합니다.
+Targets Highest Health,체력 {icons.hp}이(가) 가장 높은 적을 대상으로 삼습니다.
+Primal Rage,자신의 부정 효과를 제거합니다. 제거한 효과 하나당 모든 적에게 피해를 1 줍니다.
+Falls Asleep to Regain HP,수면 {icons.sleep}에 빠지고 체력을 {number}{icons.hp} 회복합니다.
+Inflicts X Token1 and X Token2 to All Enemies,모든 적에게 {number1}{token1}와(과) {number2}{token2}을(를) 부여합니다.
+Fills the Board with Creature,"보드를 ""{creature_name}""(으)로 가득 채웁니다."
+"Gains X Token1 and X Token2, Inflicts X Token3 to Itself","{number1}{token1}와(과) {number2}{token2}을(를) 얻고, 자신에게 {number3}{token3}을(를) 부여합니다."
+Deals X Damage to Itself. Adds Item to your Inventory.,자신에게 피해를 {damage_number} 줍니다. {item_name}을(를) 소지품에 추가합니다.
+Devour,이 공격으로 대상을 죽이면 최대 {icons.hp}이(가) {amount} 증가하고 체력을 {amount}{icons.hp} 회복합니다.
+"Deals Extra Damage After Using an Item, Resets when Used",아이템을 소비할 때마다 피해가 1 증가합니다.
+Tummy Thrum,자신에게 피해를 1 주고 {number_turns}턴 동안 1 {icons.attack_plus}을(를) 얻습니다. 체력이 1{icons.hp} 남을 때까지 반복합니다(최대 {max_repeats}회).
+Drone Charge,{token}을(를) 부여합니다. 턴 종료 시 <u>손으로</u> 후퇴합니다.
+Traumatizing Sight,죽으면서 대상에게 {number_turns}턴 동안 {number}{token_name}을(를) 부여합니다.
+Hits all lanes. Removes Targets' Positive Effects,전 라인 공격을 합니다. 모든 대상의 긍정 효과를 제거합니다.
+Cures and Heals its Team,팀의 모든 부정 효과를 제거하고 체력을 {amount}{icons.hp} 회복합니다.
+Shell Steal,공격하기 <u>직전에 대상의 방어막 {icons.armor}을(를) 빼앗습니다.
+Hits all Lanes and Damages Itself,전 라인 공격을 합니다. 자신에게 피해를 {damage_number} 줍니다.
+Ruthlessness,"아군을 죽이고, 그들의 체력 {icons.hp}을(를) 합한 만큼 자신의 체력 {icons.hp}을(를) 회복합니다."
+Gives Token to Adjacent Allies,인접한 아군에게 {number}{token}을(를) 부여합니다.
+Burden Carrier,인접한 크리처의 부정 효과를 빼앗습니다.
+Identity Erasure,특성이 가장 많은 적을 대상으로 삼아 그 특성을 모두 지웁니다.
+Complete Hypnosis,"턴 종료 시, 실제로는 체력이 1{icons.hp}인 자신의 환영으로 보드를 가득 채우고 그 사이에 숨습니다."
+"Hits All Lanes, Inflicts X Token to All Enemies",전 라인 공격을 합니다. 모든 적에게 {number}{token}을(를) 부여합니다.
+Switches Places with Ally to its Left,왼쪽 아군과 자리를 바꿉니다.
+Retreats at the End of the Turn,턴 종료 시 후퇴합니다.
+"Applies X Token1,  X Token2 and X Token3 to its Team","팀에 {number1}{token1}, {number2}{token2}, {number3}{token3}을(를) 부여합니다."
+Targets Leftmost Enemy,가장 왼쪽의 적을 대상으로 삼습니다.
+Targets Rightmost Enemy,가장 오른쪽의 적을 대상으로 삼습니다.
+Target and Itself Fall Asleep.,대상과 자신이 수면 {icons.sleep}에 빠집니다.
+Controlled Kick,대상의 체력을 1{icons.hp} 미만으로 떨어뜨릴 수 없습니다.
+Black Hole,모든 크리처의 모든 효과를 빼앗습니다.
+Can Only be Used if Slow/Vulnerable/Weak,"자신에게 {icons.attack_minus}, {icons.speed_minus}, {icons.defense_minus} 중 하나 이상 있을 때만 사용할 수 있습니다."
+Malediction,대상에게 저주 하나를 부여합니다.
+Disables Last Move v2,대상이 마지막으로 사용한 기술을 {number_turns}턴 동안 사용할 수 없게 합니다 {icons.impeded}.
+Deals X Damage to Enemies in Other Lanes,다른 라인의 적에게 피해를 {number} 줍니다.
+"Inflicts X Token1. If the Target Has Token2, Doesn't Lose its Limited Use.",{number}{token1}을(를) 부여합니다. 대상에게 {token2}이(가) 있으면 사용 횟수가 줄지 않습니다.
+Converts Enemy Token1 to Token2,모든 적의 {token1}을(를) {token2}(으)로 바꿉니다.
+Inflicts as Much Token as Damage Dealt,준 피해 하나당 {token}을(를) 부여합니다.
+Extra Damage for Each Token the Target Has,대상이 가진 {token} 하나당 추가 피해를 1 줍니다.
+Hits X times if the Target Has 0 Speed.,대상의 속도가 0이면 {number_of_times}회 공격합니다.
+"Inflicts X Token to All Enemies, Gains X Token","모든 적에게 {number1}{token1}을(를) 부여하고, 자신은 {number2}{token2}을(를) 얻습니다."
+Disables Own Talents,남은 전투 동안 자신의 특성을 비활성화합니다.
+Smoke Bomb,즉시 팀을 후퇴시키고 카드를 {number}장 뽑습니다.
+Mutated Strike,이 크리처가 가진 기술 및 특성 돌연변이 하나당 추가 피해를 1 줍니다.
+Evolution,자신에게 피해를 {damage} 줍니다. 무작위 특성 또는 기술 돌연변이를 얻습니다.
+Paradigm Shift,손을 모두 버린 뒤 같은 수만큼 카드를 다시 뽑습니다.
+Parting Gift,자신의 긍정 효과 사본을 아군에게 부여합니다. 턴 종료 시 후퇴합니다.
+Fully Heals its Team,팀의 체력을 완전히 회복합니다 {icons.hp}.
+Dies. Deals X Damage to All Enemies,죽으면서 모든 적에게 피해를 {damage} 줍니다.
+Targets Leftmost and Rightmost Enemies,가장 왼쪽의 적을 대상으로 삼은 뒤 가장 오른쪽의 적을 대상으로 삼습니다.
+Extra Damage Based on Wave,2웨이브마다 피해가 증가합니다.
+Forces Target to Retreat,대상을 강제로 후퇴시킵니다.
+Steals 1 HP for Each Token the Target Has,대상이 가진 {token} 하나당 체력을 1{icons.hp} 빼앗습니다.
+"Extra Damage Based on Wave, Hits All Lanes",전 라인 공격을 합니다. {extra_damage_based_on_wave_description}
+"Extra Damage Based on Wave, Hits Twice",2회 공격합니다. {extra_damage_based_on_wave_description}
+Extra Poison Based on Wave,{number} {icons.poison}을(를) 부여합니다. 2웨이브마다 수치가 증가합니다.
+Self Heal and Inflicts Token,자신의 체력을 {number1}{icons.hp} 회복합니다. 대상에게 {number2}{token}을(를) 부여합니다.
+Hyperimpact,자신의 속도만큼 피해를 줍니다.
+Can Only be Used at X HP,체력이 {number}{icons.hp}일 때만 사용할 수 있습니다.
+"Gains X Token1, Gives X Token2 to the Ally to its Right",{number1}{token1}을(를) 얻고 오른쪽 아군에게 {number2}{token2}을(를) 부여합니다.
+Inflicts Token1 to All Enemies for Each Token2 They Have,각 적이 가진 {token2}의 수만큼 그 적에게 {token1}을(를) 부여합니다.
+Fulmination,대상의 중독 {icons.poison} 피해를 모두 즉시 발동시킵니다.
+Can Only be Used if Has at Least X Token,자신에게 {amount}{token} 이상 있을 때만 사용할 수 있습니다.
+"Removes Token, Regains Health For Each Token Removed",자신의 {token}을(를) 모두 제거합니다. 제거한 {token} 하나당 체력을 1{icons.hp} 회복합니다.
+"Gains Token, Amount Increases Each Time",{amount} {token}을(를) 얻습니다. 사용할 때마다 수치가 1 증가합니다.
+Falls Asleep to Regain HP and X Token,수면 {icons.sleep}에 빠지고 체력을 {number}{icons.hp} 회복하며 {token_amount}{token}을(를) 얻습니다.
+Gives X Token to Adjacent Creatures,인접한 아군에게 {number}{token}을(를) 부여합니다.
+Gives X Token1 and X Token2 to its Team,팀에 {number1}{token1}와(과) {number2}{token2}을(를) 부여합니다.
+"If This Move Doesn't Kill, This Creature Dies",이 기술로 대상을 죽이지 못하면 자신이 죽습니다.
+Deals Extra Damage For Each Creature That Died This Turn,이번 턴에 죽은 크리처 하나당 추가 피해를 {amount} 줍니다.
+Hits All Lanes If A Creature Died This Turn,이번 턴에 크리처가 죽었다면 전 라인 공격을 합니다.
+"Inflicts X Token, Amount Increases by X at the End of Each Turn","{token_amount} {token}을(를) 부여합니다. 턴 종료 시 수치가 2 증가하며, 사용하면 초기화됩니다."
+"Gains X Token, Amount Increases by X at the End of Each Turn","{token_amount} {token}을(를) 얻습니다. 턴 종료 시 수치가 2 증가하며, 사용하면 초기화됩니다."
+Inflicts As Much Token1 as This Has Token2,자신이 가진 {token2}만큼 {token1}을(를) 부여합니다.
+Inflicts X Token1 and X Token2 for X Turns to the Target,대상에게 {number_turns}턴 동안 {number1}{token1}와(과) {number2}{token2}을(를) 부여합니다.
+"If This Kills the Target, Inflicts X Token for X Turns To All Enemies",이 공격으로 대상을 죽이면 모든 적에게 {number_turns}턴 동안 {number}{token}을(를) 부여합니다.
+Steals X HP From All Enemies if They Have Token,{token}이(가) 있는 모든 적에게서 체력을 {number}{icons.hp} 빼앗습니다.
+Doubles Negative Effects of Ennemies,모든 적의 부정 효과를 2배로 만듭니다.
+Gives X Token1 And X Token2 This Turn Only to its Team,이번 턴에만 팀에 {number1}{token1}와(과) {number2}{token2}을(를) 부여합니다.
+Forgets this move,사용한 뒤 이 기술을 잊습니다.
+Steals X HP From All Enemies,모든 적에게서 체력을 {number}{icons.hp} 빼앗습니다.
+Inflicts X Token1 and X Token2 for X Turns to All Enemies,모든 적에게 {number_turns}턴 동안 {number1}{token1}와(과) {number2}{token2}을(를) 부여합니다.
+Self-Heal Excess To Armor,자신의 체력을 {number}{icons.hp} 회복합니다. 초과 회복량은 {icons.armor}(으)로 전환됩니다.
+"Gains Token, Increases for Each Creature in Entire Deck",덱 전체의 크리처 하나당 1 {token}을(를) 얻습니다! (현재: {number})
+"Inflicts X Token, Amount Increases After Each Use",{number}{token}을(를) 부여합니다. 수치가 영구히 {increment} 증가합니다.
+Gains As Much Token1 as This Has Token2,자신이 가진 {token2}만큼 {token1}을(를) 얻습니다.
+Self-Heal and Gain X Token,체력을 {hp_amount}{icons.hp} 회복하고 {number}{token}을(를) 얻습니다.
+Inflicts X Token1 and X Token2 to Itself for X Turns,자신에게 {number_turns}턴 동안 {number1}{token1}와(과) {number2}{token2}을(를) 부여합니다.
+Self-Heal and Inflicts X Token to Itself,체력을 {hp_amount}{icons.hp} 회복하고 자신에게 {number}{token}을(를) 부여합니다.
+Gives X Token This Turn Only to its Team,이번 턴에만 팀에 {number}{token}을(를) 부여합니다.
+Dies to Give X Token This Turn Only to its Team,죽으면서 이번 턴에만 팀에 {number}{token}을(를) 부여합니다.
+Can Only be Used if Target Has at Least X Token,대상에게 {amount}{token} 이상 있을 때만 사용할 수 있습니다.
+Can Only be Used at X HP Gains X Token,{amount}{token}을(를) 얻습니다. 체력이 {number}{icons.hp}일 때만 사용할 수 있습니다.
+Heal Adjacent Allies,인접한 아군의 체력을 {number}{icons.hp} 회복합니다. 
+Gain Item if this kills,이 공격으로 대상을 죽이면 {item_amount}{item_name}을(를) 소지품에 추가합니다.
+First Aid,이번 턴에 왼쪽 아군이 죽었다면 체력이 {hp_amount}{icons.hp}인 상태로 부활시킵니다.
+Heals Ally To The RIght,오른쪽 아군의 체력을 {hp_amount}{icons.hp} 회복합니다.
+Heals Ally That Have X HP Left,남은 체력이 정확히 {required_hp}{icons.hp}인 아군의 체력을 {hp_amount}{icons.hp} 회복합니다.
+Self-Devour,자신에게 피해를 {damage} 준 뒤 체력을 {health}{icons.hp} 회복합니다. {times}회 반복합니다.
+Regurgitate,{item_name}을(를) 소지품에 추가합니다. 이번 턴에 먹이를 먹었을 때만 사용할 수 있습니다.
+Leaves the Deck,덱에서 떠납니다.
+Self-Cure and Gains X Token,자신의 부정 효과를 제거하고 {amount}{token}을(를) 얻습니다.
+Armor Piercing,공격하기 <u>직전에 대상의 {icons.armor}과(와) {icons.defense_plus}을(를) 제거합니다.
+"If Target Has Token1, Gains X Token2",대상에게 {token1}이(가) 있으면 {amount}{token2}을(를) 얻습니다.
+Damage Increases When Ally Retreats,아군이 후퇴할 때마다 이 기술의 피해가 {amount} 증가합니다.
+Heals Its Team and Draws Cards,팀의 체력을 {number}{icons.hp} 회복하고 카드를 {number_cards}장 뽑습니다.
+Team Tactic,팀원이 상태 기술 {icons.status_move}을(를) 사용할 때마다 이 기술의 피해가 {amount} 증가합니다.
+"Gains X Token1, Increases Wth Token2",{number}{gained_token}을(를) 얻습니다. 대상의 {target_token}이(가) 많을수록 수치가 증가합니다.
+"Gains X Token, Increases On Kill",{number}{token}을(를) 얻습니다. 이 크리처가 다른 크리처를 죽일 때마다 수치가 영구히 {increment} 증가합니다.
+Self-Cure and Gains X HP,자신의 부정 효과를 제거하고 체력을 {amount}{icons.hp} 회복합니다.
+Invert negative stat changes,자신의 부정적인 능력치 변화를 긍정적인 변화로 바꿉니다.
+Targets All Enemies That Have Token,{token}이(가) 있는 모든 적을 대상으로 삼습니다.
+Deals X Damage to All Enemies That Have Token,{token}이(가) 있는 모든 적에게 피해를 {damage_amount} 줍니다.

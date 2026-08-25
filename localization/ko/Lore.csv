@@ -1,0 +1,20 @@
+﻿Key,Value
+Eye of the Abyss Description,정확도는 낮지만 탐사 장비가 심연 깊은 곳에서 이상 현상을 감지했다. 이곳의 강한 돌연변이 유발 환경에서 유전적 흉물이 태어났다는 이론도 있다. 직접 확인해 봐야겠다.
+Former Pioneer Description,심연 깊은 곳에서 일지 하나가 발견되었다. 심연 탐사의 개척자 중 한 명이자 세 번째 원정에서 돌아오지 못한 전설적인 잠수부의 것이었다. 일지에는 그녀가 향하려던 목적지가 적혀 있다. 내려가 조사해 봐야겠다.
+Colossus Description,보고 내용은 명확하다. 심연의 지진 활동이 위험할 정도로 증가하고 있다. 움직임만으로 대지를 뒤흔들 만큼 거대한 생명체가 원인일지도 모른다. 우리가 너무 깊이 파고들어 건드려서는 안 될 존재를 깨운 것일까?
+Son of the Abyss Description,{former_pioneer_name}이(가) 이룬 나무의 열매에서 표본 하나가 태어나 달아난 모양이다. 의문이 끝없이 생긴다. 과학적 호기심 때문에라도 그 크리처를 찾아 나서기 전에는 쉴 수 없을 것 같다.
+Colossus Location,기간티스 동굴
+Eye of the Abyss Location,남쪽 분화구 가장자리
+Former Pioneer Location,시간의 동굴
+Son of the Abyss Location,시간의 동굴
+True Final Boss Description,밑바닥에 도달해 이야기를 전하러 돌아온 사람은 없다... 하지만 누군가 그 아래에 갇혀 지상으로 돌아오지 못한 것뿐이라면? 물론 아무도 이렇게 어리석은 가설을 진지하게 받아들이지 않을 것이다. 나만 빼고.
+True Final Boss Location,심연의 밑바닥
+True Final Boss Name,길 잃은 탐험가
+True Final Boss Battle Start Dialogue Part 1,"이 아래에서 보낸 긴 세월 동안 다른 사람을 만난 적도 없는데, 하물며 사람과 싸운 적은 더더욱 없다."
+True Final Boss Battle Start Dialogue Part 2,이렇게까지 하지 않아도 됐으면 좋겠는데...
+True Final Boss Battle Few Cards Dialogue Part 1,이제 정말 내 한계를 시험하는군...
+True Final Boss Battle Few Cards Dialogue Part 2,아직 화해할 수 있어. 제발.
+True Final Boss Battle Specimen Killed Dialogue,무슨 짓을 한 거야?! 내 가장 친한 친구를 죽였잖아!
+True Final Boss Battle Triple Kill Dialogue,네 크리처들이 너를 부끄러워해야 할 거다.
+True Final Boss Victory Message,목표를 이루었습니다... 하지만 그 대가는 무엇이었을까요?
+True Final Boss Appears Warning,곧 마주할 적은 예상과 다른 존재인 듯합니다...
