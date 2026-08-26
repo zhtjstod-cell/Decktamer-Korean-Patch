@@ -15,7 +15,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 
-$PatchVersion = "1.1.0"
+$PatchVersion = "1.1.1"
 $PackageRoot = Split-Path -Parent $PSScriptRoot
 $MarkerName = ".decktamer-korean-patch.json"
 $ReleaseApi = "https://api.github.com/repos/zhtjstod-cell/Decktamer-Korean-Patch/releases/latest"
@@ -41,6 +41,8 @@ $SupportedProfiles = @(
 )
 
 $GameVersion = $null
+$TranslationProfileVersion = $null
+$CompatibilityMode = $false
 $TranslationTables = 0
 $TranslationRows = 0
 $LocalizationSource = $null
@@ -145,7 +147,7 @@ function Resolve-GameRoot([string]$RequestedPath) {
     throw '게임 폴더를 자동으로 찾지 못했습니다. 배치 파일에 게임 폴더를 끌어다 놓거나 -GamePath "경로"로 실행하세요.'
 }
 
-function Find-SupportedProfile([string]$AssetPath, [string]$AssemblyPath) {
+function Find-SupportedProfile([string]$AssetPath, [string]$AssemblyPath, [switch]$AllowMissing) {
     $assetHash = Get-LowerHash $AssetPath
     $assemblyHash = Get-LowerHash $AssemblyPath
     $matches = @($SupportedProfiles | Where-Object {
@@ -153,6 +155,7 @@ function Find-SupportedProfile([string]$AssetPath, [string]$AssemblyPath) {
         $assemblyHash -in @($_.OriginalAssemblyHash, $_.PatchedAssemblyHash)
     })
     if ($matches.Count -eq 1) { return $matches[0] }
+    if ($AllowMissing) { return $null }
 
     $supported = ($SupportedProfiles.GameVersion -join ", ")
     $updateHint = ""
@@ -169,6 +172,8 @@ function Find-SupportedProfile([string]$AssetPath, [string]$AssemblyPath) {
 
 function Set-ActiveProfile($Profile) {
     $script:GameVersion = $Profile.GameVersion
+    $script:TranslationProfileVersion = $Profile.GameVersion
+    $script:CompatibilityMode = $false
     $script:TranslationTables = [int]$Profile.TranslationTables
     $script:TranslationRows = [int]$Profile.TranslationRows
     $script:OriginalAssetHash = $Profile.OriginalAssetHash
@@ -178,6 +183,27 @@ function Set-ActiveProfile($Profile) {
     $script:LocalizationSource = Join-Path $PackageRoot "localization\$GameVersion\ko"
     $script:AssetPatch = Join-Path $PackageRoot "patches\$GameVersion\sharedassets0.assets.kpatch.gz"
     $script:AssemblyPatch = Join-Path $PackageRoot "patches\$GameVersion\Assembly-CSharp.dll.kpatch.gz"
+}
+
+function Set-TranslationProfile($Profile) {
+    $script:GameVersion = "미지원 빌드"
+    $script:TranslationProfileVersion = $Profile.GameVersion
+    $script:CompatibilityMode = $true
+    $script:TranslationTables = [int]$Profile.TranslationTables
+    $script:TranslationRows = [int]$Profile.TranslationRows
+    $script:LocalizationSource = Join-Path $PackageRoot "localization\$($Profile.GameVersion)\ko"
+}
+
+function Find-CompatibleAssetProfile([string]$Hash) {
+    return @($SupportedProfiles | Where-Object {
+        $Hash -in @($_.OriginalAssetHash, $_.PatchedAssetHash)
+    } | Sort-Object { [version]$_.GameVersion } -Descending | Select-Object -First 1)
+}
+
+function Find-CompatibleAssemblyProfile([string]$Hash) {
+    return @($SupportedProfiles | Where-Object {
+        $Hash -in @($_.OriginalAssemblyHash, $_.PatchedAssemblyHash)
+    } | Sort-Object { [version]$_.GameVersion } -Descending | Select-Object -First 1)
 }
 
 function Invoke-PatchUpdate([string]$ResolvedGame, [string]$ResolvedLocalizationRoot) {
@@ -359,12 +385,81 @@ function Install-PatchedFile(
     Write-Host "적용 완료: $([IO.Path]::GetFileName($TargetPath))"
 }
 
+function Resolve-LocalizationBackupRoot(
+    [string]$ResolvedGame,
+    [string]$TargetRoot,
+    [string]$FallbackBackupRoot
+) {
+    $marker = Join-Path (Join-Path $TargetRoot "ko") $MarkerName
+    if (-not (Test-Path -LiteralPath $marker -PathType Leaf)) { return $FallbackBackupRoot }
+    try {
+        $markerData = Get-Content -LiteralPath $marker -Raw | ConvertFrom-Json
+        if (($markerData.PSObject.Properties.Name -contains "backup_directory_name") -and $markerData.backup_directory_name) {
+            $name = [string]$markerData.backup_directory_name
+            if ([IO.Path]::GetFileName($name) -eq $name) { return Join-Path $ResolvedGame $name }
+        }
+        if (($markerData.PSObject.Properties.Name -contains "game_version") -and $markerData.game_version) {
+            $oldProfile = @($SupportedProfiles | Where-Object { $_.GameVersion -eq [string]$markerData.game_version })
+            if ($oldProfile.Count -eq 1) { return Join-Path $ResolvedGame "KoreanPatch_Backup_$($oldProfile[0].GameVersion)" }
+        }
+    } catch {
+        Write-Warning "기존 한글패치 표식의 백업 정보를 읽지 못해 기본 백업 위치를 사용합니다."
+    }
+    return $FallbackBackupRoot
+}
+
+function New-CompatibleLocalizationSource([string]$TargetRoot) {
+    $templateRoot = Join-Path (Split-Path -Parent $TargetRoot.TrimEnd('\')) "Localization Templates\en"
+    if (-not (Test-Path -LiteralPath $templateRoot -PathType Container)) {
+        throw "호환되는 번역 키를 확인할 영어 템플릿이 없습니다: $templateRoot`n게임을 영어로 한 번 실행해 메인 화면까지 진입한 뒤 종료하고 다시 설치하세요."
+    }
+
+    $temporaryRoot = Join-Path ([IO.Path]::GetTempPath()) "Decktamer-Korean-Compatible-$([Guid]::NewGuid().ToString('N'))"
+    New-Item -ItemType Directory -Path $temporaryRoot | Out-Null
+    $tableCount = 0
+    $rowCount = 0
+    try {
+        foreach ($templateFile in Get-ChildItem -LiteralPath $templateRoot -Filter "*.csv" -File) {
+            $translationFile = Join-Path $LocalizationSource $templateFile.Name
+            if (-not (Test-Path -LiteralPath $translationFile -PathType Leaf)) { continue }
+
+            $translations = @{}
+            foreach ($row in Import-Csv -LiteralPath $translationFile) {
+                if ($null -ne $row.Key -and $null -ne $row.Value -and -not [string]::IsNullOrWhiteSpace([string]$row.Value)) {
+                    $translations[[string]$row.Key] = [string]$row.Value
+                }
+            }
+
+            $matchedRows = @(
+                foreach ($row in Import-Csv -LiteralPath $templateFile.FullName) {
+                    $key = [string]$row.Key
+                    if ($translations.ContainsKey($key)) {
+                        [pscustomobject][ordered]@{ Key = $key; Value = $translations[$key] }
+                    }
+                }
+            )
+            if ($matchedRows.Count -eq 0) { continue }
+            $matchedRows | Export-Csv -LiteralPath (Join-Path $temporaryRoot $templateFile.Name) -NoTypeInformation -Encoding UTF8
+            $tableCount++
+            $rowCount += $matchedRows.Count
+        }
+
+        if ($tableCount -eq 0 -or $rowCount -eq 0) {
+            throw "현재 게임의 영어 템플릿과 일치하는 한국어 번역을 찾지 못했습니다."
+        }
+        return [pscustomobject]@{ Root = $temporaryRoot; Tables = $tableCount; Rows = $rowCount }
+    } catch {
+        if (Test-Path -LiteralPath $temporaryRoot) { Remove-Item -LiteralPath $temporaryRoot -Recurse -Force }
+        throw
+    }
+}
+
 function Install-Localization([string]$TargetRoot, [string]$BackupRoot) {
     if (-not (Test-Path -LiteralPath $LocalizationSource -PathType Container)) {
         throw "배포 번역 폴더가 없습니다: $LocalizationSource"
     }
     $sourceFiles = @(Get-ChildItem -LiteralPath $LocalizationSource -Filter "*.csv" -File)
-    if ($sourceFiles.Count -ne $TranslationTables) { throw "배포 번역 표가 $TranslationTables개가 아닙니다." }
+    if ($sourceFiles.Count -ne $TranslationTables) { throw "배포 번역 표가 ${TranslationTables}개가 아닙니다." }
 
     New-Item -ItemType Directory -Path $TargetRoot -Force | Out-Null
     $target = Join-Path $TargetRoot "ko"
@@ -387,6 +482,9 @@ function Install-Localization([string]$TargetRoot, [string]$BackupRoot) {
         patch = "Decktamer Korean Patch"
         patch_version = $PatchVersion
         game_version = $GameVersion
+        translation_profile = $TranslationProfileVersion
+        compatibility_mode = $CompatibilityMode
+        backup_directory_name = Split-Path -Leaf $BackupRoot
         installed_at = [DateTimeOffset]::Now.ToString("o")
         tables = $TranslationTables
         rows = $TranslationRows
@@ -442,10 +540,10 @@ function Restore-Localization([string]$TargetRoot, [string]$BackupRoot) {
     }
 }
 
-function Assert-Installed([string]$AssetPath, [string]$AssemblyPath, [string]$TargetRoot) {
-    if ((Get-LowerHash $AssetPath) -ne $PatchedAssetHash) { throw "폰트 패치 파일 검증 실패: $AssetPath" }
-    if ((Get-LowerHash $AssemblyPath) -ne $PatchedAssemblyHash) { throw "언어 전환 패치 파일 검증 실패: $AssemblyPath" }
+function Assert-Localization([string]$TargetRoot) {
     $target = Join-Path $TargetRoot "ko"
+    $marker = Join-Path $target $MarkerName
+    if (-not (Test-Path -LiteralPath $marker -PathType Leaf)) { throw "한글패치 설치 표식이 없습니다: $marker" }
     $sourceFiles = @(Get-ChildItem -LiteralPath $LocalizationSource -Filter "*.csv" -File)
     $targetFiles = @(Get-ChildItem -LiteralPath $target -Filter "*.csv" -File)
     if ($sourceFiles.Count -ne $TranslationTables -or $targetFiles.Count -ne $TranslationTables) { throw "번역 표 개수 검증 실패" }
@@ -455,6 +553,12 @@ function Assert-Installed([string]$AssetPath, [string]$AssemblyPath, [string]$Ta
             throw "번역 파일 검증 실패: $($source.Name)"
         }
     }
+}
+
+function Assert-Installed([string]$AssetPath, [string]$AssemblyPath, [string]$TargetRoot) {
+    if ((Get-LowerHash $AssetPath) -ne $PatchedAssetHash) { throw "폰트 패치 파일 검증 실패: $AssetPath" }
+    if ((Get-LowerHash $AssemblyPath) -ne $PatchedAssemblyHash) { throw "언어 전환 패치 파일 검증 실패: $AssemblyPath" }
+    Assert-Localization $TargetRoot
     Write-Host "검증 완료: Decktamer $GameVersion / 한글패치 $PatchVersion"
 }
 
@@ -473,32 +577,107 @@ if ($Mode -eq "Update") {
     exit 0
 }
 
-$profile = Find-SupportedProfile $assetTarget $assemblyTarget
-Set-ActiveProfile $profile
-$backupDir = Join-Path $resolvedGame "KoreanPatch_Backup_$GameVersion"
-$assetBackup = Join-Path $backupDir "sharedassets0.assets"
-$assemblyBackup = Join-Path $backupDir "Assembly-CSharp.dll"
-
+$profile = Find-SupportedProfile $assetTarget $assemblyTarget -AllowMissing
 Write-Host "게임 경로: $resolvedGame"
-Write-Host "감지 버전: Decktamer $GameVersion"
 Write-Host "실행 작업: $Mode"
+
+if ($null -ne $profile) {
+    Set-ActiveProfile $profile
+    $backupDir = Join-Path $resolvedGame "KoreanPatch_Backup_$GameVersion"
+    $localizationBackupDir = Resolve-LocalizationBackupRoot $resolvedGame $LocalizationRoot $backupDir
+    $assetBackup = Join-Path $backupDir "sharedassets0.assets"
+    $assemblyBackup = Join-Path $backupDir "Assembly-CSharp.dll"
+    Write-Host "감지 버전: Decktamer $GameVersion"
+
+    switch ($Mode) {
+        "Install" {
+            New-Item -ItemType Directory -Path $backupDir -Force | Out-Null
+            Install-PatchedFile $assetTarget $AssetPatch $assetBackup $OriginalAssetHash $PatchedAssetHash
+            Install-PatchedFile $assemblyTarget $AssemblyPatch $assemblyBackup $OriginalAssemblyHash $PatchedAssemblyHash
+            Install-Localization $LocalizationRoot $localizationBackupDir
+            Assert-Installed $assetTarget $assemblyTarget $LocalizationRoot
+            Write-Host "`n설치가 끝났습니다. 게임 설정에서 언어를 한국어로 선택하세요." -ForegroundColor Green
+        }
+        "Uninstall" {
+            Restore-PatchedFile $assetTarget $assetBackup $OriginalAssetHash $PatchedAssetHash
+            Restore-PatchedFile $assemblyTarget $assemblyBackup $OriginalAssemblyHash $PatchedAssemblyHash
+            Restore-Localization $LocalizationRoot $localizationBackupDir
+            Write-Host "`n한글패치를 제거하고 원본을 복구했습니다. 백업 폴더는 안전을 위해 남겨 두었습니다." -ForegroundColor Green
+        }
+        "Verify" {
+            Assert-Installed $assetTarget $assemblyTarget $LocalizationRoot
+        }
+    }
+    exit 0
+}
+
+$assetHash = Get-LowerHash $assetTarget
+$assemblyHash = Get-LowerHash $assemblyTarget
+$translationProfile = @($SupportedProfiles | Sort-Object { [version]$_.GameVersion } -Descending | Select-Object -First 1)[0]
+$assetProfile = Find-CompatibleAssetProfile $assetHash
+$assemblyProfile = Find-CompatibleAssemblyProfile $assemblyHash
+Set-TranslationProfile $translationProfile
+$compatibilityBackupDir = Join-Path $resolvedGame "KoreanPatch_Backup_Compatible"
+$localizationBackupDir = Resolve-LocalizationBackupRoot $resolvedGame $LocalizationRoot $compatibilityBackupDir
+
+Write-Warning "정확히 지원되는 게임 빌드는 아닙니다. $TranslationProfileVersion 번역과 현재 영어 템플릿에서 키가 일치하는 문구만 설치하는 호환 모드로 진행합니다."
+Write-Host "sharedassets0.assets: $assetHash"
+Write-Host "Assembly-CSharp.dll: $assemblyHash"
+if ($null -eq $assetProfile) { Write-Warning "폰트 에셋 구조를 확인할 수 없어 폰트 바이너리는 변경하지 않습니다." }
+if ($null -eq $assemblyProfile) { Write-Warning "언어 전환 DLL 구조를 확인할 수 없어 DLL은 변경하지 않습니다." }
 
 switch ($Mode) {
     "Install" {
-        New-Item -ItemType Directory -Path $backupDir -Force | Out-Null
-        Install-PatchedFile $assetTarget $AssetPatch $assetBackup $OriginalAssetHash $PatchedAssetHash
-        Install-PatchedFile $assemblyTarget $AssemblyPatch $assemblyBackup $OriginalAssemblyHash $PatchedAssemblyHash
-        Install-Localization $LocalizationRoot $backupDir
-        Assert-Installed $assetTarget $assemblyTarget $LocalizationRoot
-        Write-Host "`n설치가 끝났습니다. 게임 설정에서 언어를 한국어로 선택하세요." -ForegroundColor Green
+        $compatible = New-CompatibleLocalizationSource $LocalizationRoot
+        try {
+            $script:LocalizationSource = $compatible.Root
+            $script:TranslationTables = [int]$compatible.Tables
+            $script:TranslationRows = [int]$compatible.Rows
+
+            if ($null -ne $assetProfile) {
+                $assetBackupDir = Join-Path $resolvedGame "KoreanPatch_Backup_$($assetProfile.GameVersion)"
+                New-Item -ItemType Directory -Path $assetBackupDir -Force | Out-Null
+                Install-PatchedFile $assetTarget (Join-Path $PackageRoot "patches\$($assetProfile.GameVersion)\sharedassets0.assets.kpatch.gz") (Join-Path $assetBackupDir "sharedassets0.assets") $assetProfile.OriginalAssetHash $assetProfile.PatchedAssetHash
+            }
+            if ($null -ne $assemblyProfile) {
+                $assemblyBackupDir = Join-Path $resolvedGame "KoreanPatch_Backup_$($assemblyProfile.GameVersion)"
+                New-Item -ItemType Directory -Path $assemblyBackupDir -Force | Out-Null
+                Install-PatchedFile $assemblyTarget (Join-Path $PackageRoot "patches\$($assemblyProfile.GameVersion)\Assembly-CSharp.dll.kpatch.gz") (Join-Path $assemblyBackupDir "Assembly-CSharp.dll") $assemblyProfile.OriginalAssemblyHash $assemblyProfile.PatchedAssemblyHash
+            }
+
+            New-Item -ItemType Directory -Path $localizationBackupDir -Force | Out-Null
+            Install-Localization $LocalizationRoot $localizationBackupDir
+            Assert-Localization $LocalizationRoot
+            Write-Host "`n호환 번역 설치 완료: ${TranslationTables}개 표 / ${TranslationRows}개 일치 문구" -ForegroundColor Green
+            Write-Warning "새 버전 전용 문구는 영어로 표시될 수 있습니다. 폰트 바이너리를 적용하지 못했다면 한글 표시도 제한될 수 있습니다."
+        } finally {
+            if (Test-Path -LiteralPath $compatible.Root) { Remove-Item -LiteralPath $compatible.Root -Recurse -Force }
+        }
     }
     "Uninstall" {
-        Restore-PatchedFile $assetTarget $assetBackup $OriginalAssetHash $PatchedAssetHash
-        Restore-PatchedFile $assemblyTarget $assemblyBackup $OriginalAssemblyHash $PatchedAssemblyHash
-        Restore-Localization $LocalizationRoot $backupDir
-        Write-Host "`n한글패치를 제거하고 원본을 복구했습니다. 백업 폴더는 안전을 위해 남겨 두었습니다." -ForegroundColor Green
+        if ($null -ne $assetProfile) {
+            $assetBackupDir = Join-Path $resolvedGame "KoreanPatch_Backup_$($assetProfile.GameVersion)"
+            Restore-PatchedFile $assetTarget (Join-Path $assetBackupDir "sharedassets0.assets") $assetProfile.OriginalAssetHash $assetProfile.PatchedAssetHash
+        }
+        if ($null -ne $assemblyProfile) {
+            $assemblyBackupDir = Join-Path $resolvedGame "KoreanPatch_Backup_$($assemblyProfile.GameVersion)"
+            Restore-PatchedFile $assemblyTarget (Join-Path $assemblyBackupDir "Assembly-CSharp.dll") $assemblyProfile.OriginalAssemblyHash $assemblyProfile.PatchedAssemblyHash
+        }
+        Restore-Localization $LocalizationRoot $localizationBackupDir
+        Write-Host "`n호환 번역을 제거했습니다. 확인되지 않은 게임 바이너리는 변경하지 않았습니다." -ForegroundColor Green
     }
     "Verify" {
-        Assert-Installed $assetTarget $assemblyTarget $LocalizationRoot
+        $compatible = New-CompatibleLocalizationSource $LocalizationRoot
+        try {
+            $script:LocalizationSource = $compatible.Root
+            $script:TranslationTables = [int]$compatible.Tables
+            $script:TranslationRows = [int]$compatible.Rows
+            if ($null -ne $assetProfile -and (Get-LowerHash $assetTarget) -ne $assetProfile.PatchedAssetHash) { throw "호환 가능한 폰트 패치가 적용되지 않았습니다." }
+            if ($null -ne $assemblyProfile -and (Get-LowerHash $assemblyTarget) -ne $assemblyProfile.PatchedAssemblyHash) { throw "호환 가능한 언어 전환 패치가 적용되지 않았습니다." }
+            Assert-Localization $LocalizationRoot
+            Write-Host "검증 완료: 호환 번역 ${TranslationTables}개 표 / ${TranslationRows}개 문구 / 한글패치 $PatchVersion"
+        } finally {
+            if (Test-Path -LiteralPath $compatible.Root) { Remove-Item -LiteralPath $compatible.Root -Recurse -Force }
+        }
     }
 }

@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MAGIC = b"DKTKO174"
-PATCH_VERSION = "1.1.0"
+PATCH_VERSION = "1.1.1"
 PROFILES = {
     "1.7.4": {
         "tables": 37,
@@ -128,6 +128,12 @@ def main() -> None:
         "patch_name": "Decktamer Korean Patch",
         "patch_version": PATCH_VERSION,
         "supported_game_versions": list(PROFILES),
+        "compatibility_mode": {
+            "enabled": True,
+            "translation_profile": "latest supported profile",
+            "matching": "intersection of current English template keys and translated keys",
+            "unknown_binaries": "never modified",
+        },
         "builds": builds,
         "files": {
             path.relative_to(ROOT).as_posix(): {

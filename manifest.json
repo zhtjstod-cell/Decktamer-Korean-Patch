@@ -1,10 +1,16 @@
 {
   "patch_name": "Decktamer Korean Patch",
-  "patch_version": "1.1.0",
+  "patch_version": "1.1.1",
   "supported_game_versions": [
     "1.7.4",
     "1.8.6"
   ],
+  "compatibility_mode": {
+    "enabled": true,
+    "translation_profile": "latest supported profile",
+    "matching": "intersection of current English template keys and translated keys",
+    "unknown_binaries": "never modified"
+  },
   "builds": {
     "1.7.4": {
       "game_version": "1.7.4",
@@ -71,8 +77,8 @@
   },
   "files": {
     "CHANGELOG.md": {
-      "sha256": "9763a8af9d030538a65a7d95a15bd4643fa9bb4f3809c1ce92f6428a12f55722",
-      "size": 1304
+      "sha256": "033f257a25a6d8f63aae10059e87b934981874bd03b2053fb410d3021fbddf35",
+      "size": 1848
     },
     "Install_Korean_Patch.bat": {
       "sha256": "b736a9202be3dbd72af1b00ffc9d6c6d7e1429a4799c06a942fa41d008040b1a",
@@ -403,20 +409,20 @@
       "size": 13358899
     },
     "README.md": {
-      "sha256": "259f274d41679a0b9b695a4b1d54d142ec8e73e2bc96c17d39ae4a7c6e66f682",
-      "size": 4624
+      "sha256": "8c9149fac525d5da5fdd74b54641a0ba7ca6e39c2856e0f4d4a9a7641307adaf",
+      "size": 5332
     },
     "RELEASE_NOTES.md": {
-      "sha256": "c54c34aefdfca449b9a0b98330264e7018d77775535e3e0b681c6c1a5f1b1585",
-      "size": 767
+      "sha256": "d7c7395ceb719d4c22dbc80e90bf1cb3016161d9f4cb9229e1f617c397ff671e",
+      "size": 1006
     },
     "THIRD_PARTY_NOTICES.md": {
       "sha256": "f54417bc1903ea02524bc2b7d754b6f410fb129353a030119f2db640beac213e",
       "size": 1085
     },
     "tools/DecktamerKoreanPatch.ps1": {
-      "sha256": "7a65849502ba1904177f692ce6d1d9069a7c3ccb7f8fb52778a40b6e19ff1d3d",
-      "size": 24763
+      "sha256": "99eeb8236735de2aa3d6991dd2470c3702254a39990719fe29e3ecbf3c290d71",
+      "size": 35340
     },
     "Uninstall_Korean_Patch.bat": {
       "sha256": "2bbfd86839a62bdf6e30bc4735230bb36e3064219799334b1b5eca7cd787a079",
