@@ -1,5 +1,5 @@
 * text=auto eol=lf
-*.bat text eol=lf whitespace=-blank-at-eof
+*.bat text eol=crlf whitespace=-blank-at-eof
 *.csv text eol=lf whitespace=-trailing-space
 *.json text eol=lf
 *.md text eol=lf

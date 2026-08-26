@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MAGIC = b"DKTKO174"
-PATCH_VERSION = "1.1.1"
+PATCH_VERSION = "1.1.2"
 PROFILES = {
     "1.7.4": {
         "tables": 37,

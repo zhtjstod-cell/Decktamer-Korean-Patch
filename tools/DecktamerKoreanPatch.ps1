@@ -15,7 +15,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 
-$PatchVersion = "1.1.1"
+$PatchVersion = "1.1.2"
 $PackageRoot = Split-Path -Parent $PSScriptRoot
 $MarkerName = ".decktamer-korean-patch.json"
 $ReleaseApi = "https://api.github.com/repos/zhtjstod-cell/Decktamer-Korean-Patch/releases/latest"
@@ -54,7 +54,14 @@ $OriginalAssemblyHash = $null
 $PatchedAssemblyHash = $null
 
 function Get-LowerHash([string]$Path) {
-    return (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToLowerInvariant()
+    $stream = [IO.File]::OpenRead($Path)
+    $hasher = [Security.Cryptography.SHA256]::Create()
+    try {
+        return (($hasher.ComputeHash($stream) | ForEach-Object { $_.ToString("x2") }) -join "")
+    } finally {
+        $hasher.Dispose()
+        $stream.Dispose()
+    }
 }
 
 function Test-GameRoot([string]$Path) {

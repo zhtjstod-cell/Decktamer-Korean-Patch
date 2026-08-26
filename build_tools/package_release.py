@@ -48,12 +48,20 @@ def main() -> None:
         actual_hash = sha256(source)
         if actual_hash != expected["sha256"] or source.stat().st_size != expected["size"]:
             raise ValueError(f"Manifest mismatch: {relative}")
+        if source.suffix.lower() == ".bat":
+            data = source.read_bytes()
+            if b"\r\n" not in data or b"\n" in data.replace(b"\r\n", b""):
+                raise ValueError(f"Windows batch file must use CRLF only: {relative}")
 
     RELEASE_ROOT.mkdir(exist_ok=True)
     mode = "w" if args.replace else "x"
     with zipfile.ZipFile(archive, mode, compression=zipfile.ZIP_DEFLATED, compresslevel=9) as output:
         for relative in sorted([*manifest["files"], "manifest.json"]):
             output.write(ROOT / relative, Path(package_name) / relative)
+        embedded_installer = RELEASE_ROOT / "Decktamer_Korean_Patch.exe"
+        if not embedded_installer.is_file():
+            raise FileNotFoundError(f"Missing self-contained installer: {embedded_installer}")
+        output.write(embedded_installer, Path(package_name) / embedded_installer.name)
 
     checksum.write_text(f"{sha256(archive)}  {archive.name}\n", encoding="ascii")
     print(archive)
