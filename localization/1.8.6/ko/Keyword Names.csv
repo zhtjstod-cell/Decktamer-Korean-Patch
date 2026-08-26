@@ -1,0 +1,32 @@
+﻿Key,Value
+when placed keyword name,배치 시
+retreat keyword name,후퇴 시
+opposing enemy keyword name,맞은편 적
+target token name,대상
+Always hits first keyword name,선제공격
+Always hits last keyword name,후공
+negative effects keyword name,부정 효과
+when attacked keyword name,공격받을 때
+adjacent creatures keyword names,인접한 크리처
+hits all lanes keyword name,전 라인 공격
+speed keyword name,속도
+survives damage keyword name,피해 생존
+lane keyword name,라인
+when this attacks keyword name,공격 후
+positive effects keyword name,긍정 효과
+status move keyword name,상태 기술
+status move keyword title,{icons.status_move} 상태 기술
+limited use keyword name,사용 횟수
+temporary effect keyword name,일시적 효과
+negative effects keyword name SINGULAR,부정 효과
+positive effects keyword name SINGULAR,긍정 효과
+Danger Level keyword name,위험도
+curse keyword name,저주
+stat changes keyword,능력치 변화
+inverts stat changes keyword,능력치 변화 반전
+Lowest Health Keyword Name,체력이 가장 낮은 적
+Team Keyword Name,팀
+limited turns keyword name,지속 턴 제한
+when damaged key word name,피해를 받을 때
+positive stat changes keyword names,긍정적 능력치 변화
+negative stat changes keyword names,부정적 능력치 변화

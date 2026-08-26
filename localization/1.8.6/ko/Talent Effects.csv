@@ -1,0 +1,266 @@
+﻿Key,Value
+Nap Notification,{owner_name}이(가) 낮잠을 자며 체력을 4{icons.hp} 회복합니다!
+Rocky Shell Message,{owner_name}이(가) {talent_name} 덕분에 공격을 버텼습니다!
+Turbo Message,{owner_name}의 움직임이 빨라집니다!
+Positive Feedback Message,{owner_name}은(는) 아군이 회복하는 모습을 보니 기쁩니다!
+Imitate Message,{owner_name}이(가) 아군을 따라 합니다!
+Gigantic Message,{owner_name}은(는) 꿈쩍도 하지 않습니다!
+Peripheral Vision Message,{owner_name}은(는) 공격이 올 것을 알고 있었습니다!
+Vengeful Message,아군의 죽음에 {owner_name}이(가) 격노합니다!
+Protective Instinct Message,{owner_name}이(가) 아군 대신 공격을 받습니다!
+Ambusher Message,{owner_name}이(가) 적을 기습합니다!
+Haunting Presence Message,{owner_name}의 존재감이 적들을 겁에 질리게 합니다!
+Thick Hide Message,{owner_name}의 가죽이 피해를 줄입니다!
+Tongue Wiggle Message,{owner_name}이(가) 운 좋게 한 번 더 공격했습니다!
+Clumsy Strike Message,{owner_name}이(가) 운 좋게 추가 피해를 줍니다!
+Ever-Growing Message,{owner_name}이(가) 자라납니다...
+Fast Predator Message,{owner_name}의 공격력이 속도에 따라 증가합니다!
+Regeneration Message,{owner_name}이(가) 스스로를 치유합니다!
+Apex Predator Message,{owner_name}이(가) 더욱 강해집니다!
+Venom Cure Message,중독 {icons.poison}이(가) {owner_name}을(를) 치유합니다!
+Toxic Thorns Message,{owner_name}이(가) 공격자를 중독 {icons.poison}시킵니다!
+Searing Skin Message,{owner_name}이(가) 공격자에게 화상을 입힙니다!
+Vampirism Message,{owner_name}이(가) 대상의 피를 빨아 체력을 회복합니다!
+Deimatic Talent Effect,{owner_name}이(가) 무시무시한 피부 무늬로 적을 위협합니다!
+Sleeping Spores Talent Effect,{owner_name}의 적이 더 느려 수면 {icons.sleep}에 빠집니다!
+Tracker Talent Effect,{owner_name}이(가) 적을 취약하게 만듭니다 {icons.defense_minus}!
+Rush Talent Effect,{owner_name}의 움직임이 이번 턴에 빨라집니다!
+Toxic Stare Talent Effect,{owner_name}이(가) 적을 중독 {icons.poison}시킵니다!
+Hot Temper Message,공격을 받은 {owner_name}이(가) 분노합니다!
+Magic Mustache Message,{owner_name}이(가) 아군을 치료합니다!
+Slow Start Message,{owner_name}은(는) 깊이 잠들어 있습니다... 아직은요.
+Cellular Adaptation,{owner_name}이(가) 심연에서 새로운 특성을 얻습니다!
+Force Field Message,{owner_name}이(가) 아군 주위에 역장을 펼칩니다!
+Hard-Headed Message,이번 턴에 {owner_name}의 방어력이 증가합니다!
+Eerie Screech Message,{owner_name}이(가) 적의 긍정적인 능력치 변화를 제거합니다!
+Trap Beak Message,대상이 더 느리므로 {owner_name}의 기술이 추가 피해를 줍니다!
+Trap Fangs Message,대상이 더 빠르므로 {owner_name}의 기술이 추가 피해를 줍니다!
+Poison Beak Message,대상이 더 느리므로 {owner_name}의 기술이 {icons.defense_minus}을(를) 부여합니다.
+Venomous Bite Message,{owner_name}이(가) 운 좋게 대상을 중독 {icons.poison}시킵니다!
+Removes Positive Effects Message,{owner_name}이(가) 대상의 긍정 효과를 제거합니다!
+Combat Stance Message 1,이번 턴에 {owner_name}의 움직임이 빨라집니다!
+Combat Stance Message 2,이번 턴에 {owner_name}의 방어력이 증가합니다!
+Bloodthirsty Message,{owner_name}이(가) 점점 강해집니다!
+Galvanizing Message,{owner_name}이(가) 아군의 사기를 북돋습니다!
+Protection Message,보호 덕분에 {owner_name}이(가) 피해를 1만 받습니다!
+Defensive Message,{owner_name}이(가) 보호 {icons.protection} 하나를 얻습니다!
+Fortress Message,{owner_name}이(가) 보호 {icons.protection} 하나를 얻습니다!
+Hydrodynamic Message,이번 턴에 {owner_name}이(가) 먼저 공격합니다!
+Magnify Message,이번 턴에 아군도 사용했으므로 {magnify_name}의 위력이 크게 증가합니다!
+Mushroom Madness Message,{owner_name}이(가) 부정 효과 {number_of_removed_effects}개를 제거하고 {number_of_removed_effects}회 추가로 공격합니다!
+Board Token Replace Message,보드 위의 모든 {source}와(과) {target}이(가) 서로 뒤바뀝니다!
+Self Hurt Message,{owner_name}이(가) 스스로에게 상처를 입힙니다!
+Defensive Surge Message,{owner_name}의 비늘이 더 자라납니다!
+Fear Bonding Message,아군이 부정 효과를 받는 모습을 본 {owner_name}이(가) 강해집니다!
+Biohazard Message,{owner_name}의 사체가 적을 중독 {icons.poison}시킵니다!
+Poisoner Message,중독 {icons.poison}의 냄새가 {owner_name}을(를) 강하게 만듭니다!
+Biotoxic Swipe Message,대상이 중독 {icons.poison} 상태라 {owner_name}이(가) 3배의 피해를 줍니다!
+Tail Shelter Message,{owner_name}이(가) 공격 후 꼬리를 떼어 냅니다!
+Repeated Strike Message,{move_name}의 위력이 증가합니다!
+Entrench Message After,{owner_name}와(과) 아군이 참호에 들어갔습니다!
+Entrench Message Before,{owner_name}이(가) 다음 턴을 위한 참호를 준비합니다...
+Resentful Message,{owner_name}이(가) 맞은편 적에게 부정 효과를 옮깁니다!
+Predation Message,대상의 속도가 느려져 {owner_name}이(가) 한 번 더 공격합니다!
+Devils Advocate Message,{owner_name}이(가) 능력치 변화를 반전시킵니다!
+Ethereal Message,{owner_name}이(가) 복제체를 남깁니다!
+Cruel Stomp Message,대상에게 {token}이(가) 있어 {owner_name}이(가) 추가 피해를 줍니다!
+Peer Learning Message,{owner_name}이(가) 아군의 효과를 얻습니다!
+Assimilator Message,{owner_name}이(가) 적의 특성을 얻습니다!
+Transmission Message,{owner_name}이(가) 자신의 긍정 효과를 아군에게 나눠 줍니다!
+Acquired State Message,{owner_name}이(가) 상대의 긍정 효과를 빼앗습니다!
+Hot-Blooded Talent Effect,이번 턴에 {owner_name}이(가) 더 강하게 공격합니다!
+Hypersensitive Message,{owner_name}이(가) 효과를 2배로 만듭니다!
+Team Spirit Message,{owner_name}은(는) 친구를 만나 기쁩니다!
+Cloning Message,{owner_name}이(가) 복제체를 준비합니다!
+Tentacle Message,{owner_name}이(가) 촉수를 땅속에 숨깁니다!
+Item Received Message,{item_name}이(가) 소지품에 추가되었습니다!
+Critical Strike Message,대상이 취약하여 {owner_name}이(가) 여러 번 공격합니다!
+Assailant message,{owner_name}이(가) 적에게 맹공을 퍼붓습니다!
+Frightening Message,{owner_name}이(가) 적들을 겁에 질리게 합니다!
+Egg Hatch Message,알이 곧 부화하려 합니다!
+Egg Hatch Message 2,알에서 {creature_name}이(가) 태어났습니다!
+Deft Message,{owner_name}이(가) 상태 기술을 사용해 우선권을 얻습니다!
+Pain Harvester Message,{owner_name}이(가) 체력을 회복합니다!
+Undying Message,{owner_name}이(가) 죽음에서 돌아옵니다!
+Observed Token Message,{owner_name}이(가) 의문스러운 죽음을 맞았습니다... {icons.observed}
+Adaptive Message,{owner_name}이(가) 모든 기술을 익힙니다...
+Neural Accumulation Message,{owner_name}이(가) 전력을 다한 정신 공격을 펼칩니다!
+Detection Message,{owner_name}이(가) 적을 탐지했습니다 {icons.detected}.
+Sightless Swipe Fail Message,{owner_name}이(가) 아무도 탐지 {icons.detected}하지 못해 기술이 실패합니다!
+Oineric Message,{owner_name}이(가) 새로운 기술을 꿈꿉니다!
+Callouses Message,{owner_name}의 피부가 단단해집니다 {icons.armor}!
+Gains Armor Message,{owner_name}이(가) 방어막 {icons.armor}을(를) 얻습니다!
+Spiky Scales Message,{owner_name}의 비늘이 공격자에게 상처를 입힙니다!
+Deals double damage because it has token,{owner_name}에게 {token}이(가) 있어 2배의 피해를 줍니다!
+Anesthetic Gas Before Message,{owner_name}이(가) 가스를 방출할 준비를 합니다...
+Anesthetic Gas After Message,{owner_name}이(가) 수면 가스 {icons.sleep}을(를) 방출합니다!
+Blight Message,아군 일부가 죽어 {owner_name}이(가) 더 강하게 공격합니다!
+Inkstain Message,{owner_name}이(가) 상대를 먹물에 가둡니다!
+Blinding Radiance Message,{owner_name}이(가) 대상을 눈멀게 하여 {icons.defense_minus}을(를) 부여합니다!
+Self Heal Message,{owner_name}이(가) 체력을 회복합니다!
+Leech Aura Message,{owner_name}이(가) 아군의 회복을 돕습니다!
+Calcification Message,{owner_name}이(가) 초과 체력을 방어막 {icons.armor}(으)로 바꿉니다!
+Endless Shell Message,{owner_name}와(과) 아군이 방어막 {icons.armor}을(를) 얻습니다!
+Affliction Message,{owner_name}이(가) 대상의 부정 효과를 2배로 만듭니다!
+Zappy Message,{owner_name}이(가) 상태 기술 사용 후 적의 주위를 재빠르게 맴돕니다!
+Reactive Message,상태 기술에 반응한 {owner_name}이(가) 모든 적에게 피해를 줍니다!
+Everlasting Message,{owner_name}의 최대 {icons.hp}이(가) 증가합니다!
+User ascends,{owner_name}이(가) 승천합니다!
+Reinvigorating Spirit Message,{owner_name}이(가) 아군 기술의 사용 횟수를 회복합니다!
+Opportunist Message,대상에게 부정 효과가 있어 {owner_name}이(가) 추가 피해를 줍니다!
+Sadistic Message,{owner_name}이(가) 적의 고통을 보며 뒤틀린 쾌감을 느낍니다!
+Trap Ink Mesage,{owner_name}이(가) 적들을 먹물에 가둡니다!
+Optimistic Message,{owner_name}은(는) 큰 피해를 주지 못했지만 긍정적인 마음으로 체력을 회복합니다 {icons.hp}!
+Excitement Message,체력이 최대 {icons.hp}라 {owner_name}이(가) 먼저 공격합니다!
+Restores 1 hp message,{owner_name}이(가) 체력을 1 {icons.hp} 회복합니다!
+Submerge Message,{owner_name}이(가) 물속으로 달아납니다!
+Made In Heaven Message,시간의 흐름이 빨라져 일시적 효과 {icons.hourglass}이(가) 더 빨리 끝납니다!
+Revive Message,{owner_name}이(가) 아군이 죽기 전으로 시간을 되돌립니다!
+End Of Eternity Message,{owner_name}이(가) 영구 효과를 일시적 효과 {icons.hourglass}(으)로 바꿉니다!
+Nightmare Fuel Message,{owner_name}이(가) 다른 크리처의 꿈에 침입해 생명력을 빼앗습니다!
+Slumbersmash Message,대상이 수면 {icons.sleep} 상태라 {owner_name}이(가) 2배의 피해를 줍니다!
+Eternal Night Message,{owner_name}의 대상이 이미 수면 {icons.sleep} 상태라 피해를 받습니다!
+Slumbering Message,{owner_name}이(가) 깊은 잠에서 깨어납니다!! 특성의 피해가 증가합니다!
+Spine Volley Fail Message,{owner_name}에게 방어막 {icons.armor}이(가) 없어 기술이 실패합니다!
+Draw 1 card Message,{owner_name}이(가) 카드 1장을 뽑습니다!
+Devour Message,{owner_name}이(가) 대상을 집어삼켜 {icons.hp}을(를) 얻습니다!
+Withering Message,{owner_name}이(가) 적에게 피해를 줍니다!
+Sneaky Message,{owner_name}이(가) 조용히 후퇴하여 피리를 계속 사용할 수 있습니다!
+Retreats to your hand,{owner_name}이(가) 손으로 돌아옵니다!
+Traumatizing Sight Message,{owner_name}의 적이 충격에 빠졌습니다...
+Burden of life message,{owner_name}의 사체가 소지품에 추가되었습니다...
+Weeper Heart Message,{creature_name}의 영혼이 마침내 안식을 찾았습니다.
+Weeper Corpse Effect,사체를 훼손했습니다. {creature_name}의 심장이 소지품에 추가되었습니다.
+Weeper Corpse Revive Effect,{creature_name}이(가) 완전히 재생했습니다!
+Torpidity Message,{owner_name}이(가) 무기력 {icons.torpidity} 때문에 의식을 잃고 수면 {icons.sleep}에 빠집니다!
+Born in Heaven Message,{owner_name}이(가) 아군을 강화합니다!
+Starving Message,{owner_name}이(가) 굶어 죽어 갑니다!
+Shell Steal Message,{owner_name}이(가) 상대의 방어막을 빼앗습니다!
+Damages the Enemy Message,{owner_name}이(가) 적에게 피해를 줍니다!
+Complete Hypnosis Clone Message,그저 환영이었습니다!!
+Complete Hypnosis Before Message,{owner_name}이(가) 환영을 준비합니다!
+Complete Hypnosis After Message,{owner_name}이(가) 설계한 환영 속으로 들어갑니다!
+Ever Evolving Message,{owner_name}이(가) 적의 효과를 얻습니다!
+Complete Hypnosis Undo Message v2,내가 시간 여행도 눈치채지 못할 줄 알았나?
+Extra Damage Because Target Asleep Message,대상이 수면 {icons.sleep} 상태라 {owner_name}이(가) 추가 피해를 줍니다!
+Sleep Sucker Message,대상이 수면 {icons.sleep} 상태라 {owner_name}이(가) 체력 {icons.hp}을(를) 회복합니다!
+Narco Crystals Message,{owner_name}의 깨진 수정에서 마취 가스 {icons.torpidity}이(가) 퍼집니다!
+Retreats Message,{owner_name}이(가) 후퇴합니다!
+Warcry Message,{owner_name}이(가) 아군에게 적을 향해 돌진할 용기를 북돋습니다 {icons.dexterity}!
+Glow Mark Message,{owner_name}의 기술이 대상에게 표식을 남깁니다 {icons.defense_minus}!
+Venomous Message,{owner_name}의 맹독이 대상을 중독 {icons.poison}시킵니다!
+Double damage because target has token Message,대상에게 {token}이(가) 있어 {owner_name}이(가) 2배의 피해를 줍니다!
+Controlled Kick Message,{owner_name}이(가) 힘을 조절해 대상의 체력을 1{icons.hp} 남깁니다.
+Radioactive Message,사용한 기술이 돌연변이라 {owner_name}이(가) 추가 피해를 줍니다!
+Black Hole Message,{owner_name}이(가) 모든 효과를 빼앗습니다!
+Impediment Message,{target}의 {move} 기술이 봉인되었습니다!
+No move to disable,봉인할 기술이 없습니다!
+Cant Retreat Message,지금은 후퇴할 수 없습니다!
+Strength Sucker Message,{owner_name}의 일격이 대상의 힘을 흡수합니다!
+Toxic Aura Message,대상이 중독 {icons.poison}됩니다!
+Inflicts Token Message,{owner_name}이(가) {token}을(를) 부여합니다!
+Dreadful Message,{owner_name}의 모습이 적에게 공포를 심어 줍니다!
+Onslaught Message,대상의 속도가 0이라 {owner_name}이(가) 추가로 공격합니다!
+Takes Double Damage Message,{owner_name}이(가) 2배의 피해를 받습니다!
+Deams Double Damage Message,{owner_name}이(가) 2배의 피해를 줍니다!
+Restful Sleep Message,{owner_name}이(가) 체력을 회복합니다!
+Gains Mutation Message,{owner_name}이(가) 변이하여 {ability}을(를) 얻습니다!
+Smoke Bomb Message,{owner_name}이(가) 전장을 연기로 뒤덮어 팀의 후퇴를 돕습니다!
+Force Retreat Message,{owner_name}이(가) 적을 강제로 후퇴시킵니다!
+Prepares to Retrat Message,{owner_name}이(가) 후퇴할 준비를 합니다!
+Critical Hit Message,치명타!
+Genotoxic Message,{owner_name}이(가) 아군을 물어 맹독에 반응하게 만듭니다!
+Implosion Death Message,{owner_name}이(가) 저절로 폭발합니다!
+Ripple Effect Message,대상이 다른 라인에 있어 추가 피해를 줍니다!
+Abominable Son Appear,오! 크리처가 몸을 흉측한 형태로 다시 자라냅니다!
+Perfect Son Appear,괴물이 인간형 크리처로 변했습니다!!
+Snowball Message,{owner_name}이(가) 적들을 느리게 만듭니다!
+The attack fails because the target doesn't have token,대상에게 {token}이(가) 없어 기술이 실패합니다!
+Test Subject Message,{owner_name}의 능력 사용 횟수가 줄지 않습니다!
+Force-Sucker Message,{owner_name}의 사용 횟수 제한 기술이 회복됩니다!
+Delicious Message,아군이 {owner_name}의 사체를 참지 못하고 먹어 체력을 회복합니다 {icons.hp}...
+Regains X HP Message,{owner_name}이(가) 체력을 {number}{icons.hp} 회복합니다!
+Inspired Message v2,{owner_name}이(가) 고취되어 {icons.attack_plus}와(과) {icons.speed_plus}을(를) 얻습니다!
+No Torpidity Message,{owner_name}은(는) 수면 {icons.sleep} 상태라 {torpidity_name} {icons.torpidity}을(를) 가질 수 없습니다!
+Pushback Failed Message,적이 너무 강해 {owner_name}의 밀치기에 저항합니다!
+Can't Get More Mutations Message,{owner_name}은(는) 지나치게 불안정해 돌연변이를 더 얻을 수 없습니다!
+Thick Hide Break Message,"{owner_name}의 피부는 두껍지만, 이렇게 강한 공격까지 버틸 정도는 아닙니다!"
+Immune to effect Message,{owner_name}은(는) {token_name}에 면역입니다!
+Ally immune to effect Message,{owner_name}의 아군은 {token_name}에 면역입니다!
+Incubating Message 1,부화가 진행되고 있습니다...
+Incubating Message 2,부화가 거의 끝났습니다...
+Incubating Message 3,"부화가 끝났습니다! 날아라, 바보들아!!"
+Toxic Message,{owner_name}의 독성이 너무 강해 적의 중독 {icons.poison}이(가) 심해집니다!
+Sonar Disabled Message,{owner_name}의 {talent_name} 효과가 사라집니다!
+Toxin Rush Message,크리처 하나가 중독 {icons.poison} 상태라 {owner_name}이(가) 모든 라인을 공격합니다!
+Hyperspeed Message,{owner_name}이(가) 가속합니다...
+Owner Has No Token Fail Message,{owner_name}에게 {token}이(가) 없어 기술이 실패합니다...
+Iron Will Message,{owner_name}이(가) 쓰러지기를 거부합니다!!
+Zenkai Boost Message,{owner_name}이(가) 부상에서 회복해 전보다 강해졌습니다!
+Lazy Message,{owner_name}이(가) 싸우기 전에 잠깐 낮잠 {icons.sleep}을(를) 자기로 했습니다.
+Cryo-Sleep Message,{owner_name}이(가) 깊은 잠으로 몸을 강화합니다 {icons.armor}{icons.sleep}!
+Bulwark Message,{owner_name}이(가) 추가 방어막 {icons.armor}을(를) 부여합니다!
+Scales Shed Message,{owner_name}의 아군이 떨어진 비늘로 몸을 보호합니다 {icons.armor}!
+Assassination Death Message,{owner_name}이(가) 몸을 유지하지 못하고 죽습니다!
+Haunt Message,이번 턴에 크리처가 죽어 {owner_name}이(가) 모든 라인을 공격합니다!
+Grim Example Message,{owner_name}이(가) 대상에게 저지른 짓을 보여 적들을 공포에 빠뜨립니다...
+The attack fails because no target has token Message,어떤 적에게도 {token}이(가) 없어 기술이 실패합니다...
+Energivore Message,{owner_name}이(가) 대상의 에너지를 빼앗습니다!
+Corpse Eater Message,{owner_name}이(가) 사체를 포식합니다 {icons.hp}!
+Sclerocytes Message,{owner_name}이(가) 장갑판을 더 자라게 해 인접한 아군과 나눕니다!
+Hardening Spores Message,{owner_name}의 사체가 팀의 피부를 단단하게 만드는 물질을 방출합니다!
+Runner Message,{owner_name}이(가) 달리며 속도를 높입니다!
+Initiator Message,{owner_name}이(가) 선수를 칩니다!
+Guardian Message,{owner_name}이(가) 이를 악물고 아군을 지킵니다!
+Manner Bee Message,{owner_name}은(는) 꿀을 먹어 기쁩니다!
+First Aid Failed Message,{owner_name}에게 부활시킬 대상이 없습니다!
+Eternal Cycle Message,{owner_name}이(가) 적을 먹어 치웁니다!
+Gluttosis Message,{owner_name}의 신진대사가 먹이를 통해 더 강하게 성장하도록 돕습니다!
+Scavenger Message,전장을 둘러보던 {owner_name}이(가) 다음 아이템을 발견했습니다: {item_name}!
+Liberation Message,{owner_name}이(가) 팀을 떠나 자유로 돌아갑니다!
+Liberation Only Creature Left Message,{owner_name}은(는) 마지막 남은 크리처라 떠나지 않습니다.
+Plague Message,중독 {icons.poison}이(가) 추가 피해를 줍니다!
+Gourmet Message,{owner_name}이(가) 맛있는 식사를 즐깁니다!
+Stagger Message,{owner_name}이(가) 적의 방어를 꿰뚫습니다!
+Leech Venom Message,{owner_name}이(가) 중독 {icons.poison}에서 영양분을 얻습니다!
+Biosublimation Message,{owner_name}의 신체가 적의 중독 {icons.poison}에 반응해 방어막 {icons.armor}을(를) 키웁니다!
+Lithophagous Message,{owner_name}은(는) 아군의 방어막 {icons.armor}을(를) 맛있게 먹습니다!
+Strategic Shield Message,{owner_name}이(가) 틈을 포착해 방어막 {icons.armor}을(를) 얻습니다!
+Buboes Message,{owner_name}의 림프절종이 바이러스를 내뿜어 적을 감염시킵니다 {icons.poison}!
+Disease Hunter Message,{owner_name}이(가) 근처의 중독 {icons.poison} 크리처를 감지하고 더 빠르게 움직입니다 {icons.speed_plus}!
+Grazer Message,{owner_name}이(가) 약초에서 더 많은 영양분을 추출합니다!
+Empathy Message,{owner_name}은(는) 아군이 엄폐하는 모습을 보니 기쁩니다!
+Flipside Message,{owner_name}이(가) 부정적인 능력치 변화를 긍정적인 변화로 바꿉니다!
+Owner Has No Negative Stat Fail Message,{owner_name}에게 부정적인 능력치 변화가 없어 기술이 실패합니다...
+The Attack Fails Because No Enemy Has Token Message,{owner_name}의 적 중 누구에게도 {token}이(가) 없어 공격이 실패합니다.
+Moving Castle Message,아군의 지원을 받은 {owner_name}이(가) 더욱 단단해집니다 {icons.defense_plus}!
+Sound-Sensitive Message,"이런, 피리의 날카로운 소리에 {owner_name}이(가) 완전히 미쳐 버립니다!!"
+Harrowing Reset Message,{owner_name}이(가) 신하의 죽음을 슬퍼하는 듯합니다... 아직 모든 희망이 사라진 건 아닐까요?
+Harrowing Increase Message,{owner_name}의 불길한 존재감이 점점 더 압도적으로 커집니다... 아군 크리처들이 서서히 희망을 잃습니다.
+Queen's Heir Message,{owner_name}이(가) 정당한 후계자로서 새로운 {hivequeen_name}의 자리를 차지합니다!
+Queen's Blessing Failed Message,{queen_name}이(가) 아군을 축복하지 못했습니다...
+Mind Control Failed Message,정신 지배에 실패했습니다!
+Mind Control Ends Message,크리처가 정신 지배에서 풀려나 아군으로 돌아옵니다!
+Queen's Blessing Success Message,{queen_name}이(가) 아군을 축복합니다!
+Queen's Grace Message,{owner_name}이(가) 아군의 상처를 돌봅니다.
+Ineffable Dread Death Message,크리처가 공포에 질려 죽었습니다.
+Queen's Heir Failed Evolution Message,무언가 잘못됐습니다. {owner_name}이(가) 제대로 변하지 못합니다!
+Mind Control DL Too High Fail Message,대상이 너무 강해 {owner_name}의 정신 지배를 뿌리칩니다!!
+Quick BIter Message,{owner_name}이(가) 반격해 공격자를 물어뜯습니다!
+Sentinel Message,{owner_name}이(가) 주변 환경에서 배웁니다. 공격 기술 {icons.damaging_move}의 피해가 1 증가합니다!
+Flawless Talent Message,{owner_name}이(가) 적응하여 {ability}을(를) 익힙니다!
+Infinite Potential Message,{owner_name}이(가) 무서운 속도로 강인해집니다!
+Move fails generic,{owner_name}이(가) 기술을 사용할 수 없습니다!
+Inert Item Use Message,{owner_name}에게는 아이템이 전혀 통하지 않습니다!
+Risky Flight Message,{owner_name}이(가) 위험천만한 기동을 시도합니다!
+Misdirection Success Message,{owner_name}이(가) 상대의 주의를 대상에게 돌리는 데 성공합니다!!
+Volte-Face Succes Message,{owner_name}이(가) 상대를 속이고 유리한 위치를 차지합니다!
+Retargeting One Enemy Message,{owner_name}은(는) 먹잇감을 쉽게 놓아주지 않습니다...
+Retargeting Multiple Enemies Message,{owner_name}이(가) 적의 아군에게 온 신경을 돌립니다...
+Aberration Disabler Item Success Message,가스가 {aberration_omega_name}을(를) 완전히 무력화했습니다!! 기회는 지금입니다!
+Aberration Disabler Item Failed Message,병을 깨뜨리자 가스가 퍼집니다... 하지만 별 효과가 없었습니다.
+Aberration Disabler Dropped,이런... 외과의가 무언가를 떨어뜨린 모양입니다...
+Infinite Potential Flaw Message,결함이 있습니다! {owner_name}의 막대한 힘은 오래 유지될 수 없습니다! 몸이 무너지고 있습니다!
+Kaikai Secret Evolution Message,무슨 일이죠? {owner_name}이(가) 스스로 입힌 상처에 반응하는 듯합니다!
+Puppeteer Message,{owner_name}이(가) 인형을 만듭니다!
+Puppeteer Failed Message,{owner_name}이(가) 인형을 만들지 못했습니다...

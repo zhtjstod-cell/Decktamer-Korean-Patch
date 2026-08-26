@@ -1,0 +1,331 @@
+﻿Key,Value
+Select a Card,카드를 선택하세요
+New creature tamed,새 크리처를 길들였습니다!
+Victory Title,승리!
+Tamed list title,길들인 크리처:
+No new tames title,- 새로 길들인 크리처 없음 -
+Defeat Title,크리처가 모두 쓰러졌습니다...
+Resume,계속하기
+Abandon Run,탐사 포기
+Save and Exit,저장 후 나가기
+General,일반
+Video,화면
+Language,언어
+Window Mode,창 모드
+Resolution,해상도
+VSync,수직 동기화
+Yes,예
+No,아니요
+A lapse in judgement,판단 착오
+Lapse in judgement content,"모든 크리처의 기술을 선택하지 않았습니다.
+
+그래도 계속하시겠습니까?"
+...No,...아니요
+Play Title Screen Button,플레이
+Exit,종료
+Credits,제작진
+Kill,처치
+Cancel,취소
+Warning,경고
+Settings,설정
+New Run Warning,이미 진행 중인 탐사가 있습니다. 정말 포기하시겠습니까?
+Abandon Run Warning,정말 이번 탐사를 포기하시겠습니까?
+Delete Save Warning,저장 데이터를 완전히 삭제하시겠습니까?
+Delete Save,저장 데이터 삭제
+End Turn,<color=#4c4a59>턴 종료
+End Turn Background Text,<color=#b5b3c9>턴 종료
+Choose an Essence,보관할 에센스를 선택하세요
+Confirm,확인
+Ok,확인
+Information,정보
+Ability already present,이 크리처는 이미 이 능력을 가지고 있습니다...
+Auto Skip Turns,공격 단계 진행 방식
+Upcoming Enemies,다가오는 적
+Talent Dialogue box,{owner_name}의 {talent_name}
+Audio,오디오
+Main Volume,전체 음량
+The End Title,끝
+End Stats,시간: {run_duration}
+Demo Finished Title,데모를 플레이해 주셔서 감사합니다!
+Demo Finished Message,"데모를 재미있게 즐기셨기를 바랍니다! 더 플레이하고 싶다면 정식 버전도 확인해 보세요.
+
+Decktamer를 찜 목록에 추가하는 것도 잊지 마세요!"
+Demo Finished Message 2,Decktamer Discord 서버에 참여하시겠습니까?
+Newly Tamed Creatures,새로 길들인 크리처
+Draw Pile,뽑을 카드 더미
+Discard Pile,버린 카드 더미
+Spoils!,전리품!
+Wishlist Now,지금 찜하기!
+Music Volume,음악
+Sounds Volume,효과음
+Save and Exit Warning Title,정말 종료하시겠습니까?
+Save and Exit Warning,이번 전투의 진행 상황은 저장되지 않습니다.
+Dynamic Camera,동적 카메라
+Undo Title,<size=200%>이전 턴 종료 시점으로 돌아가시겠습니까?
+Undo Message,"실수했다면 턴을 종료하기 직전으로 돌아갈 수 있습니다.
+
+시간의 시계는 이번 전투에서 {amount}회 더 사용할 수 있습니다."
+Exit Popup Title,플레이해 주셔서 감사합니다
+Exit Popup Content,데모가 마음에 드셨나요? 지금 게임을 찜하세요!
+Exit Popup Discord,Discord 참여
+Exit Popup Wishlist,지금 찜하기!
+Exit Popup No Thanks,괜찮습니다
+Undo Text,<color=#FFFFFF>되돌리기
+Danger Level,위험도
+Mutations,돌연변이
+danger level 1,경미
+danger level 2,보통
+danger level 3,치명적
+danger level 4,상상 불가
+danger level 5,터무니없음
+danger level 0,무해
+danger level 6,황당무계
+health mutation,체력 +{value}
+speed mutation,속도 +{value}
+difficulty 0 description,"- 크리처가 특성을 가질 확률 감소
+- 되돌리기 무제한
+- 전투 후 크리처 HP 2 회복
+- 전투 보상: 매우 좋음
+- 주사기 피해 없음
+- 시작 아이템: 주사기 3개, 먹이 3개, 약초 2개"
+difficulty 1 description,"- 전투당 되돌리기 4회
+- 전투 후 크리처 HP 1 회복
+- 전투 보상: 좋음
+- 주사기 피해 없음
+- 시작 아이템: 주사기 3개, 먹이 3개, 약초 1개"
+difficulty 2 description,"- 전투당 되돌리기 2회
+- 전투 보상: 보통
+- 추출할 때만 주사기 피해 발생
+- 시작 아이템: 주사기 3개, 먹이 3개"
+difficulty 3 description,"- 되돌리기 없음
+- 전투 보상: 나쁨
+- 추출 및 주입 시 주사기 피해 발생
+- 시작 아이템: 주사기 4개, 먹이 3개
+- 길들이기 확률 감소
+- 돌연변이 확률 증가"
+Back,뒤로
+Start,시작
+Undo Message Infinite,실수했다면 턴을 종료하기 직전으로 돌아갈 수 있습니다.
+difficulty 4,<color=#ffa3f1> 바보 (극한)
+Bestiary DL Tag,<b>위험도:</b> {danger_level}
+Bestiary Depth Tag,<b>깊이:</b> {depth}
+Bestiary Habitat Tag,<b>서식지:</b> {habitat}
+Undiscovered Creature Description,<color=#7a6851>이 크리처를 길들여야 더 자세히 알 수 있다.
+Misc,기타
+Unlock All,모두 해금
+Unlock All Warning,모든 콘텐츠를 해금하시겠습니까? 저장 데이터를 복원할 때까지 도전 과제를 달성할 수 없습니다. 이후 언제든 저장 데이터를 복원할 수 있습니다.
+Bestiary,도감
+Creatures by danger level,위험도별 크리처
+Bestiary Title,- 크리처 도감 -
+Fun Fact,<b>흥미로운 사실:</b> {fun_fact}
+Locked Fun Fact,<color=#52412c><i><size=80%>이 크리처로 승리해야 흥미로운 사실을 해금할 수 있다.
+Lock explanation 2,<b>{previous_difficulty1}</b> 또는 <b>{previous_difficulty2}</b>에서 승리하면 이 단계를 해금합니다.
+Sonar Alert Title,{talent_name} 경고
+Sonar Alert Content,맞은편 적에게 아군의 특성을 비활성화하는 {talent_name} 특성이 있습니다. 그래도 계속하시겠습니까?
+Bestiary Updated Title,도감 갱신
+Bestiary Updated Content,{creature_name}이(가) 도감에 추가되었습니다.
+Creature Ascended Title,크리처가 승천했습니다!
+Mystery Trade Warning,"이 크리처를 교환하시겠습니까?
+무작위 크리처로 바뀝니다."
+Mystery Trade Title,무작위 크리처와 교환할 크리처를 선택하세요
+New Creature Added To Deck Title,새 크리처를 받았습니다!
+Safari Select Bait Title,미끼로 놓을 먹이를 선택하세요
+Select creature mushroom,HP와 속도를 높일 크리처를 선택하세요
+Select creature mushroom cursed,저주를 받는 대신 HP와 속도를 높일 크리처를 선택하세요
+Cursed Mushroom Warning,"{creature}에게 저주를 부여하고 HP와 속도를 높이시겠습니까? (HP +{health}, 속도 +{speed})"
+Fusion Warning,두 크리처를 융합하시겠습니까? 융합된 크리처는 양쪽 부모 중 더 높은 HP와 속도를 물려받고 체력을 완전히 회복합니다.
+Two Cards Required,카드 두 장을 선택해야 합니다.
+Fuse Title,융합할 크리처 2마리를 선택하세요
+Non Targetable Item Warning,이 아이템을 사용하시겠습니까?
+Egg Warning,"알을 먹으시겠습니까?
+나중에 부화하도록 남겨 두는 편이 나을 수도 있습니다."
+Generic Warning,계속하시겠습니까?
+Syringe Warning,"{creature}에게 피해를 주시겠습니까? (HP -{damage})
+
+해당 크리처의 특성 또는 기술 하나를 에센스로 얻습니다."
+Release Creature Title,덱에서 크리처를 제거하시겠습니까?
+Release Creature Warning,{creature_name}을(를) 덱에서 <color=red>영구히</color> 제거하시겠습니까?
+High Priority Move,높은 우선순위
+Low Priority Move,낮은 우선순위
+Can't delete creature,마지막 남은 크리처는 방생할 수 없습니다.
+Battle Number,전투 {currentBattleNumber}/{maxBattleNumber}
+Item Rewards,{icons.item_icon} 아이템 보상
+Fight Button,전투<i>!
+Empty Card Selection Message,아무것도 없습니다...
+Empty Spyglass Message,다가오는 적이 없습니다...
+Rename Creature,크리처 이름 변경
+Select Starter Title,시작 크리처를 선택하세요
+Select Rat Title,동행할 크리처 무리를 선택하세요
+Item on same enemy twice tutorial warning,이 크리처에게 아이템을 주지 마세요!
+Cant use this item outside of battle warning,이 아이템은 전투 밖에서 사용할 수 없습니다!
+Wild Creatures Ahead,{icons.creature_icon} 야생 크리처 출현!
+Event Reward,{icons.event_icon} 이벤트 보상
+Give Up Button,포기
+Quick Retry Button,빠른 재도전
+Team Button,팀
+Main Menu Button,메인 메뉴
+Out of creatures title,남은 크리처가 없습니다...
+Death,죽음
+Death lore text,심연에 뛰어든 모두가 귀환이라는 자비를 허락받는 것은 아니다.
+danger level 7,불가해
+Screenshake,화면 흔들림
+No Moves To Refresh Message,이 크리처에게는 회복할 사용 횟수 제한 기술이 없습니다...
+danger level 8,세계 종말급
+Level,레벨 {level}
+Boss Selection Menu Location,<b>위치:</b> {location}
+XP Gained,+ {xp} XP
+Unlocks left,남은 해금: {unlocks}개
+Beat Previous Boss,먼저 이전 보스를 처치하세요
+Experience Gained Title,경험치 획득
+New Game Mode Unlocked,새 게임 모드 해금!
+New Card Unlocked,새 카드 해금!
+New Boss Unlocked,새 보스 해금!
+New Boss Unlocked Description,"새로운 목적지가 기다립니다.
+이전 보스를 쓰러뜨리면 갈 수 있습니다."
+Explorer Notes Title,- 탐험가의 기록 -
+Other creatures,기타 크리처
+Anomalies,변칙 개체
+Special Specimens,특수 표본
+Victory Rewards,승리 보상!
+Diary Pages Unlocked,새 일지 페이지 해금!
+Game Modes,게임 모드
+Select Reward,보상을 선택하세요
+Personal Diary,개인 일지
+Reports,보고서
+Choose an ability to duplicate,복제할 능력을 선택하세요
+Choose a creature to heal,회복할 크리처를 선택하세요 (남은 HP: {hp}{icons.hp})
+Choose a creature to revive,부활시킬 크리처를 선택하세요
+Set HP and Speed to Value,HP와 속도를 모두 {number}(으)로 만들 크리처를 선택하세요
+Set HP and Speed to Value with curse,저주를 받는 대신 HP와 속도를 모두 {number}(으)로 만들 크리처를 선택하세요
+Set HP and Speed Warning,이 카드의 HP와 속도를 모두 {number}(으)로 만드시겠습니까?
+Set Cursed HP and Speed Warning,이 카드에 저주를 부여하고 HP와 속도를 {number}(으)로 만드시겠습니까?
+Select item to increase max HP Title,좋아하는 크리처의 최대 HP를 높일 먹이를 선택하세요
+Increase max HP warning,이 먹이를 사용하시겠습니까? 이 먹이를 좋아하는 크리처의 최대 HP가 {number} 증가합니다.
+Red medicine warning,이 돌연변이들을 크리처에게 부여하시겠습니까? 일부는 저주일 수 있습니다.
+Swap Stats Title,능력치를 맞바꿀 크리처 2마리를 선택하세요
+Swap Stats Warning,"두 크리처의 능력치를 맞바꾸시겠습니까? 첫 번째 크리처는 두 번째 크리처의 속도와 HP를 얻고, 반대쪽도 마찬가지입니다."
+Choose Stats Title,능력치 선택
+Choose Talent Title,특성을 선택하세요
+Choose Move Title,기술을 선택하세요
+Leave Infinite Syringe Warning,정말 떠나시겠습니까? 사용하지 않은 주사기는 모두 사라집니다.
+Restore Save,저장 데이터 복원
+Restore Save Warning,모든 콘텐츠를 해금하기 전의 진행 상태로 되돌리시겠습니까?
+Hand Full Warning,손이 이미 가득 찼습니다!
+No Cards to Draw Warning,뽑을 카드가 없습니다!
+Can't use item on this creature warning,이 크리처에게는 이 아이템을 사용할 수 없습니다!
+Voices Volume,크리처 울음소리
+Not available in the demo,데모에서는 이용할 수 없습니다.
+Please buy the full game,"이 기능은 데모에서 이용할 수 없습니다.
+정식 버전을 구매하면 이용할 수 있습니다!"
+Purchase full game for bosses,정식 버전을 구매하여 다른 보스를 해금하세요!
+Demo Additional Credits,"정식 버전도 기대해 주세요!
+
+
+지금 Decktamer를 찜하세요!
+"
+On,켜기
+Off,끄기
+ModeWindowed,창 모드
+ModeBorderless,테두리 없음
+ModeFullscreen,전체 화면
+Total,합계
+Skip Turn Mode Manual,수동
+Skip Turn Mode Auto,자동
+Skip Turn Mode Fast Auto,빠른 자동
+Accessibility,접근성
+Bloom Setting,블룸
+Trypophobia Censorship,환공포증 완화
+Can't retreat only card,마지막 남은 카드는 후퇴시킬 수 없습니다!
+Special VFX Setting,특수 시각 효과
+Undo Successful Tame,{creature} 길들이기 성공({percent}%)을 되돌리려 합니다. 먹이는 반환되지만 다시 시도해도 성공이 보장되지는 않습니다.
+Undo Failed Tame,{creature} 길들이기 실패({percent}%)를 되돌려도 먹이는 반환되지 않습니다.
+Redo Text,<color=#FFFFFF>다시 실행
+Undo Notification Title,되돌리기
+Redo Notification Title,다시 실행
+Undo Failed Tame Notification,{creature} 길들이기 실패 ({percentage}%)
+Undo Successful Tame Notification,{creature} 길들이기 성공 ({percentage}%)
+Undo Creature Placement Notification,{creature} 배치
+Undo Creature Retreat Notification,{creature} 후퇴
+Undo Attack Phase Notification,공격 단계 #{number}
+Undo Item Use Notification,{item} 사용
+Community Translation Warning,"*이 번역은 커뮤니티에서 제작했으며, 오래된 정보나 공식 검수를 거치지 않은 내용이 포함될 수 있습니다."
+Credits Intro,"Decktamer를 플레이해 주셔서 감사합니다!
+
+
+
+
+Horizon Edge가 자랑스럽게 제작했습니다
+Assemble Entertainment 배급"
+Credits Art Title,아트
+Credits Programming Title,프로그래밍
+Credits Game Design Title,게임 디자인
+Credits Soundtrack Title,오리지널 사운드트랙
+Credits Guest Art,게스트 아트: TOPDOG Entertainment
+Credits Sound Design,사운드 디자인 및 추가 사운드트랙
+Credits Localization,현지화
+Credits Publisher Team,Assemble Entertainment 팀
+Credits Special Thanks,특별 감사
+Relaxed Mode Description,"가볍게 즐기고 싶은 분을 위한 모드입니다. 
+크리처가 영구 사망하지 않으며 전투가 끝날 때마다 체력을 완전히 회복합니다."
+Standard Mode Description,"실수를 만회할 여지가 조금 있는 전략적인 모드입니다.
+도중에 몇몇 크리처를 희생해야 할 수도 있습니다."
+Challenge Mode Description,"더 어려운 설정으로 플레이하고, 도전 단계에 따라 도감에 서로 다른 별을 획득하세요.
+규칙을 직접 설정할 수도 있습니다."
+Challenge Run Menu Subtitle,도전 단계를 선택하거나 직접 설정하세요!
+Difficulty Locked Title,이 설정으로는 플레이할 수 없습니다!
+Locked Challenge Mode Description,표준 탐사에서 승리하면 이 모드를 해금합니다!
+Challenge Menu Help Information,"이 메뉴에서 별로 표시되는 도전 단계를 선택할 수 있습니다.<size=45%>
+
+</size>단계마다 게임 규칙이 달라지며, 이전 단계를 완료하면 다음 단계가 해금됩니다."
+Challenge Menu Help Information 2,"직접 설정 버튼으로 나만의 도전을 만들 수도 있습니다.<size=45%>
+
+</size>직접 설정한 도전에서도 설정 난이도에 맞는 별을 획득합니다."
+Encounter Choice Reroll Warning Title,다른 조우를 찾아보시겠습니까?
+Encounter Choice Reroll Warning,"제시된 선택지가 마음에 들지 않으면 전투, 이벤트, 보상 조합을 새로 생성할 수 있습니다. 조우당 한 번만 가능합니다."
+Custom Difficulty Description,"현재 직접 설정한 규칙은 <b>{preset_name}</b> 별을 획득할 난이도입니다.<size=45%>
+
+</size>직접 설정 버튼으로 규칙을 수정하거나 별 아이콘으로 미리 설정된 단계를 선택하세요."
+Share Difficulty Settings Title,다른 사람도 같은 설정으로 플레이할 수 있도록 코드를 공유하세요
+Apply Settings,적용
+Shareable Code Error,"입력한 코드가 올바르지 않습니다.
+코드는 대소문자를 구분합니다."
+Copy Text,복사
+Paste Text,붙여넣기
+Copied code to clipboard confirmation,코드를 클립보드에 복사했습니다!
+Challenge Runs Title,도전 탐사
+Select your Difficulty Title,난이도를 선택하세요
+Challenge Difficulty,도전
+Title with colon,{title}:
+Fast Forward Button,빨리 감기 버튼 방식
+Fast Forward Speed,빨리 감기 속도
+Fast Forward Hold Button,누르는 동안
+Fast Forward Toggle Button,전환
+May or May not Have Ability,보유할 수도 있음
+Has X ability in list,다음 중 {amount}개 보유
+Has X to Y abilities in list,다음 중 {minimumAmount}~{maximumAmount}개 보유
+Unknown Abilities Bestiary,알 수 없는 능력...
+Creature Bestiary Variant Title ,변종 {letter}
+Save Delete Confirmation,이 저장 파일을 <color=red>영구히</color> 삭제하시겠습니까?
+Save Slot Duration,플레이 시간: {number}
+Save Slot Last Played Date,마지막 플레이: {date}
+Select a Save Title,저장 파일을 선택하세요
+Save Slot New Game,새 게임
+Victory Status,승리
+Defeat Status,패배
+Abandoned Status,포기
+History Victory Checkmark,승리만 표시
+History Defeat Checkmark,패배만 표시
+History Favorites Checkmark,즐겨찾기만
+Run History Title,- 탐사 기록 -
+danger level 8 v2,광기
+danger level 9,대재앙
+danger level 10,세계 위협급
+Infinite Enemies Spyglass Message,여기에 표시된 것 너머로 끝없는 적의 무리가 기다리고 있습니다...
+Item Received,아이템 획득
+Secret Bestiary Section,특이 발견
+Number of Bosses Boss Rush Selector,보스 수
+Random Amount of Bosses Boss Rush Title,무작위로 선정된 보스와 몇 번 싸울지 선택하세요.
+Not enough bosses selected warning,보스를 최소 {number}개체 선택해야 합니다!
+Boss Rush Random Boss Order,보스가 무작위 순서로 등장합니다.
+Boss Rush Sequential Boss Order,보스가 선택한 순서대로 등장합니다.
+Secret Section Info,이 구역의 크리처는 각종 도감 완성 도전 과제의 달성 조건에 포함되지 않습니다.

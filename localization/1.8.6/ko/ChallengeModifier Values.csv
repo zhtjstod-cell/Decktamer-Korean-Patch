@@ -1,0 +1,34 @@
+﻿Key,Value
+Unlimited Challenge Value,무제한
+Once per encounter Challenge Value,조우당 1회
+Percentage Challenge Value,{percentage}%
+None Challenge Value,없음
+Weak Challenge Value,약함
+Regular Challenge Value,보통
+Strong Challenge Value,강함
+Very Strong Challenge Value,매우 강함
+Number HP Challenge Value,{number} HP
+Full HP Challenge Value,전부
+Good Challenge Value,좋음
+Medium Challenge Value,보통
+Bad Challenge Value,나쁨
+Very Bad Challenge Value,매우 나쁨
+Very Good Challenge Value,매우 좋음
+On Extract Challenge Value,추출 시
+On Extract and infuse Challenge Value,추출 및 주입 시
+Double Damage Challenge Value,피해 2배
+Less Talents Challenge Value,특성 감소
+More Mutations Challenge Value,돌연변이 증가
+Extreme Challenge Value,극심
+Low Challenge Value,낮음
+Very Low Challenge Value,매우 낮음
+Guaranteed Only Challenge Value,확정 성공만
+Equivalent to Food Challenge Value,먹이와 동일
+Food + 1 Challenge Value,먹이 + 1
+Among all starters Challenge Value,모든 시작 크리처 중
+Choice of 3 Challenge Value,3개 중 선택
+Random Challenge Value,무작위
+Abysmal Challenge Value,최악
+High Challenge Value,높음
+Enabled Challenge Value,활성화
+Disabled Challenge Value,비활성화

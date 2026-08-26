@@ -4,7 +4,7 @@
 
 Decktamer, its original text, game assets, and trademarks belong to their respective rights holders. This is an unofficial fan translation and is not affiliated with or endorsed by the developer or publisher.
 
-The release does not contain complete original game DLLs or Unity asset files. Its binary deltas contain only data needed to transform a verified Decktamer 1.7.4 installation.
+The release does not contain complete original game DLLs or Unity asset files. Its binary deltas contain only data needed to transform verified supported Decktamer installations (1.7.4 and 1.8.6).
 
 ## Noto Serif KR
 

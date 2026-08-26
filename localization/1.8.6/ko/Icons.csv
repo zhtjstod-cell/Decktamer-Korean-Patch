@@ -1,0 +1,33 @@
+﻿Key,Value
+poison icon,{icons.poison}
+sleep icon,{icons.sleep}
+speed plus icon,{icons.speed_plus}
+attack minus icon,{icons.attack_minus}
+attack plus icon,{icons.attack_plus}
+defense plus icon,{icons.defense_plus}
+defense minus icon,{icons.defense_minus}
+speed minus icon,{icons.speed_minus}
+carnivore icon,{icons.carnivore}
+herbivore icon,{icons.herbivore}
+piscivore icon,{icons.piscivore}
+hp icon,{icons.hp}
+protection icon,{icons.protection}
+status move icon,{icons.status_move}
+damaging move icon,{icons.damaging_move}
+clumsy icon,{icons.clumsy}
+dexterity icon,{icons.dexterity}
+dizzy icon,{icons.dizzy}
+danger star icon,{icons.danger_star}
+charmed icon,{icons.charmed}
+hourglass icon,{icons.hourglass}
+observed icon	,{icons.observed}
+detected icon,{icons.detected}
+armor icon,{icons.armor}
+torpidity icon,{icons.torpidity}
+taming attempt icon,{icons.taming_attempt}
+impeded icon,{icons.impeded}
+flawless icon,{icons.flawless}
+mind control icon,{icons.mind_control}
+disable all talents icon,{icons.disable_all_talents}
+{icons.neutralized},
+neutralized icon,{icons.neutralized}

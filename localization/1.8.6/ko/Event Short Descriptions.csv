@@ -1,0 +1,32 @@
+﻿Key,Value
+Golden Scarab,시작 덱의 크리처 하나를 진화시킵니다.
+Rest Site,"크리처의 체력을 회복하거나(1{icons.hp}), 먹이 하나 또는 아이템 두 개를 얻습니다."
+Mushroom,"크리처 하나에게 HP +1과 속도 +1을 부여하거나, 저주와 함께 각각 +3을 부여합니다."
+Hunting Grounds,먹이 3개 중 하나를 선택하거나 최상급 먹이를 노리고 도박합니다.
+Status Items,아이템 3개 중 하나를 고르는 과정을 두 번 진행합니다.
+Serum,크리처 하나에게 무작위 능력 2개를 부여합니다.
+Empty Vessel,능력이 없고 체력이 12{icons.hp}인 {former_human_name}이(가) 팀에 합류합니다.
+Duplicate Creature,크리처 하나를 복제합니다. 복제체는 저주를 받습니다.
+Mystery Trade,크리처 하나를 같은 위험도 {icons.danger_star}의 다른 크리처와 교환합니다.
+Safari,먹이를 미끼로 놓아 크리처를 유인하고 길들입니다.
+Oasis,크리처 하나의 체력을 완전히 회복하고 저주를 제거합니다.
+Fuse Creature,크리처 둘을 골라 하나로 융합합니다.
+Egg,크리처로 부화하거나 체력 회복에 사용할 수 있는 알을 얻습니다.
+Menacing Presence,위험한 크리처와 싸우거나 달아납니다.
+Random Essence,크리처 하나에게 주입할 수 있는 특성 또는 기술 에센스를 선택합니다.
+Ability Duplicator v2,능력 하나를 골라 사본 2개를 추출합니다.
+Extra Heal,크리처 하나의 체력을 1{icons.hp} 회복하는 과정을 5번 진행합니다.
+Revival,죽은 크리처 하나가 덱으로 돌아옵니다.
+Laboratory,길들이기에 반드시 성공하는 특별한 아이템을 얻습니다.
+Reinforcements,크리처 하나를 고르면 같은 종의 크리처가 덱에 추가됩니다.
+Tree of balance,"크리처 하나의 HP와 속도를 모두 5로 만들거나, 저주를 받는 대신 7로 만듭니다."
+Feast,먹이 하나를 소비해 그 먹이를 좋아하는 모든 크리처의 최대 HP를 높입니다.
+Experimental Syringe,적에게도 사용할 수 있는 빈 주사기와 적에게 저주를 부여하는 주사기 중 하나를 고릅니다.
+Red or blue,크리처 하나의 체력을 완전히 회복하거나 {number}개의 돌연변이를 부여합니다. 저주가 나올 수도 있습니다.
+Silver Beetle,{silver_beetle_name}이(가) 덱에 합류합니다. 배치하면 남은 전투 동안 아군 크리처를 진화시킵니다.
+Phantom Matter,모든 적에게 피해를 {number} 주지만 사용자를 죽이는 기술을 가르칩니다.
+Metabolism Shift,"크리처 하나에게 속도 {minus_speed}을(를) 대가로 최대 HP +{plus_hp}, 또는 최대 HP {minus_hp}을(를) 대가로 속도 +{plus_speed}을(를) 부여합니다."
+Special Foraging,길들인 크리처를 즉시 손에 넣는 먹이와 무작위 돌연변이를 부여하는 먹이 중 하나를 고릅니다.
+Infinite Syringe 2,소모되지 않고 최대 {number}회 사용할 수 있는 주사기를 사용합니다.
+Mix and Match,크리처 2마리를 골라 서로의 속도와 {icons.hp}을(를) 맞바꿉니다.
+Aberration,"능력치 조합을 고르고, 특성은 3개 중 하나를 두 번, 기술도 3개 중 하나를 두 번 골라 맞춤 크리처를 만듭니다."

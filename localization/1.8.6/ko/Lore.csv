@@ -1,0 +1,57 @@
+﻿Key,Value
+Eye of the Abyss Description,정확도는 낮지만 탐사 장비가 심연 깊은 곳에서 이상 현상을 감지했다. 이곳의 강한 돌연변이 유발 환경에서 유전적 흉물이 태어났다는 이론도 있다. 직접 확인해 봐야겠다.
+Former Pioneer Description,심연 깊은 곳에서 일지 하나가 발견되었다. 심연 탐사의 개척자 중 한 명이자 세 번째 원정에서 돌아오지 못한 전설적인 잠수부의 것이었다. 일지에는 그녀가 향하려던 목적지가 적혀 있다. 내려가 조사해 봐야겠다.
+Colossus Description,보고 내용은 명확하다. 심연의 지진 활동이 위험할 정도로 증가하고 있다. 움직임만으로 대지를 뒤흔들 만큼 거대한 생명체가 원인일지도 모른다. 우리가 너무 깊이 파고들어 건드려서는 안 될 존재를 깨운 것일까?
+Son of the Abyss Description,{former_pioneer_name}이(가) 이룬 나무의 열매에서 표본 하나가 태어나 달아난 모양이다. 의문이 끝없이 생긴다. 과학적 호기심 때문에라도 그 크리처를 찾아 나서기 전에는 쉴 수 없을 것 같다.
+Colossus Location,기간티스 동굴
+Eye of the Abyss Location,남쪽 분화구 가장자리
+Former Pioneer Location,시간의 동굴
+Son of the Abyss Location,시간의 동굴
+True Final Boss Description,밑바닥에 도달해 이야기를 전하러 돌아온 사람은 없다... 하지만 누군가 그 아래에 갇혀 지상으로 돌아오지 못한 것뿐이라면? 물론 아무도 이렇게 어리석은 가설을 진지하게 받아들이지 않을 것이다. 나만 빼고.
+True Final Boss Location,심연의 밑바닥
+True Final Boss Name,길 잃은 탐험가
+True Final Boss Battle Start Dialogue Part 1,"이 아래에서 보낸 긴 세월 동안 다른 사람을 만난 적도 없는데, 하물며 사람과 싸운 적은 더더욱 없다."
+True Final Boss Battle Start Dialogue Part 2,이렇게까지 하지 않아도 됐으면 좋겠는데...
+True Final Boss Battle Few Cards Dialogue Part 1,이제 정말 내 한계를 시험하는군...
+True Final Boss Battle Few Cards Dialogue Part 2,아직 화해할 수 있어. 제발.
+True Final Boss Battle Specimen Killed Dialogue,무슨 짓을 한 거야?! 내 가장 친한 친구를 죽였잖아!
+True Final Boss Battle Triple Kill Dialogue,네 크리처들이 너를 부끄러워해야 할 거다.
+True Final Boss Victory Message,목표를 이루었습니다... 하지만 그 대가는 무엇이었을까요?
+True Final Boss Appears Warning,곧 마주할 적은 예상과 다른 존재인 듯합니다...
+Neuromefos Society Name,{neuromefos_name} 사회
+Neuromefos Society Location,심연 우림 최하층
+Neuromefos Society Description,심층에서 회수한 일지 조각에는 사람이 만든 듯한 구조물과 도구가 남은 버려진 정착지에 관한 이야기가 적혀 있었다... 보고서는 여러 쪽이 사라진 상태이니 더 자세한 사실은 내가 직접 밝혀내야 한다.
+Neuromefos Society Dialogue,"ψ Ω   λ Ϟ  ∴ø◊  ω∆ł χ ø ƒ
+ħ∆Ϟ, ◊Ϟ∆Ʃ∇λ Ʃ Ϟ !"
+Grimjaw Hive-Queen Description,"야생 {grimjaw_name}들은 밤마다 한곳에 모여 같은 방향으로 향하는 기묘한 습성이 있다.
+정확히 어디로 가는 걸까? 한 마리를 따라가서 목적지를 확인해 봐야겠다."
+Grimjaw Hive-Queen Location,붉은 군체
+Grimjaw Hive-Queen Secret Interaction Message,아군 {grimjaw_name}은(는) 여왕과 맞서기를 망설이지만 마지못해 명령을 따릅니다...
+Surgeon Battle Start Dialogue 1,제 가장 위대한 업적을 목격하기에 딱 맞춰 오셨군요.
+Surgeon Incubation Almost Done Dialogue,당신도 느껴집니까? 압력이 높아지는 것을?
+Surgeon Omega Spawn Dialogue 1,드디어... 보십시오... 완벽한 표본입니다!
+Surgeon Omega Spawn Dialogue 2,막 배양기에서 나왔죠… 아직 배울 것이 아주 많습니다…
+Surgeon Omega Spawn Dialogue 3,온 힘을 다해 주십시오. 그래야 적응할 테니. 해 주시겠습니까?
+Surgeon Omega Generic Dialogue,개인적인 감정은 없습니다. 당신은 우연히도 제가 바라던 완벽한 촉매인 동시에 최고의 실험 대상일 뿐입니다.
+Surgeon Omega Dead Dialogue,이 멍청한 자… 방금 인류를 얼마나 퇴보시킨 건지 알기나 한다면…
+Surgeon Incubator Broken Dialogue,엉망이 됐군요... 이제 만족합니까?
+Surgeon Death Dialogue If Omega Alive,으윽… 이 어리석은 자… 내가 없으면 누가 오메가를 억제할 수 있을 것 같습니까?
+Surgeon Battle Start Dialogue 2,실험에… <i>당신도 포함</i>해도 괜찮겠지요…?
+Surgeon Event Aberration Dialogue 1,흐흐... 내 창조물 중 하나를 내게 쓰겠다고?
+Surgeon Event Aberration Dialogue 2,어떻게 되는지 두고 보지.
+Duo Boss Description,아름다운 지하 사막에서 희귀한 표본 두 마리가 목숨을 걸고 싸우는 광경보다 장관인 것이 있을까? 그 이야기를 전하러 돌아온 사람이 있다는 사실이다.
+Duo Boss Location,푸른 모래 평원
+Duo Boss Name,{vespalisk_name} & {carchanon_name}
+Duo Boss Transition Message,무슨 일이죠? 죽기 직전이던 두 크리처가 하나로 융합한 것 같습니다!!
+Grimjaw Hive Queen Defeat Message,아... 여왕이 죽자 군체가 싸울 의지를 잃었습니다.
+Imprisoned One Location,얼어붙은 해구
+Surgeon Location,외과의의 은신처
+Imprisoned One Description,"가장 깊고 얼어붙은 구역 전역에서 공포에 찬 비명이 들린다. 가끔 들리는 소리였다면 대수롭지 않게 넘겼겠지만, 이 울음은 몇 주째 한순간도 멈추지 않고 이어졌다... 더는 외면할 수 없다."
+Surgeon Description,심연 곳곳에 사람이 만든 물건이 흩어져 있다는 보고를 셀 수 없이 많이 접했다. 이 주사기들은 어디에서 오는 걸까? 누군가 저 아래에서 실험을 벌이고 있는 걸까?
+Neuromefos Society Neuromefos Placed Dialogue,"ψ Ω   λ◊λ χ   ψ Ω Ϟ   Ω ∴   χ∵∴đ,  b Ϟ ø θ Ϟ ?"
+Neuromefos Society Neuromefos Answer Dialogue,...
+Neuromefos Society Dialogue Name,적대적인 {neuromefos_name}
+Grimjaw Hive Queen Intro 1,이런... 이곳은 {grimjaw_name}들로 들끓고 있습니다...
+Grimjaw Hive Queen Intro 2,유일한 희망은 여왕을 제거하는 것입니다...
+Surgeon Victory Message,외과의는 목표를 달성했습니다(아닐 수도 있습니다).
+Standard Victory Message,당신은 목표를 달성했습니다(아닐 수도 있습니다).

@@ -1,0 +1,47 @@
+﻿Key,Value
+Undo Amount Description,"한 전투에서 되돌리기 버튼을 몇 번 사용할 수 있는지 정합니다.
+실수했을 때 이 버튼으로 행동을 취소할 수 있습니다."
+Boss Strength Description,"보스의 최대 HP와 속도, 효과에 영향을 줍니다.
+<b>{weak}:</b> HP -{weak_hp}% / 속도 -{weak_speed}
+<b>{regular}:</b> 변화 없음
+<b>{strong}:</b> HP +{strong_hp}% / 속도 +{strong_speed}
+<b>{very_strong}:</b> HP +{very_strong_hp}% / 속도 +{very_strong_speed} / +{very_strong_strength} {icons.attack_plus} / +{very_strong_sturdy} {icons.defense_plus}"
+Encounter Choice Reroll Description,"각 전투에서 적과 보상 선택지 한 쌍을 새로 뽑을 수 있는 횟수를 정합니다.
+제시된 두 선택지가 마음에 들지 않으면 조우당 한 번 새로고침할 수 있습니다."
+Enemy Strength Description,"전투에서 만나는 크리처에게 적용됩니다.
+<b>{less_talents}:</b> 특성이 없는 카드를 만날 확률 증가
+<b>{regular}:</b> 변화 없음
+<b>{more_mutations}:</b> 원래 가질 수 없는 능력이 붙은 카드를 만날 확률 증가"
+Heal Before Boss Description,보스전 직전에 모든 크리처가 회복하는 체력의 양을 정합니다.
+Heal Between Battles Description,"매 전투가 끝난 뒤 모든 크리처가 회복하는 체력의 양을 정합니다.
+보스전 직전에는 적용되지 않습니다."
+Heal on Tame Description,"길들이기에 성공한 직후 크리처가 회복하는 체력의 양을 정합니다.
+<b>{full}:</b> 크리처의 HP를 최대로 회복
+<b>{food_plus_one}:</b> 먹이의 회복량에 HP 1을 더해 회복
+<b>{food}:</b> 길들이기에 사용한 먹이의 회복량만큼 정확히 회복"
+Item Rewards Description,"각 전투가 끝난 뒤 얻는 아이템을 정합니다.
+<b>{very_good}:</b> 카드 {number_cards}장 + 최상급 먹이 1개
+<b>{good}:</b> 카드 {number_cards}장 + 먹이 1개
+<b>{medium}:</b> 카드 {number_cards}장
+<b>{bad}:</b> 카드 {number_cards}장. 단, {herb}의 회복량 감소
+<b>{very_bad}:</b> 카드 {low_number_cards}장"
+Permadeath Description,"비활성화하면 죽은 크리처가 매 전투 후 덱으로 돌아옵니다.
+HP가 1인 상태로 돌아오지만, <b>{heal_between_battles_name}</b>이 활성화되어 있다면 해당 설정만큼 추가로 회복합니다."
+Starter Choice Description,탐사를 시작할 때 시작 카드를 고를 수 있는 선택지 수를 정합니다.
+Starting Items Description,"탐사를 시작할 때 보유하는 아이템 카드를 정합니다.
+<b>{good}:</b> 먹이 {food_good}개, 주사기 {syringes_good}개, 약초 {herbs_good}개
+<b>{medium}:</b> 먹이 {food_medium}개, 주사기 {syringes_medium}개, 약초 {herbs_medium}개
+<b>{bad}:</b> 먹이 {food_bad}개, 주사기 {syringes_bad}개
+<b>{very_bad}:</b> 먹이 {food_very_bad}개, 주사기 {syringes_very_bad}개"
+Syringe Damage Description,"주사기가 주는 피해를 정합니다.
+<b>{none}:</b> 피해 없음
+<b>{on_extract}:</b> 카드에서 능력을 추출할 때만 HP -{damage}
+<b>{on_extract_and_infuse}:</b> 카드에서 능력을 추출하거나 주입할 때 HP -{damage}
+<b>{double}:</b> 카드에서 능력을 추출하거나 주입할 때 HP -{two_damage}"
+Taming Chance Description,"길들이기 확률에 배율을 적용합니다.
+<b>{high}:</b> x{mult_high}
+<b>{regular}:</b> x{mult_regular}
+<b>{low}:</b> x{mult_low}
+<b>{very_low}:</b> x{mult_very_low}
+<b>{guaranteed_only}:</b> HP가 1인 크리처에게 알맞은 먹이를 줬을 때만 길들이기 성공"
+Permadeath Prebuff Description,비활성화하면 죽은 크리처가 매 전투 후 HP가 1인 상태로 덱에 돌아옵니다.

@@ -1,6 +1,6 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param(
-    [ValidateSet("Install", "Uninstall", "Verify")]
+    [ValidateSet("Install", "Uninstall", "Verify", "Update")]
     [string]$Mode = "Install",
 
     [Parameter(Position = 0)]
@@ -15,18 +15,41 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 
-$PatchVersion = "1.0.0"
-$GameVersion = "1.7.4"
+$PatchVersion = "1.1.0"
 $PackageRoot = Split-Path -Parent $PSScriptRoot
-$LocalizationSource = Join-Path $PackageRoot "localization\ko"
-$AssetPatch = Join-Path $PackageRoot "patches\sharedassets0.assets.kpatch.gz"
-$AssemblyPatch = Join-Path $PackageRoot "patches\Assembly-CSharp.dll.kpatch.gz"
 $MarkerName = ".decktamer-korean-patch.json"
+$ReleaseApi = "https://api.github.com/repos/zhtjstod-cell/Decktamer-Korean-Patch/releases/latest"
+$SupportedProfiles = @(
+    [pscustomobject]@{
+        GameVersion = "1.7.4"
+        TranslationTables = 37
+        TranslationRows = 3039
+        OriginalAssetHash = "ba21274137c1f6a8b896cc25d2a316228b6ca9861b3c25e349395ea13a4fa6cf"
+        PatchedAssetHash = "2027eeecc0f3657ecc08cc483db48be942b582b0a7cec509b6b2f23d4350c050"
+        OriginalAssemblyHash = "ee5dc47461f2776fa83d4acbb17d0434e12e76f0ac54ebc631a8c7cbb3225b5b"
+        PatchedAssemblyHash = "8a0a8e93d51c707d77f69e69624dc8191df4373d5aea4c60f2f1255961ba3f85"
+    },
+    [pscustomobject]@{
+        GameVersion = "1.8.6"
+        TranslationTables = 37
+        TranslationRows = 3288
+        OriginalAssetHash = "83ef469e22e1e23cca03ce551a3c6e7a39c4f007f2dadd5bd98c5b80aee36787"
+        PatchedAssetHash = "051f488823d53d68ca773e1036814a06cd056882a6ebd0b115f8421270cc2374"
+        OriginalAssemblyHash = "a184232a87a3ed737fdab38db8f97589766e6699ceb4cdcdf3807a0984a86080"
+        PatchedAssemblyHash = "07e6834e6da4f866ab165e68015e24d0a3fc2fa8a98e383a3df80d933876997a"
+    }
+)
 
-$OriginalAssetHash = "ba21274137c1f6a8b896cc25d2a316228b6ca9861b3c25e349395ea13a4fa6cf"
-$PatchedAssetHash = "2027eeecc0f3657ecc08cc483db48be942b582b0a7cec509b6b2f23d4350c050"
-$OriginalAssemblyHash = "ee5dc47461f2776fa83d4acbb17d0434e12e76f0ac54ebc631a8c7cbb3225b5b"
-$PatchedAssemblyHash = "8a0a8e93d51c707d77f69e69624dc8191df4373d5aea4c60f2f1255961ba3f85"
+$GameVersion = $null
+$TranslationTables = 0
+$TranslationRows = 0
+$LocalizationSource = $null
+$AssetPatch = $null
+$AssemblyPatch = $null
+$OriginalAssetHash = $null
+$PatchedAssetHash = $null
+$OriginalAssemblyHash = $null
+$PatchedAssemblyHash = $null
 
 function Get-LowerHash([string]$Path) {
     return (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToLowerInvariant()
@@ -96,7 +119,7 @@ function Get-SteamCandidates {
 function Resolve-GameRoot([string]$RequestedPath) {
     if (-not [string]::IsNullOrWhiteSpace($RequestedPath)) {
         if (-not (Test-GameRoot $RequestedPath)) {
-            throw "지정한 경로에서 Decktamer 1.7.4 게임 파일을 찾지 못했습니다: $RequestedPath"
+            throw "지정한 경로에서 Decktamer 게임 파일을 찾지 못했습니다: $RequestedPath"
         }
         $resolved = $RequestedPath.Trim('"')
         if (Test-Path -LiteralPath $resolved -PathType Leaf) { $resolved = Split-Path -Parent $resolved }
@@ -120,6 +143,91 @@ function Resolve-GameRoot([string]$RequestedPath) {
     } catch { }
 
     throw '게임 폴더를 자동으로 찾지 못했습니다. 배치 파일에 게임 폴더를 끌어다 놓거나 -GamePath "경로"로 실행하세요.'
+}
+
+function Find-SupportedProfile([string]$AssetPath, [string]$AssemblyPath) {
+    $assetHash = Get-LowerHash $AssetPath
+    $assemblyHash = Get-LowerHash $AssemblyPath
+    $matches = @($SupportedProfiles | Where-Object {
+        $assetHash -in @($_.OriginalAssetHash, $_.PatchedAssetHash) -and
+        $assemblyHash -in @($_.OriginalAssemblyHash, $_.PatchedAssemblyHash)
+    })
+    if ($matches.Count -eq 1) { return $matches[0] }
+
+    $supported = ($SupportedProfiles.GameVersion -join ", ")
+    $updateHint = ""
+    try {
+        $latest = Invoke-RestMethod -Uri $ReleaseApi -Headers @{ "User-Agent" = "Decktamer-Korean-Patch/$PatchVersion" } -TimeoutSec 8
+        if ($latest.tag_name) {
+            $updateHint = "`n최신 한글패치: $($latest.tag_name)`n$($latest.html_url)`nUpdate_Korean_Patch.bat로 최신 패치를 확인할 수 있습니다."
+        }
+    } catch {
+        $updateHint = "`n최신 지원 여부: https://github.com/zhtjstod-cell/Decktamer-Korean-Patch/releases/latest"
+    }
+    throw "현재 게임 파일은 이 패치가 지원하는 빌드가 아닙니다. 원본을 덮어쓰지 않습니다.`n지원 버전: $supported`nsharedassets0.assets: $assetHash`nAssembly-CSharp.dll: $assemblyHash$updateHint"
+}
+
+function Set-ActiveProfile($Profile) {
+    $script:GameVersion = $Profile.GameVersion
+    $script:TranslationTables = [int]$Profile.TranslationTables
+    $script:TranslationRows = [int]$Profile.TranslationRows
+    $script:OriginalAssetHash = $Profile.OriginalAssetHash
+    $script:PatchedAssetHash = $Profile.PatchedAssetHash
+    $script:OriginalAssemblyHash = $Profile.OriginalAssemblyHash
+    $script:PatchedAssemblyHash = $Profile.PatchedAssemblyHash
+    $script:LocalizationSource = Join-Path $PackageRoot "localization\$GameVersion\ko"
+    $script:AssetPatch = Join-Path $PackageRoot "patches\$GameVersion\sharedassets0.assets.kpatch.gz"
+    $script:AssemblyPatch = Join-Path $PackageRoot "patches\$GameVersion\Assembly-CSharp.dll.kpatch.gz"
+}
+
+function Invoke-PatchUpdate([string]$ResolvedGame, [string]$ResolvedLocalizationRoot) {
+    Write-Host "GitHub에서 최신 한글패치를 확인합니다..."
+    $latest = Invoke-RestMethod -Uri $ReleaseApi -Headers @{ "User-Agent" = "Decktamer-Korean-Patch/$PatchVersion" } -TimeoutSec 15
+    if (-not $latest.tag_name) { throw "최신 릴리스 정보를 읽지 못했습니다." }
+    $latestVersionText = ([string]$latest.tag_name).TrimStart([char]'v')
+    try {
+        $latestVersion = [version]$latestVersionText
+        $currentVersion = [version]$PatchVersion
+    } catch {
+        throw "릴리스 버전을 해석하지 못했습니다: $($latest.tag_name)"
+    }
+    if ($latestVersion -le $currentVersion) {
+        Write-Host "이미 최신 한글패치입니다: v$PatchVersion" -ForegroundColor Green
+        Write-Host $latest.html_url
+        return
+    }
+
+    $releaseAsset = @($latest.assets | Where-Object { $_.name -like "Decktamer-Korean-Patch-v*.zip" }) | Select-Object -First 1
+    if (-not $releaseAsset) { throw "최신 릴리스에서 배포 ZIP을 찾지 못했습니다: $($latest.html_url)" }
+    $temporaryRoot = Join-Path ([IO.Path]::GetTempPath()) "Decktamer-Korean-Patch-$($latest.tag_name)-$([Guid]::NewGuid().ToString('N'))"
+    $zipPath = Join-Path $temporaryRoot $releaseAsset.name
+    $extractPath = Join-Path $temporaryRoot "extracted"
+    New-Item -ItemType Directory -Path $temporaryRoot -Force | Out-Null
+    try {
+        Invoke-WebRequest -Uri $releaseAsset.browser_download_url -OutFile $zipPath -Headers @{ "User-Agent" = "Decktamer-Korean-Patch/$PatchVersion" } -TimeoutSec 120
+        $expected = $null
+        if (($releaseAsset.PSObject.Properties.Name -contains "digest") -and $releaseAsset.digest -and ([string]$releaseAsset.digest).StartsWith("sha256:")) {
+            $expected = ([string]$releaseAsset.digest).Substring(7).ToLowerInvariant()
+        } else {
+            $checksumAsset = @($latest.assets | Where-Object { $_.name -eq "$($releaseAsset.name).sha256" }) | Select-Object -First 1
+            if ($checksumAsset) {
+                $checksumPath = "$zipPath.sha256"
+                Invoke-WebRequest -Uri $checksumAsset.browser_download_url -OutFile $checksumPath -Headers @{ "User-Agent" = "Decktamer-Korean-Patch/$PatchVersion" } -TimeoutSec 30
+                $checksumText = Get-Content -LiteralPath $checksumPath -Raw
+                if ($checksumText -match '(?i)\b([0-9a-f]{64})\b') { $expected = $Matches[1].ToLowerInvariant() }
+            }
+        }
+        if (-not $expected) { throw "최신 패치 ZIP의 SHA-256 정보를 찾지 못해 설치하지 않습니다." }
+        if ((Get-LowerHash $zipPath) -ne $expected) { throw "다운로드한 최신 패치의 SHA-256 검증에 실패했습니다." }
+        Expand-Archive -LiteralPath $zipPath -DestinationPath $extractPath
+        $newScripts = @(Get-ChildItem -LiteralPath $extractPath -Recurse -File -Filter "DecktamerKoreanPatch.ps1")
+        if ($newScripts.Count -ne 1) { throw "최신 패치에서 설치 도구를 고유하게 찾지 못했습니다." }
+        Write-Host "한글패치 $($latest.tag_name)을(를) 내려받았습니다. 새 설치 도구로 전환합니다."
+        & powershell.exe -NoProfile -ExecutionPolicy Bypass -File $newScripts[0].FullName -Mode Install -GamePath $ResolvedGame -LocalizationRoot $ResolvedLocalizationRoot
+        if ($LASTEXITCODE -ne 0) { throw "최신 한글패치 설치가 실패했습니다(종료 코드 $LASTEXITCODE)." }
+    } finally {
+        if (Test-Path -LiteralPath $temporaryRoot) { Remove-Item -LiteralPath $temporaryRoot -Recurse -Force }
+    }
 }
 
 function Get-DefaultLocalizationRoot {
@@ -235,7 +343,7 @@ function Install-PatchedFile(
         return
     }
     if ($currentHash -ne $ExpectedOriginal) {
-        throw "지원하지 않는 파일입니다. Decktamer 1.7.4 원본이 아니거나 다른 모드가 적용되어 있습니다:`n$TargetPath`nSHA-256: $currentHash"
+        throw "지원하지 않는 파일입니다. 지원 게임 버전의 원본이 아니거나 다른 모드가 적용되어 있습니다:`n$TargetPath`nSHA-256: $currentHash"
     }
 
     if (Test-Path -LiteralPath $BackupPath -PathType Leaf) {
@@ -256,7 +364,7 @@ function Install-Localization([string]$TargetRoot, [string]$BackupRoot) {
         throw "배포 번역 폴더가 없습니다: $LocalizationSource"
     }
     $sourceFiles = @(Get-ChildItem -LiteralPath $LocalizationSource -Filter "*.csv" -File)
-    if ($sourceFiles.Count -ne 37) { throw "배포 번역 표가 37개가 아닙니다." }
+    if ($sourceFiles.Count -ne $TranslationTables) { throw "배포 번역 표가 $TranslationTables개가 아닙니다." }
 
     New-Item -ItemType Directory -Path $TargetRoot -Force | Out-Null
     $target = Join-Path $TargetRoot "ko"
@@ -280,8 +388,8 @@ function Install-Localization([string]$TargetRoot, [string]$BackupRoot) {
         patch_version = $PatchVersion
         game_version = $GameVersion
         installed_at = [DateTimeOffset]::Now.ToString("o")
-        tables = 37
-        rows = 3039
+        tables = $TranslationTables
+        rows = $TranslationRows
     }
     $markerData | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $target $MarkerName) -Encoding UTF8
     Write-Host "번역 적용 완료: $target"
@@ -340,7 +448,7 @@ function Assert-Installed([string]$AssetPath, [string]$AssemblyPath, [string]$Ta
     $target = Join-Path $TargetRoot "ko"
     $sourceFiles = @(Get-ChildItem -LiteralPath $LocalizationSource -Filter "*.csv" -File)
     $targetFiles = @(Get-ChildItem -LiteralPath $target -Filter "*.csv" -File)
-    if ($sourceFiles.Count -ne 37 -or $targetFiles.Count -ne 37) { throw "번역 표 개수 검증 실패" }
+    if ($sourceFiles.Count -ne $TranslationTables -or $targetFiles.Count -ne $TranslationTables) { throw "번역 표 개수 검증 실패" }
     foreach ($source in $sourceFiles) {
         $installed = Join-Path $target $source.Name
         if (-not (Test-Path -LiteralPath $installed) -or (Get-LowerHash $source.FullName) -ne (Get-LowerHash $installed)) {
@@ -360,11 +468,19 @@ if ([string]::IsNullOrWhiteSpace($LocalizationRoot)) { $LocalizationRoot = Get-D
 $dataDir = Join-Path $resolvedGame "Decktamer_Data"
 $assetTarget = Join-Path $dataDir "sharedassets0.assets"
 $assemblyTarget = Join-Path $dataDir "Managed\Assembly-CSharp.dll"
-$backupDir = Join-Path $resolvedGame "KoreanPatch_Backup_1.7.4"
+if ($Mode -eq "Update") {
+    Invoke-PatchUpdate $resolvedGame $LocalizationRoot
+    exit 0
+}
+
+$profile = Find-SupportedProfile $assetTarget $assemblyTarget
+Set-ActiveProfile $profile
+$backupDir = Join-Path $resolvedGame "KoreanPatch_Backup_$GameVersion"
 $assetBackup = Join-Path $backupDir "sharedassets0.assets"
 $assemblyBackup = Join-Path $backupDir "Assembly-CSharp.dll"
 
 Write-Host "게임 경로: $resolvedGame"
+Write-Host "감지 버전: Decktamer $GameVersion"
 Write-Host "실행 작업: $Mode"
 
 switch ($Mode) {

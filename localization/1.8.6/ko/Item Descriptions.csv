@@ -1,0 +1,98 @@
+﻿Key,Value
+Meat,"야생 크리처를 길들입니다.
+아군 크리처의 체력을 {icons.hp} 회복합니다.
+육식 크리처 {icons.carnivore}에게
+효과적입니다."
+Berry,"야생 크리처를 길들입니다.
+아군 크리처의 체력을 {icons.hp} 회복합니다.
+초식 크리처 {icons.herbivore}에게
+효과적입니다."
+Fish,"야생 크리처를 길들입니다.
+아군 크리처의 체력을 {icons.hp} 회복합니다.
+어식 크리처 {icons.piscivore}에게
+효과적입니다."
+Fruit of Might,"야생 크리처를 길들입니다.
+아군 크리처의 체력을 {icons.hp} 회복합니다.
+모든 크리처에게 효과적입니다: {icons.carnivore}, {icons.herbivore}, {icons.piscivore}."
+Prime Meat,"야생 크리처를 길들입니다.
+아군 크리처의 체력을 {icons.hp} 회복합니다.
+육식 크리처 {icons.carnivore}에게 매우 효과적입니다."
+Prime Fish,"야생 크리처를 길들입니다.
+아군 크리처의 체력을 {icons.hp} 회복합니다.
+어식 크리처 {icons.piscivore}에게 매우 효과적입니다."
+Sweet Berries,"야생 크리처를 길들입니다.
+아군 크리처의 체력을 {icons.hp} 회복합니다.
+초식 크리처 {icons.herbivore}에게 매우 효과적입니다."
+Talent Essence,크리처에게 다음 특성을 주입합니다:
+Move Essence,크리처에게 다음 기술을 주입합니다:
+Medicinal Herb,"체력을 2{icons.hp} 회복합니다.
+길들이기에는 적합하지 않습니다."
+Special Flower,"야생 크리처를 길들입니다.
+아군 크리처의 체력을 {icons.hp} 회복합니다.
+모든 크리처에게 효과적입니다: {icons.carnivore}, {icons.herbivore}, {icons.piscivore}."
+Empty Syringe,<u>길들인 크리처</u>에게서 특성이나 기술을 추출합니다. 추출한 능력은 다른 크리처에게 줄 수 있습니다.
+Mediocre Herb,"체력을 1{icons.hp} 회복합니다.
+길들이기에는 적합하지 않습니다."
+Old Fruit of Might,2 {icons.attack_plus}와 2 {icons.speed_plus}을(를) 부여합니다.
+Gives Token,{token}을(를) 부여합니다.
+Inflicts X Token Item,{token}을(를) {number} 부여합니다.
+Inflicts Token Item,{token}을(를) 부여합니다.
+Gives X Token,{token}을(를) {number} 부여합니다.
+Gives Token for X Turns,{number_turns}턴 동안 {token}을(를) 부여합니다.
+Inflicts Token for X Turns Item,{number_turns}턴 동안 {token}을(를) 부여합니다.
+Deals X Damage,피해를 {damage} 줍니다.
+Retreat,아군 하나를 후퇴시킵니다.
+Full Heal,체력을 완전히 회복합니다 {icons.hp}.
+Cure,대상의 부정 효과를 제거합니다.
+Draws X Cards,카드를 {number}장 뽑습니다.
+Poison Bug Flavor Text,한 번 쏘이면 닷새 동안 아프다!
+Kofa Bean Flavor Text,활성 성분의 자극 효과가 카페인의 두 배나 된다.
+Glowing Substance Flavor Text,냄새만 아니었다면 제법 괜찮은 등불이 됐을 텐데.
+Rock Flavor Text,낡았지만 믿음직하다.
+Leaf Whistle Flavor Text,이 재주가 쓸모 있을 줄은 몰랐는데.
+Milk Flavor Text,상하지 않는다!
+Reno Bean Flavor Text,이걸 조금만 팔아도 부자가 되겠어.
+Narcotulip Flavor Text,꽃가루를 음식에 뿌리면 밤새 푹 잘 수 있다.
+Emberfly Flavor Text,생물 발광이 아니다. 그냥 엄청나게 뜨거울 뿐이다.
+Wind Feather Flavor Text,주변으로 공기가 흐르는 게 느껴진다.
+Honey Flavor Text,맛있다.
+Pseudo-Water Flavor Text,물처럼 보이지만 실은 기생 생물이다.
+Mud Ball Flavor Text,얼굴에 한 방!
+Scale Flavor Text,모양마저 방패처럼 생겼다!
+Sticky Fruit Flavor Text,원숭이들은 늘 이걸 내게 집어 던진다.
+Fruit of Might Flavor Text,이걸 먹는 행운의 주인공은 누가 될까?
+Egg,"체력을 완전히 회복합니다 {icons.hp}.
+먹지 않고 {number_of_battles}번의 전투가 지나면 위험도 {danger_level} {icons.danger_star}의 크리처가 부화합니다."
+Charm Petal Flavor Text,페로몬과 흥분제가 완벽하게 배합된 칵테일.
+Armor Item Flavor Text,먹으면 피부를 단단하게 굳히는 물질이 분비된다.
+Blood,"육식 크리처 {icons.carnivore}에게 사용하면 체력을 {heal_amount}{icons.hp} 회복합니다.
+그 외의 대상에게는 피해를 {damage_amount} 줍니다."
+Refreshes Limited Use,대상이 가진 사용 횟수 제한 기술의 횟수를 모두 회복합니다.
+Refresh Limited Use Item Flavor Text,햇빛 대신 달빛을 받으며 자라는 잎.
+Weeper Corpse,"{turns_left}턴 후 부활하여 손으로 돌아옵니다.
+훼손하면 {heart_name}을(를) 얻을 수 있습니다."
+Weeper Heart,"체력을 완전히 회복합니다 {icons.hp}.
+사용 횟수 제한 기술의 횟수를 모두 회복합니다.
+모든 부정 효과를 제거합니다."
+Secret Formula,상황이 어떻든 야생 크리처 길들이기에 반드시 성공합니다!
+Secret Formula Flavor Text,도무지 재현할 방법을 모르겠어...
+Golden Syringe 2,{empty_syringe_item}처럼 작동하지만 최대 {number}번 사용할 수 있습니다! (남은 횟수: {current})
+Reinforced Syringe,{empty_syringe_item}처럼 작동하지만 적에게도 사용할 수 있습니다(위험도 {danger_level} {icons.danger_star} 이하)!
+Cursed Syringe,크리처에게 다음 저주를 주입합니다. 적에게도 사용할 수 있습니다:
+Mutated Meat,"고기 {icons.carnivore}처럼 작동합니다.
+길들이기 확률은 낮지만 무작위 돌연변이를 부여합니다."
+Mutated Fish,"생선 {icons.piscivore}처럼 작동합니다.
+길들이기 확률은 낮지만 무작위 돌연변이를 부여합니다."
+Mutated Berries,"열매 {icons.herbivore}처럼 작동합니다.
+길들이기 확률은 낮지만 무작위 돌연변이를 부여합니다."
+Meat Treat,"고기 {icons.carnivore}처럼 작동합니다.
+길들이기 확률은 낮지만 길들이는 즉시 크리처가 손으로 들어옵니다."
+Fish Treat,"생선 {icons.piscivore}처럼 작동합니다.
+길들이기 확률은 낮지만 길들이는 즉시 크리처가 손으로 들어옵니다."
+Berry Treat,"열매 {icons.herbivore}처럼 작동합니다.
+길들이기 확률은 낮지만 길들이는 즉시 크리처가 손으로 들어옵니다."
+Chyme,"체력을 1{icons.hp} 회복합니다.
+길들이기에 성공할 확률이 낮습니다."
+Chyme Flavor Text,반쯤 소화된 먹이. {gluttosis_name}을(를) 발동시키지 않습니다.
+Aberration Disabler Item,"외과의가 떨어뜨린 기묘한 가스가 든 병입니다.
+라벨에 커다란 ""<size=80%><b>Ω</b></size>"" 기호가 그려져 있습니다."

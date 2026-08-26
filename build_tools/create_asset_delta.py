@@ -24,14 +24,14 @@ def sha256(path: Path) -> bytes:
 def find_segments(original: Path, patched: Path, max_gap: int) -> list[tuple[int, int]]:
     segments: list[tuple[int, int]] = []
     offset = 0
+    common_size = min(original.stat().st_size, patched.stat().st_size)
     with original.open("rb") as left, patched.open("rb") as right:
-        while True:
-            source = left.read(8 * 1024 * 1024)
-            target = right.read(8 * 1024 * 1024)
-            if not source:
-                break
-            if len(source) != len(target):
-                raise ValueError("Input files must have equal lengths for this patch format")
+        while offset < common_size:
+            block_size = min(8 * 1024 * 1024, common_size - offset)
+            source = left.read(block_size)
+            target = right.read(block_size)
+            if len(source) != block_size or len(target) != block_size:
+                raise ValueError("Unexpected end of input while creating the patch")
             changed = np.flatnonzero(
                 np.frombuffer(source, dtype=np.uint8) != np.frombuffer(target, dtype=np.uint8)
             )
@@ -45,9 +45,13 @@ def find_segments(original: Path, patched: Path, max_gap: int) -> list[tuple[int
                         segments[-1] = (segments[-1][0], end)
                     else:
                         segments.append((start, end))
-            offset += len(source)
-        if right.read(1):
-            raise ValueError("Input files must have equal lengths for this patch format")
+            offset += block_size
+    if patched.stat().st_size > common_size:
+        start, end = common_size, patched.stat().st_size
+        if segments and start - segments[-1][1] <= max_gap:
+            segments[-1] = (segments[-1][0], end)
+        else:
+            segments.append((start, end))
     return segments
 
 
@@ -59,8 +63,6 @@ def main() -> None:
     parser.add_argument("--max-gap", type=int, default=8)
     args = parser.parse_args()
 
-    if args.original.stat().st_size != args.patched.stat().st_size:
-        raise SystemExit("Input files have different sizes")
     segments = find_segments(args.original, args.patched, args.max_gap)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     temporary = args.output.with_suffix(args.output.suffix + ".tmp")
@@ -95,4 +97,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

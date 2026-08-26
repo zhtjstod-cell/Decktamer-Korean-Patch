@@ -1,0 +1,32 @@
+﻿Key,Value
+when placed keyword description,크리처를 보드에 배치하는 순간 발동하는 즉발 효과입니다. 해당 라인에 카드가 이것뿐이어도 발동합니다.
+retreat keyword description,피리를 사용해 이 크리처를 후퇴시키면 발동합니다.
+opposing enemy keyword description,같은 라인에서 이 크리처와 마주 보고 있는 크리처입니다.
+target keyword description,"공격자와 같은 라인에 있든 다른 라인에 있든, 공격을 맞게 될 크리처입니다."
+always hits first keyword description,선제공격: 속도와 관계없이 <u>같은 라인 안에서</u> 먼저 공격합니다. 양쪽 모두 선제공격 기술을 사용하면 더 빠른 쪽이 먼저 공격합니다.
+always hits last keyword description,후공: 크리처의 속도와 관계없이 마지막에 공격합니다. 양쪽 모두 후공 기술을 사용하면 더 빠른 쪽이 먼저 공격합니다.
+negative effect keyword description,모든 능력치 감소 효과 {icons.attack_minus} {icons.speed_minus} {icons.defense_minus}와 상태 이상 {icons.poison} {icons.sleep} {icons.clumsy} {icons.dizzy} {icons.torpidity}을(를) 뜻합니다.
+when attacked keyword description,"이 크리처가 기술로 직접 피해를 받으면 발동합니다. 아군과 적 중 누가 공격했는지는 관계없으며, 그 피해로 죽어도 발동합니다."
+lane keyword description,하나의 라인에서 크리처와 적이 서로 마주 봅니다. 그 라인에서 더 빠른 크리처가 먼저 공격합니다. 각 라인은 서로 독립적입니다.
+adjacent creatures keyword description,이 크리처의 바로 왼쪽과 오른쪽에 배치된 아군입니다.
+hits all lanes keyword description,전 라인 공격: 다른 라인에 있는 적까지 모든 적을 대상으로 삼아 각각 피해를 주는 기술입니다.
+speed keyword description,속도는 같은 라인에서 어느 크리처가 먼저 공격할지를 결정합니다. 느린 크리처는 빠른 크리처의 공격에서 살아남아야 공격할 수 있습니다. 속도가 같으면 동시에 공격합니다.
+survives damage keyword description,"피해 생존: 기술이나 중독 {icons.poison} 같은 간접 효과로 피해를 받은 뒤, 해당 피해에서 살아남았을 때만 발동합니다."
+when this attacks keyword description,이 크리처가 피해 기술을 사용한 직후 발동합니다. 상태 기술은 해당하지 않습니다.
+positive effects keyword description,"모든 능력치 증가 효과 {icons.attack_plus} {icons.speed_plus} {icons.defense_plus}와 {icons.dexterity}, 방어막 {icons.armor}을(를) 뜻합니다."
+status move keyword description,상태 기술({icons.status_move} 기호로 표시)은 피해를 주지 않으며 {icons.attack_plus}의 영향을 받지 않습니다.
+limited use keyword description,한 전투에서 정해진 횟수만 사용할 수 있는 기술입니다.
+temporary effects keyword description,정해진 턴 동안만 적용되는 모든 효과입니다. 긍정 효과와 부정 효과를 모두 포함합니다.
+Danger Level Keyword Description,크리처에 표시된 {icons.danger_star}의 개수로 나타냅니다.
+curse keyword description,주사기로 추출할 수 없는 부정적인 돌연변이입니다.
+stat changes keyword description,{icons.attack_minus} {icons.speed_minus} {icons.defense_minus} {icons.attack_plus} {icons.speed_plus} {icons.defense_plus}
+inverts stat changes keyword description,"{icons.attack_minus} {icons.speed_minus} {icons.defense_minus}은(는) {icons.attack_plus} {icons.speed_plus} {icons.defense_plus}(으)로, 그 반대도 서로 뒤바뀝니다."
+Lowest Health Keyword Description,남은 체력이 가장 낮은 적입니다. 같은 적이 여럿이면 가장 왼쪽에 있는 적을 우선합니다.
+Team Keyword Description,이 크리처와 모든 아군을 뜻합니다.
+limited turns keyword description,빨간 원 안의 숫자로 표시된 턴 동안만 지속되는 효과입니다.
+Situational Token,(상황 한정)
+when damaged keyword description,피해의 출처와 관계없이 이 크리처가 1 이상의 피해를 받으면 발동합니다.
+positive stat changes keyword description,모든 능력치 증가 효과 {icons.attack_plus} {icons.speed_plus} {icons.defense_plus}을(를) 뜻합니다.
+negative stat changes keyword description,모든 능력치 감소 효과 {icons.attack_minus} {icons.speed_minus} {icons.defense_minus}을(를) 뜻합니다.
+fulmination custom keyword description,"예를 들어 적에게 {icons.poison}이 3 있다면, 이 기술은 즉시 3+2+1=<b>6</b>의 피해를 준 뒤 {icons.poison}을(를) 모두 제거합니다."
+Talent Keyword,(특성)
